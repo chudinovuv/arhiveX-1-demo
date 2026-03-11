@@ -1,0 +1,2760 @@
+﻿{
+ "meta": {
+  "$specVersion": "1.0.5",
+  "alias": "xref",
+  "generated": "2026-02-20T02:42:34.317Z",
+  "fileCount": 26,
+  "sectionCount": 166,
+  "totalRefs": 291,
+  "refsByType": {
+   "section": 230,
+   "standard": 59,
+   "url": 2,
+   "person": 0
+  }
+ },
+ "sections": {
+  "4": {
+   "file": "4_0_semantic_model.md",
+   "title": "Semantic Model",
+   "refs": [
+    {
+     "type": "section",
+     "target": "4.2",
+     "context": "…efinement path from idea → intent → specification → action (see Section 4.2);",
+     "line": 16
+    },
+    {
+     "type": "section",
+     "target": "4.3",
+     "context": "…n is governed through three complementary mechanisms (see **Section 4.3 Auto-Regressive Evolution**):",
+     "line": 19
+    },
+    {
+     "type": "section",
+     "target": "4.6",
+     "context": "This aspect is specified in detail in **Section 4.6 — Meaning Resolution**, which defines the resolution phases, determinis…",
+     "line": 27
+    }
+   ]
+  },
+  "1.0.2": {
+   "file": "1_0_design_principles.md",
+   "title": "Foundational design principles",
+   "refs": [
+    {
+     "type": "section",
+     "target": "1.3",
+     "context": "…iples are elaborated in their respective thematic sections (Section 1.3 — Explicit Semantic Boundaries, Section 1.6 — Enforcement as Archite…",
+     "line": 57
+    },
+    {
+     "type": "section",
+     "target": "1.6",
+     "context": "…matic sections (Section 1.3 — Explicit Semantic Boundaries, Section 1.6 — Enforcement as Architecture, Section 1.8 — Resilience by Design).",
+     "line": 57
+    },
+    {
+     "type": "section",
+     "target": "1.8",
+     "context": "…ntic Boundaries, Section 1.6 — Enforcement as Architecture, Section 1.8 — Resilience by Design).",
+     "line": 57
+    },
+    {
+     "type": "section",
+     "target": "1.1",
+     "context": "*(Elaborated in Section 1.1 — Meaning-First Architecture)*",
+     "line": 62
+    },
+    {
+     "type": "section",
+     "target": "1.2",
+     "context": "*(Elaborated in Section 1.2 — Determinism by Construction)*",
+     "line": 65
+    },
+    {
+     "type": "section",
+     "target": "1.5",
+     "context": "*(Elaborated in Section 1.5 — Declarative Authority and Admissibility)*",
+     "line": 68
+    },
+    {
+     "type": "section",
+     "target": "1.0.1",
+     "context": "*(Elaborated in Section 1.0.1 — Data and Informational Context, and Section 1.11 — Human-Machine Semantic Symmetry)*",
+     "line": 77
+    },
+    {
+     "type": "section",
+     "target": "1.11",
+     "context": "*(Elaborated in Section 1.0.1 — Data and Informational Context, and Section 1.11 — Human-Machine Semantic Symmetry)*",
+     "line": 77
+    },
+    {
+     "type": "section",
+     "target": "1.7",
+     "context": "*(Elaborated in Section 1.7 — Temporal Explicitness and Evolution Control)*",
+     "line": 80
+    }
+   ]
+  },
+  "1.2": {
+   "file": "1_0_design_principles.md",
+   "title": "Determinism by Construction",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "*(See Section 2.5 Derived Types/ Record)*",
+     "line": 190
+    },
+    {
+     "type": "section",
+     "target": "2.6",
+     "context": "*(See Section 2.6 Behavioral Types / Class)*",
+     "line": 192
+    },
+    {
+     "type": "section",
+     "target": "1.6.2",
+     "context": "*(See Section ****Section 1.6.2****: Enforcement as Architecture and 2.6 ****Behavioral Types / Rule****)*",
+     "line": 196
+    },
+    {
+     "type": "section",
+     "target": "2.3",
+     "context": "*(See Section 2.3 Special Types/ Error and Section 1.10: Auditability and Traceability)*",
+     "line": 200
+    },
+    {
+     "type": "section",
+     "target": "1.10",
+     "context": "*(See Section 2.3 Special Types/ Error and Section 1.10: Auditability and Traceability)*",
+     "line": 200
+    },
+    {
+     "type": "section",
+     "target": "2.7.4",
+     "context": "*(See Section 2.7.4 Delegate and Section 1.6.2: External Execution Boundaries)*",
+     "line": 202
+    },
+    {
+     "type": "section",
+     "target": "1.4.3.1",
+     "context": "*(See Section 2.6 Behavioral Types / Binder and Section 1.4.3.1: Data Transformation and Integration Gates)*",
+     "line": 204
+    },
+    {
+     "type": "section",
+     "target": "2.7.1",
+     "context": "*(See Section 2.7.1 Semantic Types and Section 1.5: Declarative Authority and Admissibility)*",
+     "line": 206
+    },
+    {
+     "type": "section",
+     "target": "1.5",
+     "context": "*(See Section 2.7.1 Semantic Types and Section 1.5: Declarative Authority and Admissibility)*",
+     "line": 206
+    }
+   ]
+  },
+  "1.3.3": {
+   "file": "1_0_design_principles.md",
+   "title": "Domain as the unit of semantic and technological authority",
+   "refs": [
+    {
+     "type": "section",
+     "target": "1.3.6",
+     "context": "…oritative evidence surface of the domain. (for more details Section 1.3.6 )",
+     "line": 409
+    }
+   ]
+  },
+  "1.4.6": {
+   "file": "1_0_design_principles.md",
+   "title": "Surrogates",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.0",
+     "context": "… all intermediate phases. For detailed normative treatment, see Section 2.7.0 — Semantic Types: Data Surrogates and Behavioral Surrogates.",
+     "line": 588
+    }
+   ]
+  },
+  "1.6": {
+   "file": "1_0_design_principles.md",
+   "title": "Enforcement as Architecture",
+   "refs": [
+    {
+     "type": "section",
+     "target": "1",
+     "context": "…er. It is the **direct realization of the Design Principles defined in Section 1** and applies uniformly across **business, technical, infor…",
+     "line": 660
+    },
+    {
+     "type": "standard",
+     "target": "GDPR",
+     "context": "…* — regulatory, industry, and contractual obligations (e.g. GDPR, AML, ISO, PCI-DSS), enforced as **semantic constraints independent of inte…",
+     "line": 667
+    },
+    {
+     "type": "standard",
+     "target": "PCI-DSS",
+     "context": "…industry, and contractual obligations (e.g. GDPR, AML, ISO, PCI-DSS), enforced as **semantic constraints independent of internal business lo…",
+     "line": 667
+    }
+   ]
+  },
+  "1.6.3": {
+   "file": "1_0_design_principles.md",
+   "title": "Normative Interpretation of Enforcement Constructs",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "GDPR",
+     "context": "- **definition** expresses the authoritative constraint vocabulary (e.g. RBAC roles, PII/GDPR classes, regulatory duties, domain norms);",
+     "line": 707
+    }
+   ]
+  },
+  "1.10": {
+   "file": "1_0_design_principles.md",
+   "title": "Auditability and Traceability",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.3",
+     "context": "…in enforcement, admissibility, and auditability, refer to **Section 2.3 — Special Types: Error and Event**.",
+     "line": 962
+    }
+   ]
+  },
+  "2.0.5.1": {
+   "file": "2_0_system_type_overview.md",
+   "title": "Any",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.4",
+     "context": "… background and detailed semantic rationale are provided in Section 2.4 (*Special Types / Any*), where the role of `any` as a semantic reset…",
+     "line": 259
+    }
+   ]
+  },
+  "2.0.5.2": {
+   "file": "2_0_system_type_overview.md",
+   "title": "Tuple",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.4",
+     "context": "… background and extended semantic rationale are provided in Section 2.4 (*Special Types / Tuple*), where `tuple` is examined as a semantic r…",
+     "line": 273
+    }
+   ]
+  },
+  "2.0.5.3": {
+   "file": "2_0_system_type_overview.md",
+   "title": "Reference",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.4",
+     "context": "… background and extended semantic rationale are provided in Section 2.4 (*Special Types / Reference*), where the boundary role of `reference…",
+     "line": 283
+    }
+   ]
+  },
+  "2.0.5.4": {
+   "file": "2_0_system_type_overview.md",
+   "title": "record",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.2",
+     "context": "> See Section 2.2 (*Block Types / Record*) for the normative definition of record …",
+     "line": 295
+    }
+   ]
+  },
+  "2.0.6.2": {
+   "file": "2_0_system_type_overview.md",
+   "title": "Inline primitives",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.1",
+     "context": "… Additional background and normative detail are provided in Section 2.1 (*Primitive Types*), which defines the ontological constraints, seri…",
+     "line": 341
+    }
+   ]
+  },
+  "2.1": {
+   "file": "2_1_primitive_types.md",
+   "title": "Primitives Types",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…der transfer semantics, which are defined normatively in **ANNEX B — Type Metadata Envelope** and **ANNEX A — Type Registry** and must be re…",
+     "line": 15
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "… normatively in **ANNEX B — Type Metadata Envelope** and **ANNEX A — Type Registry** and must be read in conjunction with this section.",
+     "line": 15
+    }
+   ]
+  },
+  "2.1.1.3": {
+   "file": "2_1_primitive_types.md",
+   "title": "Semantic role",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "ISO/IEC 9899",
+     "context": "- ISO/IEC 9899 (C integer model, width & signedness guarantees)",
+     "line": 55
+    },
+    {
+     "type": "standard",
+     "target": "ISO/IEC 10967",
+     "context": "- ISO/IEC 10967 (Language-independent arithmetic)",
+     "line": 56
+    },
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "- RFC 8949 (CBOR canonical integer encoding — conceptual alignment)",
+     "line": 57
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 59
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 59
+    }
+   ]
+  },
+  "2.1.2.3": {
+   "file": "2_1_primitive_types.md",
+   "title": "Semantic role",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "IEEE 754",
+     "context": "- IEEE 754 (Binary floating-point arithmetic — `float`, `double`)",
+     "line": 100
+    },
+    {
+     "type": "standard",
+     "target": "ISO/IEC 10967-2",
+     "context": "- ISO/IEC 10967-2 (Language-independent floating-point arithmetic)",
+     "line": 101
+    },
+    {
+     "type": "standard",
+     "target": "IEEE 754-2008",
+     "context": "- IEEE 754-2008 / 2019 Decimal Floating-Point (conceptual alignment for `decimal`)",
+     "line": 102
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 104
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 104
+    }
+   ]
+  },
+  "2.1.3": {
+   "file": "2_1_primitive_types.md",
+   "title": "Boolean Class",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "ISO/IEC 9899",
+     "context": "- ISO/IEC 9899 (C boolean type semantics — conceptual model)",
+     "line": 114
+    },
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "- RFC 8949 (CBOR boolean encoding — canonical serialization reference)",
+     "line": 116
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 118
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 118
+    }
+   ]
+  },
+  "2.1.4.3": {
+   "file": "2_1_primitive_types.md",
+   "title": "Semantic role",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "ISO 8601",
+     "context": "- ISO 8601 (Date and time representations, including durations)",
+     "line": 160
+    },
+    {
+     "type": "standard",
+     "target": "RFC 3339",
+     "context": "- RFC 3339 (Internet profile of ISO 8601 — timestamps)",
+     "line": 161
+    },
+    {
+     "type": "standard",
+     "target": "ISO/IEC 10967-1",
+     "context": "- ISO/IEC 10967-1 (Language-independent arithmetic — temporal concepts, conceptual alignment)",
+     "line": 162
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 164
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 164
+    }
+   ]
+  },
+  "2.1.5.4.3": {
+   "file": "2_1_primitive_types.md",
+   "title": "Canonical Syntax",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "RFC 4122",
+     "context": "- RFC 4122 (UUID / GUID)",
+     "line": 217
+    },
+    {
+     "type": "standard",
+     "target": "ISO/IEC 9834-8",
+     "context": "- ISO/IEC 9834-8 (Registration of object identifiers — conceptual alignment)",
+     "line": 218
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 220
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 220
+    }
+   ]
+  },
+  "2.1.6.2": {
+   "file": "2_1_primitive_types.md",
+   "title": "Semantic role",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "For additional normative detail, see **ANNEX B — Type Metadata Envelope**, Section **B.8 (Serialization Context)**.",
+     "line": 255
+    },
+    {
+     "type": "standard",
+     "target": "ISO/IEC 11404",
+     "context": "- ISO/IEC 11404 (Language-independent datatypes — conceptual alignment)",
+     "line": 261
+    },
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "- RFC 8949 (CBOR null / simple values encoding — canonical control markers)",
+     "line": 262
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 264
+    }
+   ]
+  },
+  "2.1.7.4.3": {
+   "file": "2_1_primitive_types.md",
+   "title": "Canonical Syntax",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "ISO/IEC 11404",
+     "context": "- ISO/IEC 11404 (Language-independent datatypes — conceptual alignment)",
+     "line": 391
+    },
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "- RFC 8949 (CBOR null / simple values encoding — canonical control markers)",
+     "line": 392
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 394
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 394
+    }
+   ]
+  },
+  "2.1.8.4.2": {
+   "file": "2_1_primitive_types.md",
+   "title": "AST Grammar",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "ISO/IEC 9899",
+     "context": "- ISO/IEC 9899 (C fixed-width character arrays — conceptual alignment)",
+     "line": 474
+    },
+    {
+     "type": "standard",
+     "target": "ISO/IEC 14882",
+     "context": "- ISO/IEC 14882 (C++ `std::array<char, N>` — conceptual alignment)",
+     "line": 475
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…on rules** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 477
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 477
+    }
+   ]
+  },
+  "2.1.9.3": {
+   "file": "2_1_primitive_types.md",
+   "title": "Floating-point and decimal encoding",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "IEEE 754",
+     "context": "1. `float` and `double` **MUST be encoded according to IEEE 754 binary formats**.",
+     "line": 500
+    }
+   ]
+  },
+  "2.1.9.5": {
+   "file": "2_1_primitive_types.md",
+   "title": "Temporal encoding",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…y declared unit (milliseconds unless otherwise specified in ANNEX A).",
+     "line": 511
+    },
+    {
+     "type": "standard",
+     "target": "ISO 8601",
+     "context": "2. `date` and `time` **MUST be encoded using fixed, locale-independent representations** derived from ISO 8601 semantics.",
+     "line": 512
+    }
+   ]
+  },
+  "2.1.9.8": {
+   "file": "2_1_primitive_types.md",
+   "title": "Normative rules",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "2. Its `TYPE_CODE` **permits inlining** according to **ANNEX A**.",
+     "line": 574
+    }
+   ]
+  },
+  "2.1.9.9.1": {
+   "file": "2_1_primitive_types.md",
+   "title": "Parsing algorithm (normative)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A.3",
+     "context": "2. Validate `TYPE_CODE` against **ANNEX A.3 (Primitive Types)**.",
+     "line": 622
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "- (b) For `any`: interpret `FORMAT_FLAGS` as **security, compression, and reference indicators** as defined in **ANNEX B**.",
+     "line": 629
+    },
+    {
+     "type": "section",
+     "target": "B.4.1",
+     "context": "1. Parsing of `any` **MUST** follow the rules defined in **ANNEX B.4.1** and **MUST be delegated** to that specification.",
+     "line": 648
+    }
+   ]
+  },
+  "2.1.9.9": {
+   "file": "2_1_primitive_types.md",
+   "title": "Semantic guarantees",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "…nical binary encoding rules are aligned conceptually with **RFC 8949 (CBOR)** and **ISO/IEC 11404**, but E.L.I.A. defines its own mandatory …",
+     "line": 678
+    },
+    {
+     "type": "standard",
+     "target": "ISO/IEC 11404",
+     "context": "…les are aligned conceptually with **RFC 8949 (CBOR)** and **ISO/IEC 11404**, but E.L.I.A. defines its own mandatory canonical form as specif…",
+     "line": 678
+    }
+   ]
+  },
+  "2.2": {
+   "file": "2_2_block_types.md",
+   "title": "Blocks",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…rder transfer semantics, which are defined normatively in **ANNEX B — Type Metadata Envelope** and **ANNEX A — Type Registry** and must be r…",
+     "line": 5
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…d normatively in **ANNEX B — Type Metadata Envelope** and **ANNEX A — Type Registry** and must be read in conjunction with this section.",
+     "line": 5
+    }
+   ]
+  },
+  "2.2.0.3": {
+   "file": "2_2_block_types.md",
+   "title": "Semantic role",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…bit length constraint), and encoding rules are defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 63
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 63
+    }
+   ]
+  },
+  "2.2.1.4.3": {
+   "file": "2_2_block_types.md",
+   "title": "Canonical Syntax",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "ISO/IEC 10646",
+     "context": "- ISO/IEC 10646 (Unicode / UTF-8 for `string`)",
+     "line": 219
+    },
+    {
+     "type": "standard",
+     "target": "RFC 4648",
+     "context": "- RFC 4648 (Base64 encoding)",
+     "line": 220
+    },
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "- RFC 8949 (CBOR byte and text string encoding — conceptual alignment)",
+     "line": 221
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 223
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 223
+    }
+   ]
+  },
+  "2.2.2": {
+   "file": "2_2_block_types.md",
+   "title": "Structural block class",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "…, and syntax for record as derived structural types are specified in Section 2.5 Derived Types — Record and should be consulted in conjuncti…",
+     "line": 237
+    }
+   ]
+  },
+  "2.2.2.0.3": {
+   "file": "2_2_block_types.md",
+   "title": "Semantic role",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "ISO/IEC 11404",
+     "context": "- ISO/IEC 11404 (Language-independent datatypes — structured types)",
+     "line": 282
+    },
+    {
+     "type": "standard",
+     "target": "ISO/IEC 19505",
+     "context": "- ISO/IEC 19505 (UML data structures — conceptual alignment)",
+     "line": 283
+    },
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "- RFC 8949 (CBOR arrays and maps — canonical serialization model)",
+     "line": 284
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 286
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 286
+    }
+   ]
+  },
+  "2.2.4": {
+   "file": "2_2_block_types.md",
+   "title": "Binary Encoding Rules for Block Types",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "1. All block values **MUST be serialized using the Envelope model** defined in **ANNEX B — Type Metadata Envelope**.",
+     "line": 299
+    },
+    {
+     "type": "standard",
+     "target": "RFC 4648",
+     "context": "- `base64` payload **MUST be valid RFC 4648 Base64**;",
+     "line": 317
+    }
+   ]
+  },
+  "2.2.4.1": {
+   "file": "2_2_block_types.md",
+   "title": "Parser Obligations",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "1. Validate CATEGORY and TYPE_CODE against **ANNEX A — Type Registry**.",
+     "line": 327
+    }
+   ]
+  },
+  "2.3": {
+   "file": "2_3_stream_types.md",
+   "title": "Stream Types",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…rder transfer semantics, which are defined normatively in **ANNEX B — Type Metadata Envelope** and **ANNEX A — Type Registry** and must be r…",
+     "line": 5
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…d normatively in **ANNEX B — Type Metadata Envelope** and **ANNEX A — Type Registry** and must be read in conjunction with this section.",
+     "line": 5
+    }
+   ]
+  },
+  "2.3.1": {
+   "file": "2_3_stream_types.md",
+   "title": "Stream carriers class",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "> Reference reading of ANNEX A for more carrier types such `binary`, `text`, `toml`, `csv`, `avro`, `pr…",
+     "line": 44
+    }
+   ]
+  },
+  "2.3.1.3": {
+   "file": "2_3_stream_types.md",
+   "title": "Semantic role",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "RFC 8259",
+     "context": "- RFC 8259 (JSON)",
+     "line": 67
+    },
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "- RFC 8949 (CBOR — conceptual alignment for streaming binary formats)",
+     "line": 70
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 72
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 72
+    }
+   ]
+  },
+  "2.3.1.4": {
+   "file": "2_3_stream_types.md",
+   "title": "Semantic Data Binding",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…nd cardinality characteristics, as normatively defined in **ANNEX A — Type Registry** and refined by structural and behavioral flags in **AN…",
+     "line": 90
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…istry** and refined by structural and behavioral flags in **ANNEX B — Type Metadata Envelope**. The semantic data interface MUST NOT expose …",
+     "line": 90
+    }
+   ]
+  },
+  "2.3.1.5": {
+   "file": "2_3_stream_types.md",
+   "title": "Syntax",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.2",
+     "context": "…overns access, enforcement, and operation generation. See **Section 2.7.2 — Data Interface** for the normative declaration grammar and canon…",
+     "line": 96
+    },
+    {
+     "type": "section",
+     "target": "A.6",
+     "context": "…ry key–value stream format defined as a stream carrier in **ANNEX A.6** (TYPE_CODE `0x03`). It is used as the canonical serialization format…",
+     "line": 98
+    },
+    {
+     "type": "section",
+     "target": "2.5.7.1",
+     "context": "… serialization format for `dictionary` derived types (see **Section 2.5.7.1 — Serialization Semantics**).",
+     "line": 98
+    }
+   ]
+  },
+  "2.3.2": {
+   "file": "2_3_stream_types.md",
+   "title": "RAW String Class",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.2.0.4",
+     "context": "…e block), and `string` (unbounded / stream-eligible), see **Section 2.2.0.4 — String Type Hierarchy**.",
+     "line": 107
+    }
+   ]
+  },
+  "2.3.2.3.2": {
+   "file": "2_3_stream_types.md",
+   "title": "Base64 String",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "ISO/IEC 10646",
+     "context": "- ISO/IEC 10646 (Unicode code points)",
+     "line": 146
+    },
+    {
+     "type": "standard",
+     "target": "RFC 3629",
+     "context": "- UTF-8 (RFC 3629)",
+     "line": 147
+    },
+    {
+     "type": "standard",
+     "target": "RFC 8259",
+     "context": "- RFC 8259 (JSON string model — conceptual alignment)",
+     "line": 148
+    },
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "- RFC 8949 (CBOR text string streaming — conceptual alignment)",
+     "line": 149
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 151
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 151
+    }
+   ]
+  },
+  "2.3.2.4": {
+   "file": "2_3_stream_types.md",
+   "title": "Semantic Data Binding",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.3.1.4",
+     "context": "…ntic data interface **MUST follow the general binding rules defined in Section 2.3.1.4 — Semantic Data Binding** and applies the following s…",
+     "line": 155
+    }
+   ]
+  },
+  "2.3.2.5": {
+   "file": "2_3_stream_types.md",
+   "title": "Syntax",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.2",
+     "context": "…ssed exclusively through **Data Interface** bindings. See **Section 2.7.2 — Data Interface** for the normative declaration grammar and canon…",
+     "line": 171
+    }
+   ]
+  },
+  "2.3.3.3": {
+   "file": "2_3_stream_types.md",
+   "title": "Normative properties",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "- RFC 8949 (CBOR byte string streaming — conceptual alignment)",
+     "line": 206
+    },
+    {
+     "type": "standard",
+     "target": "ISO/IEC 23001-7",
+     "context": "- ISO/IEC 23001-7 (Common encryption — conceptual alignment for large binary payloads)",
+     "line": 207
+    },
+    {
+     "type": "standard",
+     "target": "POSIX",
+     "context": "- POSIX I/O streams (conceptual model)",
+     "line": 208
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 210
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 210
+    }
+   ]
+  },
+  "2.3.3.4": {
+   "file": "2_3_stream_types.md",
+   "title": "Semantic Data Binding",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.3.1.4",
+     "context": "…ntic data interface **MUST follow the general binding rules defined in Section 2.3.1.4 — Semantic Data Binding** and the specialization rule…",
+     "line": 216
+    },
+    {
+     "type": "section",
+     "target": "2.3.2.4",
+     "context": "…ic Data Binding** and the specialization rules defined in **Section 2.3.2.4 — Semantic Data Binding**.",
+     "line": 216
+    }
+   ]
+  },
+  "2.3.3.5": {
+   "file": "2_3_stream_types.md",
+   "title": "Syntax",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.2",
+     "context": "…ssed exclusively through **Data Interface** bindings. See **Section 2.7.2 — Data Interface** for the normative declaration grammar and canon…",
+     "line": 230
+    }
+   ]
+  },
+  "2.3.4": {
+   "file": "2_3_stream_types.md",
+   "title": "Structural Stream class",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "…or arrays as derived structural types are specified in **Section 2.5 Derived Types — Array and Derived Array** and should be consulted in co…",
+     "line": 247
+    },
+    {
+     "type": "section",
+     "target": "2.2",
+     "context": "…s, and the `SIZE_LIMITED_26BIT` constraint are defined in **Section 2.2 — Block Types**. Schema identity, TYPE_HASH semantics, and derived-t…",
+     "line": 269
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…semantics, and derived-type envelope rules are defined in **ANNEX B — Type Metadata Envelope**. Structural stream promotion MUST be interpre…",
+     "line": 269
+    }
+   ]
+  },
+  "2.3.4.0.1": {
+   "file": "2_3_stream_types.md",
+   "title": "Designation",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "…cal stream-level realization of derived types governed by **Section 2.5 — Derived Types**, ensuring that promotion does not alter semantic o…",
+     "line": 276
+    }
+   ]
+  },
+  "2.3.4.0.3": {
+   "file": "2_3_stream_types.md",
+   "title": "Syntax",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "…etermined by the underlying derived type declaration (see **Section 2.5 — Derived Types** for array, collection, and dictionary grammar). St…",
+     "line": 289
+    },
+    {
+     "type": "section",
+     "target": "2.7.2",
+     "context": "…ed by size constraints or **Data Interface** binding (see **Section 2.7.2 — Data Interface**).",
+     "line": 289
+    }
+   ]
+  },
+  "2.3.4.1": {
+   "file": "2_3_stream_types.md",
+   "title": "Semantic Role",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "…ASH semantics, and normative constraints are specified in **Section 2.5 — Derived Types**, which MUST be consulted for the authoritative def…",
+     "line": 295
+    }
+   ]
+  },
+  "2.3.4.2": {
+   "file": "2_3_stream_types.md",
+   "title": "Semantic Data Binding",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.3.1.4",
+     "context": "Semantic binding for structural streams **MUST follow Section 2.3.1.4 — Semantic Data Binding**, including evaluation of Bit 7 (`IS_ST…",
+     "line": 299
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…und type class and its declared iterability as defined in **ANNEX A — Type Registry** and refined by flags in **ANNEX B — Type Metadata Enve…",
+     "line": 299
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and refined by flags in **ANNEX B — Type Metadata Envelope**.",
+     "line": 299
+    }
+   ]
+  },
+  "2.4.0.3.1.1": {
+   "file": "2_4_specialized_types.md",
+   "title": "Event",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "> For the full normative definition, lifecycle rules, and semantic constraints of this type, see **Section 2.5 — Derived Types / Event**.",
+     "line": 64
+    }
+   ]
+  },
+  "2.4.0.3.1.2": {
+   "file": "2_4_specialized_types.md",
+   "title": "Error",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "> For the full normative definition, lifecycle rules, and semantic constraints of this type, see **Section 2.5 — Derived Types / Error**.",
+     "line": 69
+    }
+   ]
+  },
+  "2.4.0.3.1.3": {
+   "file": "2_4_specialized_types.md",
+   "title": "Exptree",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.4.5",
+     "context": "> For the full normative definition, lifecycle rules, and semantic constraints of this type, see **Section 2.4.5 — ExpTree**.",
+     "line": 77
+    }
+   ]
+  },
+  "2.4.0.3.1.4": {
+   "file": "2_4_specialized_types.md",
+   "title": "Any",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.4.1",
+     "context": "> For the full normative definition, semantic role, and constraints of this type, see **Section 2.4.1 — Any**.",
+     "line": 83
+    }
+   ]
+  },
+  "2.4.0.3.1.5": {
+   "file": "2_4_specialized_types.md",
+   "title": "Tuple",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.4.2",
+     "context": "> For the full normative definition, semantic role, and requalification rules of this type, see **Section 2.4.2 — Tuple**.",
+     "line": 89
+    }
+   ]
+  },
+  "2.4.0.3.1.6": {
+   "file": "2_4_specialized_types.md",
+   "title": "Reference",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.4.4",
+     "context": "> For the full normative definition, formation profiles, and constraints of this type, see **Section 2.4.4 — Reference**.",
+     "line": 95
+    }
+   ]
+  },
+  "2.4.0.3.1.7": {
+   "file": "2_4_specialized_types.md",
+   "title": "Version",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.4.3",
+     "context": "> For the full normative definition, ordering rules, and serialization semantics of this type, see **Section 2.4.3 — Version**.",
+     "line": 101
+    }
+   ]
+  },
+  "2.4.0.5": {
+   "file": "2_4_specialized_types.md",
+   "title": "Type Aspect Model",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…ORY`, `TYPE_CODE`, and envelope metadata as defined in **ANNEX A — Type Registry** and **ANNEX B — Type Metadata Envelope**. This transforma…",
+     "line": 176
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…metadata as defined in **ANNEX A — Type Registry** and **ANNEX B — Type Metadata Envelope**. This transformation defines how a value is phys…",
+     "line": 176
+    }
+   ]
+  },
+  "2.4.1.3": {
+   "file": "2_4_specialized_types.md",
+   "title": "Normative properties",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "ISO/IEC 11404",
+     "context": "- ISO/IEC 11404 (Language-independent datatypes — polymorphic carriers, conceptual alignment)",
+     "line": 261
+    },
+    {
+     "type": "standard",
+     "target": "RFC 8949",
+     "context": "- RFC 8949 (CBOR — canonical serialization inherited from the concrete data item)",
+     "line": 262
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…emantics** for this type class are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 265
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**.",
+     "line": 265
+    }
+   ]
+  },
+  "2.4.2.2": {
+   "file": "2_4_specialized_types.md",
+   "title": "Normative properties",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "7. The total physical size of a tuple **MUST comply with block size constraints** defined by the enclosing envelope (see ANNEX B).",
+     "line": 301
+    }
+   ]
+  },
+  "2.4.4.3": {
+   "file": "2_4_specialized_types.md",
+   "title": "Normative properties",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "RFC 6901",
+     "context": "- `json_pointer` (RFC 6901 compatible),",
+     "line": 736
+    }
+   ]
+  },
+  "2.5": {
+   "file": "2_5_derived_types.md",
+   "title": "Derived Types",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…rder transfer semantics, which are defined normatively in **ANNEX B — Type Metadata Envelope** and **ANNEX A — Type Registry** and must be r…",
+     "line": 37
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…d normatively in **ANNEX B — Type Metadata Envelope** and **ANNEX A — Type Registry** and must be read in conjunction with this section.",
+     "line": 37
+    }
+   ]
+  },
+  "2.5.3.4": {
+   "file": "2_5_derived_types.md",
+   "title": "Semantic role",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "… parameter encoding for arrays are normatively defined in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Enve…",
+     "line": 650
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ed in **ANNEX A — Type Registry** and interpreted through **ANNEX B — Type Metadata Envelope**. The full schema (element type, rank descript…",
+     "line": 650
+    }
+   ]
+  },
+  "2.5.4.2": {
+   "file": "2_5_derived_types.md",
+   "title": "Normative properties",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…* with derived-type dimensionality constraints defined in **ANNEX B** (maximum dimensionality ≤ 5, maximum nesting ≤ 3).",
+     "line": 839
+    }
+   ]
+  },
+  "2.5.4.3": {
+   "file": "2_5_derived_types.md",
+   "title": "Declaration vs. inline array usage",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "- are governed by derived-type constraints defined in **ANNEX B**.",
+     "line": 864
+    },
+    {
+     "type": "section",
+     "target": "2.3.1",
+     "context": "- MAY be subject to Block-type size limits as defined in **Section 2.3.1**.",
+     "line": 870
+    }
+   ]
+  },
+  "2.5.5.4": {
+   "file": "2_5_derived_types.md",
+   "title": "Semantic guarantees",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7",
+     "context": "…ly governed by the Type Metadata Envelope** as defined in **Section 2.7**.",
+     "line": 1039
+    }
+   ]
+  },
+  "2.5.6": {
+   "file": "2_5_derived_types.md",
+   "title": "Record (brief)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…value** composed of **named fields**. In accordance with **ANNEX A (Derived Types)** and **ANNEX B (Type Metadata)**, a record is the **cano…",
+     "line": 1198
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ds**. In accordance with **ANNEX A (Derived Types)** and **ANNEX B (Type Metadata)**, a record is the **canonical structural data carrier** …",
+     "line": 1198
+    }
+   ]
+  },
+  "2.5.7.4": {
+   "file": "2_5_derived_types.md",
+   "title": "Semantic guarantees",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…ly governed by the Type Metadata Envelope** as defined in **ANNEX B**.",
+     "line": 1502
+    }
+   ]
+  },
+  "2.5.8": {
+   "file": "2_5_derived_types.md",
+   "title": "Class",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.6.3",
+     "context": "…omplete specification of `class` semantics is provided in **Section 2.6.3 — Behavioral Types / Class**. Execution of a class instance occurs…",
+     "line": 1647
+    }
+   ]
+  },
+  "2.5.9": {
+   "file": "2_5_derived_types.md",
+   "title": "Interface",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.6.7",
+     "context": "…ty selection, and behavioral orchestration, is defined in **Section 2.6.7 — Behavioral Types / Interface**.",
+     "line": 1659
+    }
+   ]
+  },
+  "2.6.3.5": {
+   "file": "2_6_behavioral_types.md",
+   "title": "Syntax",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7",
+     "context": "> See **Section 2.7 Semantic Types / Inline — Syntax for the formal declaration model, s…",
+     "line": 601
+    }
+   ]
+  },
+  "2.6.4.3": {
+   "file": "2_6_behavioral_types.md",
+   "title": "Behavioral Properties",
+   "refs": [
+    {
+     "type": "section",
+     "target": "C",
+     "context": "…in the `with [...]` clause; if omitted, default values from ANNEX C / Flow apply.",
+     "line": 639
+    }
+   ]
+  },
+  "2.6.7.5.1.1": {
+   "file": "2_6_behavioral_types.md",
+   "title": "Compiler Obligations",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A.18",
+     "context": "…their data types are not compatible via automatic type cast as defined in Annex A.18.",
+     "line": 1949
+    }
+   ]
+  },
+  "2.7.0.2": {
+   "file": "2_7_0_semantic_types.md",
+   "title": "Principles of Semantic Type Classification",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.0",
+     "context": "…s defined by the E.L.I.A. type system**, as introduced in **Section 2.0 — System Type Overview**. Classification reflects *how meaning is de…",
+     "line": 33
+    }
+   ]
+  },
+  "2.7.0.2.3": {
+   "file": "2_7_0_semantic_types.md",
+   "title": "Classification by Interaction Surface",
+   "refs": [
+    {
+     "type": "section",
+     "target": "1",
+     "context": "… accordance with the properties of a module defined in **Section 1**. From a compliance-scope perspective, modules are neutral by default un…",
+     "line": 81
+    }
+   ]
+  },
+  "2.7.0.4": {
+   "file": "2_7_0_semantic_types.md",
+   "title": "Export Semantics and Requirements (Normative)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "1",
+     "context": "…main boundary unless it is explicitly declared as `export` (see section 1) or is projected through an non-exported surface (`data interface`…",
+     "line": 138
+    }
+   ]
+  },
+  "2.7.1": {
+   "file": "2_7_0_semantic_types.md",
+   "title": "Definition",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "DORA",
+     "context": "…urce identified via URN (e.g. RFCs, regulatory acts such as DORA or GDPR sections, formal citations, or equivalent authoritative references)…",
+     "line": 374
+    },
+    {
+     "type": "standard",
+     "target": "GDPR",
+     "context": "…ntified via URN (e.g. RFCs, regulatory acts such as DORA or GDPR sections, formal citations, or equivalent authoritative references).",
+     "line": 374
+    }
+   ]
+  },
+  "2.7.6.5": {
+   "file": "2_7_0_semantic_types.md",
+   "title": "Transit and Fact-Materialization Semantics (Normative)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.2",
+     "context": "- (a) a persisted data structure governed by a `data interface` (see **Section 2.7.2 — Data Interface**);",
+     "line": 940
+    },
+    {
+     "type": "section",
+     "target": "2.7.0.2.1",
+     "context": "- (b) an `event` representing an acknowledged occurrence (see **Section 2.7.0.2.1 — Boundary Interaction Semantics**);",
+     "line": 941
+    }
+   ]
+  },
+  "2.7.7.2": {
+   "file": "2_7_0_semantic_types.md",
+   "title": "Formation (Normative)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.6",
+     "context": "(This primitive is fully specified in Section 2.6 — Behavioral Types / Class)",
+     "line": 1051
+    },
+    {
+     "type": "section",
+     "target": "2.7.8",
+     "context": "…through enforcement or explanation mechanisms (see below Section 2.7.8 Inline)",
+     "line": 1052
+    }
+   ]
+  },
+  "2.7.7.6": {
+   "file": "2_7_0_semantic_types.md",
+   "title": "Compiler and Reasoning Checkpoint Semantics (Normative)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.6",
+     "context": "- be explicitly marked as transit data (see **Section 2.7.6 — Data Surrogate**);",
+     "line": 1138
+    }
+   ]
+  },
+  "2.7.2.0.1": {
+   "file": "2_7_2_data_interface.md",
+   "title": "Supported Type Categories",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.2.6",
+     "context": "…ration derivation, and binder participation are provided in Section 2.7.2.6 — Database Driver.",
+     "line": 49
+    },
+    {
+     "type": "section",
+     "target": "2.7.2.7",
+     "context": "…ration derivation, and binder participation are provided in Section 2.7.2.7 — RPC Driver.",
+     "line": 56
+    }
+   ]
+  },
+  "2.7.2.0.2": {
+   "file": "2_7_2_data_interface.md",
+   "title": "Types Compatibility",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.2.4.2",
+     "context": "…erence syntax for `transform` configuration is defined in **Section 2.7.2.4.2 (F — Transform Apply)**, refined in **Section 2.7.2.4.3 (F — C…",
+     "line": 77
+    },
+    {
+     "type": "section",
+     "target": "2.7.2.4.3",
+     "context": "…n **Section 2.7.2.4.2 (F — Transform Apply)**, refined in **Section 2.7.2.4.3 (F — Canonical Syntax)**, and normatively grounded in **ANNEX …",
+     "line": 77
+    },
+    {
+     "type": "section",
+     "target": "C",
+     "context": "…4.3 (F — Canonical Syntax)**, and normatively grounded in **ANNEX C (Binder)**.",
+     "line": 77
+    }
+   ]
+  },
+  "2.7.2.0.4": {
+   "file": "2_7_2_data_interface.md",
+   "title": "Category Settings",
+   "refs": [
+    {
+     "type": "section",
+     "target": "C",
+     "context": "> For more information about category-specific `with` settings, see **ANNEX C — Semantic Type Configuration / Data Interface**.",
+     "line": 106
+    }
+   ]
+  },
+  "2.7.2.2": {
+   "file": "2_7_2_data_interface.md",
+   "title": "Interaction Surface",
+   "refs": [
+    {
+     "type": "section",
+     "target": "C",
+     "context": "> For more information about category-specific `with` settings, see **ANNEX C — Semantic Type Configuration / Data Interface**.",
+     "line": 145
+    }
+   ]
+  },
+  "2.7.2.4.1": {
+   "file": "2_7_2_data_interface.md",
+   "title": "Declaration (Normative)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.6",
+     "context": "> For more information about Binder see Section 2.6 Behavioral Types/Binder",
+     "line": 255
+    }
+   ]
+  },
+  "2.7.2.5": {
+   "file": "2_7_2_data_interface.md",
+   "title": "Category Behavior and Operation Generation.",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "…al and normative grounding of type-bound bindings, see **Section 2.5 (Derived Types)** for composition and elevation rules, **ANNEX B** and …",
+     "line": 614
+    },
+    {
+     "type": "section",
+     "target": "2.3",
+     "context": "…* for composition and elevation rules, **ANNEX B** and **Section 2.3 (Stream Types)** for iterable and streaming representations.",
+     "line": 614
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…(Derived Types)** for composition and elevation rules, **ANNEX B** and **Section 2.3 (Stream Types)** for iterable and streaming representat…",
+     "line": 614
+    },
+    {
+     "type": "section",
+     "target": "2.2",
+     "context": "…(Derived Types)** for composition and elevation rules, **Section 2.2 (Block Types)** for structural data surfaces, and **Section 2.3 (Stream…",
+     "line": 628
+    },
+    {
+     "type": "section",
+     "target": "3.0",
+     "context": "…ing semantics, and domain-level integration rules, see **Section 3.0 (Language Blocks / Using)** and **Section 3.0 (Language Blocks / Domain…",
+     "line": 640
+    }
+   ]
+  },
+  "2.7.3.3.4": {
+   "file": "2_7_3_semantic_interface.md",
+   "title": "Inheritance Model",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.3.5",
+     "context": "…semantics, validation rules, and compatibility constraints, refer to Section 2.7.3.5 Semantic Binding Mechanisms.",
+     "line": 200
+    }
+   ]
+  },
+  "2.7.3.5.4": {
+   "file": "2_7_3_semantic_interface.md",
+   "title": "Rule Binding (reserved)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.3.4",
+     "context": "…ulation** and **execution gating**, violating the intent of Section 2.7.3.4 (Syntax) where attachments are restricted to **declarative ancho…",
+     "line": 832
+    }
+   ]
+  },
+  "2.7.4.1.3": {
+   "file": "2_7_4_delegate.md",
+   "title": "Classification by Enforcement Boundary",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "GDPR",
+     "context": "- (a) Operations handling regulated data (GDPR, HIPAA, PCI-DSS)",
+     "line": 156
+    },
+    {
+     "type": "standard",
+     "target": "HIPAA",
+     "context": "- (a) Operations handling regulated data (GDPR, HIPAA, PCI-DSS)",
+     "line": 156
+    },
+    {
+     "type": "standard",
+     "target": "PCI-DSS",
+     "context": "- (a) Operations handling regulated data (GDPR, HIPAA, PCI-DSS)",
+     "line": 156
+    }
+   ]
+  },
+  "2.8.3": {
+   "file": "2_8_data_type_functions.md",
+   "title": "serialize",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "Normative note: `base64` is a Block type (ANNEX A) and represents a text-encoded binary payload. When serialized as a Stre…",
+     "line": 212
+    }
+   ]
+  },
+  "2.8.8": {
+   "file": "2_8_data_type_functions.md",
+   "title": "file",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "…ng`, `dic`, `json`, `xml`, `yaml`, `toml`) as registered in ANNEX A (Stream/Format Types). When file is opening function returns record with…",
+     "line": 405
+    },
+    {
+     "type": "url",
+     "target": "https://www.garykessler.net/library/file_sigs_GCK_latest.html",
+     "context": "…d with pointer to stream and custom format is specified by [https://www.garykessler.net/library/file_sigs_GCK_latest.html](https://www.garyk…",
+     "line": 405
+    }
+   ]
+  },
+  "2.8.9": {
+   "file": "2_8_data_type_functions.md",
+   "title": "memory",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "- `format` determines the stream TYPE_CODE (ANNEX A).",
+     "line": 449
+    }
+   ]
+  },
+  "2.8.10": {
+   "file": "2_8_data_type_functions.md",
+   "title": "policy",
+   "refs": [
+    {
+     "type": "section",
+     "target": "1.3",
+     "context": "This aligns with the top-level primitive model (Section 1.3) while remaining a data-level operation.",
+     "line": 509
+    },
+    {
+     "type": "section",
+     "target": "2.5.2",
+     "context": "1. If optional Security Context metadata is present (Section 2.5.2), it MUST be used as the authoritative classification source.",
+     "line": 515
+    }
+   ]
+  },
+  "3.3.1.2": {
+   "file": "3_0_block_syntax.md",
+   "title": "Integration Categories",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "POSIX",
+     "context": "…privilege elevation, platform-specific | Windows API, POSIX/libc, macOS Foundation, device drivers |",
+     "line": 262
+    }
+   ]
+  },
+  "3.13.7": {
+   "file": "3_0_block_syntax.md",
+   "title": "Cross-reference Summary",
+   "refs": [
+    {
+     "type": "section",
+     "target": "D",
+     "context": "| Rule normative classes | ANNEX D |",
+     "line": 2126
+    }
+   ]
+  },
+  "3.15.8": {
+   "file": "3_0_block_syntax.md",
+   "title": "default(T)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "Returns the **canonical default value** for type `T`. See ANNEX A — Core Type Code Table for type-specific defaults.",
+     "line": 2721
+    }
+   ]
+  },
+  "3.15.8.2": {
+   "file": "3_0_block_syntax.md",
+   "title": "Normative Rules",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "| INS-300 | `default(T)` MUST return the zero-value for primitives as defined in ANNEX A. | MUST |",
+     "line": 2733
+    }
+   ]
+  },
+  "3.15.9": {
+   "file": "3_0_block_syntax.md",
+   "title": "sizeof(x)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "Returns the **logical or physical size** of a value, depending on its type and representation. See ANNEX A for type-specific sizing rules.",
+     "line": 2742
+    }
+   ]
+  },
+  "3.15.9.2": {
+   "file": "3_0_block_syntax.md",
+   "title": "Normative Rules",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "| INS-340 | For fixed-size primitives, returns canonical byte width (ANNEX A). | MUST |",
+     "line": 2754
+    }
+   ]
+  },
+  "3.15.10.2": {
+   "file": "3_0_block_syntax.md",
+   "title": "Normative Rules",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "| INS-390 | Returns one of the type tags defined in ANNEX A (codes 0..95 for core types). | MUST |",
+     "line": 2776
+    }
+   ]
+  },
+  "3.21.1.2": {
+   "file": "3_0_block_syntax.md",
+   "title": "Normative Rules",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "| LIT-010 | Integer literals MUST be valid for the target type's range (ANNEX A). Overflow is a compile-time error. | MUST |",
+     "line": 3068
+    }
+   ]
+  },
+  "3.21.4.2": {
+   "file": "3_0_block_syntax.md",
+   "title": "Normative Rules",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "| LIT-170 | Strings are UTF-8 encoded (ANNEX A, block type `0x03`). | MUST |",
+     "line": 3174
+    }
+   ]
+  },
+  "3.21.6.2": {
+   "file": "3_0_block_syntax.md",
+   "title": "Normative Rules",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "RFC 4122",
+     "context": "| LIT-230 | GUID literals follow RFC 4122 format: `{8-4-4-4-12}` hex digit groups. | MUST |",
+     "line": 3238
+    }
+   ]
+  },
+  "3.21.7.2": {
+   "file": "3_0_block_syntax.md",
+   "title": "Normative Rules",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "ISO 8601",
+     "context": "| LIT-290 | Date components use ISO 8601 order: `YYYY-MM-DD`. | MUST |",
+     "line": 3284
+    },
+    {
+     "type": "standard",
+     "target": "RFC 3339",
+     "context": "| LIT-340 | Constructor form `datetime(\"2025-01-15T00:00:00Z\")` is also admitted and accepts ISO 8601 / RFC 3339 strings. | MAY |",
+     "line": 3289
+    }
+   ]
+  },
+  "3.22": {
+   "file": "3_0_block_syntax.md",
+   "title": "Forward References",
+   "refs": [
+    {
+     "type": "section",
+     "target": "D",
+     "context": "| Rule evaluation classes | ANNEX D |",
+     "line": 3490
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "| Core Type Code Table (defaults, sizing) | ANNEX A |",
+     "line": 3494
+    }
+   ]
+  },
+  "4.2.1": {
+   "file": "4_0_semantic_model.md",
+   "title": "Natural semantic degradation",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.4",
+     "context": "1. the presence of `any` as a weakest-commitment semantic placeholder (see Section 2.4 Specialized Types/Any);",
+     "line": 101
+    }
+   ]
+  },
+  "4.3.1": {
+   "file": "4_0_semantic_model.md",
+   "title": "Definition — the foundation of meaning",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.0",
+     "context": "…cycle semantics, and binding rules, is fully specified in **Section 2.7.0 — Semantic Types / Definition** and is referenced here as the auth…",
+     "line": 133
+    }
+   ]
+  },
+  "4.3.2": {
+   "file": "4_0_semantic_model.md",
+   "title": "Semantic Interface — the mechanism for binding meanings",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.3",
+     "context": "…roperties, lifecycle semantics, and binding rules, is fully specified in Section 2.7.3 — Semantic Interface and is referenced here as the au…",
+     "line": 145
+    }
+   ]
+  },
+  "4.3.3": {
+   "file": "4_0_semantic_model.md",
+   "title": "Data Interface — defining data form",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.2",
+     "context": "…roperties, lifecycle semantics, and binding rules, is fully specified in Section 2.7.2 — Data Interface and is referenced here as the author…",
+     "line": 160
+    }
+   ]
+  },
+  "4.3.4": {
+   "file": "4_0_semantic_model.md",
+   "title": "Rule — the foundation of meaning inference",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.6",
+     "context": "…inference forms, and binding rules, is fully specified in **Section 2.6 — Behavioural Types / Rule** and is referenced here as the authorita…",
+     "line": 170
+    }
+   ]
+  },
+  "4.3.5": {
+   "file": "4_0_semantic_model.md",
+   "title": "explained — connector of meaning and implementation",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.8",
+     "context": "> Detailed inline usage rules are specified in Section 2.7.8 — Semantic Types / Inline.",
+     "line": 188
+    }
+   ]
+  },
+  "4.3.6": {
+   "file": "4_0_semantic_model.md",
+   "title": "Action — intent",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.6",
+     "context": "…tax, lifecycle, and behavioral constraints is provided in **Section 2.6 — Behavioural Types / Action**.",
+     "line": 198
+    }
+   ]
+  },
+  "4.3.7": {
+   "file": "4_0_semantic_model.md",
+   "title": "Flow — intent orchestrator",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.6",
+     "context": "…, orchestration semantics, and constraints is provided in **Section 2.6 — Behavioural Types / Flow**.",
+     "line": 208
+    }
+   ]
+  },
+  "4.3.8": {
+   "file": "4_0_semantic_model.md",
+   "title": "inline — Semantic Intent Directive",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.0",
+     "context": "> Detailed type-level semantics of `inline` are defined in **Section 2.7.0 — Semantic Types / Inline**.",
+     "line": 234
+    }
+   ]
+  },
+  "4.4.3": {
+   "file": "4_0_semantic_model.md",
+   "title": "`inline` resolution and locking",
+   "refs": [
+    {
+     "type": "section",
+     "target": "4.3",
+     "context": "1. generate a formal reference (see Section 4.3 — Specialized Types / Reference) to the artifact produced at 4.4.3/7.",
+     "line": 303
+    }
+   ]
+  },
+  "4.6.2": {
+   "file": "4_0_semantic_model.md",
+   "title": "Resolution Phases",
+   "refs": [
+    {
+     "type": "section",
+     "target": "4.1",
+     "context": "The semantic subordination rules defined in Section 4.1 are validated across the graph.",
+     "line": 492
+    }
+   ]
+  },
+  "4.6.3": {
+   "file": "4_0_semantic_model.md",
+   "title": "Meaning Resolution with inline",
+   "refs": [
+    {
+     "type": "section",
+     "target": "4.6.2",
+     "context": "…ion elaborates the *optional* resolution phase defined in **Section 4.6.2, step 5 (Inline Intent Resolution)**, tracing the transition from …",
+     "line": 507
+    },
+    {
+     "type": "section",
+     "target": "4.5.2",
+     "context": "…tent node and screened against the prohibited anti-patterns defined in Section 4.5.2 to ensure admissibility at the semantic level.",
+     "line": 537
+    }
+   ]
+  },
+  "4.6.5": {
+   "file": "4_0_semantic_model.md",
+   "title": "Relationship to Enforcement and Execution",
+   "refs": [
+    {
+     "type": "section",
+     "target": "7",
+     "context": "> **Cross-reference:** Enforcement mechanics, admission gates, and compliance validation are defined in **Section 7 — Enforcement Model**.",
+     "line": 585
+    }
+   ]
+  },
+  "5.0.2": {
+   "file": "5_0_domain_semantic_authority.md",
+   "title": "Four-Layer Authority Model",
+   "refs": [
+    {
+     "type": "section",
+     "target": "6.4",
+     "context": "…d. (Realization abstractions referenced at lower layers are defined in Section 6.4.)",
+     "line": 30
+    },
+    {
+     "type": "section",
+     "target": "5.0.2.4",
+     "context": "…ating under this model are referred to as **cell domains** (see Section 5.0.2.4).",
+     "line": 39
+    }
+   ]
+  },
+  "5.0.2.3": {
+   "file": "5_0_domain_semantic_authority.md",
+   "title": "Layer 3 — Technology and Realization Constraints",
+   "refs": [
+    {
+     "type": "section",
+     "target": "6.4",
+     "context": "…sses referenced here are **pure realization abstractions** (see Section 6.4 – Capability Classes and Profiles).",
+     "line": 67
+    }
+   ]
+  },
+  "5.3": {
+   "file": "5_0_domain_semantic_authority.md",
+   "title": "Layer 3 — Integration & Enforcement Projection",
+   "refs": [
+    {
+     "type": "section",
+     "target": "6.0",
+     "context": "…r boundary connector) used for enforcement and integration (see Section 6.0).",
+     "line": 401
+    }
+   ]
+  },
+  "5.5.1": {
+   "file": "5_0_domain_semantic_authority.md",
+   "title": "Domain vs Module",
+   "refs": [
+    {
+     "type": "section",
+     "target": "1.0",
+     "context": "…nd concretizing the foundational distinctions introduced in Section 1.0 *Design Principles* and Section 3.0 *Block Syntax / Module*.",
+     "line": 548
+    },
+    {
+     "type": "section",
+     "target": "3.0",
+     "context": "…tinctions introduced in Section 1.0 *Design Principles* and Section 3.0 *Block Syntax / Module*.",
+     "line": 548
+    }
+   ]
+  },
+  "5.5.2": {
+   "file": "5_0_domain_semantic_authority.md",
+   "title": "Fact-Centric Design",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2",
+     "context": "…ned structurally as part of the **event** derived type in **Section 2 – Type System** (e.g., via an event kind discriminator and required fi…",
+     "line": 623
+    }
+   ]
+  },
+  "5.6.2.1": {
+   "file": "5_0_domain_semantic_authority.md",
+   "title": "Anti-Pattern A — Hidden State Dependency",
+   "refs": [
+    {
+     "type": "section",
+     "target": "5.13",
+     "context": "- does not declare a semantic dependency (Section 5.13);",
+     "line": 727
+    }
+   ]
+  },
+  "6.2": {
+   "file": "6_0_domain_driven_flow_design.md",
+   "title": "DFD as a Multi‑Layer Semantic Projection",
+   "refs": [
+    {
+     "type": "section",
+     "target": "E",
+     "context": "2. **ANNEX E** constrains *which kinds of meaning* may be expressed as definitions.",
+     "line": 92
+    },
+    {
+     "type": "section",
+     "target": "D",
+     "context": "3. ANNEX D defines execution, staging, and enforcement mechanics. Any rule descript…",
+     "line": 94
+    }
+   ]
+  },
+  "6.2.2.2": {
+   "file": "6_0_domain_driven_flow_design.md",
+   "title": "Canonical Domain Actions",
+   "refs": [
+    {
+     "type": "section",
+     "target": "D",
+     "context": "6. Enforcement evaluation and staging semantics are defined in ANNEX D.",
+     "line": 311
+    }
+   ]
+  },
+  "6.2.2.4": {
+   "file": "6_0_domain_driven_flow_design.md",
+   "title": "Core Domain Rules and Enforcements",
+   "refs": [
+    {
+     "type": "section",
+     "target": "D",
+     "context": "> Execution mechanics, evaluation stages, and lifecycle semantics are defined exclusively in ANNEX D.",
+     "line": 383
+    },
+    {
+     "type": "section",
+     "target": "E",
+     "context": "> The complete normative taxonomy, inheritance rules, and admissibility constraints are defined in **ANNEX E (Semantic Normative Classes)**.",
+     "line": 391
+    }
+   ]
+  },
+  "6.2.2.5": {
+   "file": "6_0_domain_driven_flow_design.md",
+   "title": "How Rules Bind to Mechanics (requires / admission / enforces / follow)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "6.2.5.2",
+     "context": "…able* for each class of control is defined normatively in **Section 6.2.5.2 — Role Ownership Matrix** and MUST be used when designing or rev…",
+     "line": 439
+    }
+   ]
+  },
+  "6.2.3.2": {
+   "file": "6_0_domain_driven_flow_design.md",
+   "title": "Data Primitives and Serialization",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "- Primitive and derived types (ANNEX A, ANNEX B)",
+     "line": 618
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "- Primitive and derived types (ANNEX A, ANNEX B)",
+     "line": 618
+    }
+   ]
+  },
+  "7.2": {
+   "file": "7_0_enforcement_compliance_architecture.md",
+   "title": "Exportable Surfaces",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.3",
+     "context": "- `interface` — declarative compatibility contracts (semantic interface as defined in Section 2.7.3)",
+     "line": 52
+    }
+   ]
+  },
+  "7.10": {
+   "file": "7_0_enforcement_compliance_architecture.md",
+   "title": "Worked Example — Policy Rule, Domain Border, and Classification",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "GDPR",
+     "context": "| `define definition \"GDPR policy\"` | **definition** | Declares normative meaning (what must be protected / enforced). |",
+     "line": 474
+    },
+    {
+     "type": "section",
+     "target": "6.4",
+     "context": "2. Cross-border enforcement (Section 6.4) is applied at *exportable* boundaries (emit/export/delegate/seriali…",
+     "line": 485
+    }
+   ]
+  },
+  "8.0.1": {
+   "file": "8_0_resilience_model.md",
+   "title": "Module as a Runtime Resilience Unit",
+   "refs": [
+    {
+     "type": "section",
+     "target": "1.3",
+     "context": "2. ensures correct and deterministic behavior for all **exported (public) primitives** (see Section 1.3);",
+     "line": 23
+    }
+   ]
+  },
+  "8.2.7": {
+   "file": "8_0_resilience_model.md",
+   "title": "Domain-Initiated Semantic and Implementation Enforcement (Critical)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "7",
+     "context": "…ain perspective and executed via the **Enforcement Model** (Section 7).",
+     "line": 290
+    }
+   ]
+  },
+  "8.5.3": {
+   "file": "8_0_resilience_model.md",
+   "title": "Cross-Border and Data Direction Enforcement",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.8",
+     "context": "- If masking is required, the runtime MUST apply `mask()` (Section 2.8) to the payload before leaving the domain.",
+     "line": 677
+    }
+   ]
+  },
+  "8.8.1": {
+   "file": "8_0_resilience_model.md",
+   "title": "Domain",
+   "refs": [
+    {
+     "type": "section",
+     "target": "3",
+     "context": "- A domain MUST NOT export behavioral instances (`class`, binder instances or delegates); only contracts (see Section 3 - behavioral types).",
+     "line": 995
+    }
+   ]
+  },
+  "8.9": {
+   "file": "8_0_resilience_model.md",
+   "title": "AST Interpretation and Enforcement Closure (Normative)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "7",
+     "context": "1. The AST is projected into a semantic graph used by the Enforcement Model (Section 7).",
+     "line": 1226
+    }
+   ]
+  },
+  "8.11.2": {
+   "file": "8_0_resilience_model.md",
+   "title": "Replay Semantics",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.7.4.1.4",
+     "context": "- (c) delegate invocations during replay MUST respect the delegate's declared failure recovery strategy (Section 2.7.4.1.4).",
+     "line": 1297
+    }
+   ]
+  },
+  "8.11.3": {
+   "file": "8_0_resilience_model.md",
+   "title": "Compensation Model",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.6.4.4",
+     "context": "(B) Compensation operates within the SAGA execution model declared in Section 2.6.4.4(F) and Section 6.2.2.3.",
+     "line": 1305
+    },
+    {
+     "type": "section",
+     "target": "6.2.2.3",
+     "context": "(B) Compensation operates within the SAGA execution model declared in Section 2.6.4.4(F) and Section 6.2.2.3.",
+     "line": 1305
+    }
+   ]
+  },
+  "8.11.3.1": {
+   "file": "8_0_resilience_model.md",
+   "title": "Compensation Declaration",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.6.4.5.2",
+     "context": "…dentifier>` or `.on error: compensate <action_identifier>` (Section 2.6.4.5.2).",
+     "line": 1309
+    }
+   ]
+  },
+  "8.11.3.3": {
+   "file": "8_0_resilience_model.md",
+   "title": "Compensating Action Contract",
+   "refs": [
+    {
+     "type": "section",
+     "target": "8.6",
+     "context": "…eceive the **persisted state** of the stage it compensates (Section 8.6), including all stage outputs, emitted events, and intermediate arti…",
+     "line": 1322
+    },
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "…tion MUST emit a `CompensationEvent` (derived from `event`, Section 2.5) upon completion, providing auditable evidence of the compensation.",
+     "line": 1323
+    }
+   ]
+  },
+  "8.11.3.4": {
+   "file": "8_0_resilience_model.md",
+   "title": "Compensation Failure",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5.1.4",
+     "context": "2. Escalation MUST produce a `SystemError` (Section 2.5.1.4) with:",
+     "line": 1330
+    },
+    {
+     "type": "section",
+     "target": "2.7.4.1.4",
+     "context": "…nded retry policy (respecting delegate retry semantics from Section 2.7.4.1.4) to the compensating action before escalating, but the retry c…",
+     "line": 1335
+    }
+   ]
+  },
+  "8.11.4": {
+   "file": "8_0_resilience_model.md",
+   "title": "Integration with Flow Durability",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.6.4.3",
+     "context": "1. The compensation model relies on the stage durability posture defined in Section 2.6.4.3(9):",
+     "line": 1347
+    },
+    {
+     "type": "section",
+     "target": "2.6.4.5.1",
+     "context": "2. A flow that declares any `compensable` stage MUST declare a SAGA transactional posture (Section 2.6.4.5.1, item 6).",
+     "line": 1351
+    }
+   ]
+  },
+  "A.1": {
+   "file": "annex_a_type_registry.md",
+   "title": "Overview",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "…terpreted exclusively through the **Type Metadata Envelope (ANNEX B)** and is referenced by the **Type Table** during compilation, validatio…",
+     "line": 9
+    }
+   ]
+  },
+  "A.5": {
+   "file": "annex_a_type_registry.md",
+   "title": "Derived Data Types (CATEGORY = `10`)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.5",
+     "context": "Derived types **MUST NOT** weaken inherited enforcement semantics. Inheritance and compatibility rules are governed by Section 2.5.",
+     "line": 111
+    }
+   ]
+  },
+  "A.17": {
+   "file": "annex_a_type_registry.md",
+   "title": "Registry Evolution and Compatibility Rules (Normative)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "*ANNEX A is normative. All implementations MUST interpret type metadata exclusively through this registry and ANNEX B.*",
+     "line": 346
+    },
+    {
+     "type": "section",
+     "target": "B",
+     "context": "*ANNEX A is normative. All implementations MUST interpret type metadata exclusively through this registry and ANNEX B.*",
+     "line": 346
+    }
+   ]
+  },
+  "B.2.2": {
+   "file": "annex_b_type_metadata.md",
+   "title": "Type Data",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A",
+     "context": "† For complete type lists and codes, refer to Type Registry (See ANNEX A- Type Registry).",
+     "line": 85
+    }
+   ]
+  },
+  "B.4.1": {
+   "file": "annex_b_type_metadata.md",
+   "title": "Primitive Category (00)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.0.5.1",
+     "context": "Although `any` (see section 2.0.5.1) is defined as a primitive by virtue of its properties, it i…",
+     "line": 111
+    }
+   ]
+  },
+  "B.4.2": {
+   "file": "annex_b_type_metadata.md",
+   "title": "Block Category (01)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A.4",
+     "context": "1. **TYPE_CODE:** Block types as defined in **ANNEX A.4**, including `bytes`, `beN`, `leN`, `string` (block), `base64`, `tuple`.",
+     "line": 129
+    },
+    {
+     "type": "standard",
+     "target": "GDPR",
+     "context": "- (c) 0x10 - Private Data (GDPR, PII-Data, Industrial requirements, etc..)",
+     "line": 143
+    }
+   ]
+  },
+  "B.4.3": {
+   "file": "annex_b_type_metadata.md",
+   "title": "Derived Category (10)",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "GDPR",
+     "context": "- (c) 0x10 - Private Data (GDPR, PII-Data, Industrial requirements, etc..)",
+     "line": 184
+    }
+   ]
+  },
+  "B.4.3.1": {
+   "file": "annex_b_type_metadata.md",
+   "title": "Specialized Types",
+   "refs": [
+    {
+     "type": "section",
+     "target": "2.4",
+     "context": "…mantics, and additional Specialized Types are detailed in **Section 2.4 (see Section 2.4 Specialized Types)**.",
+     "line": 233
+    }
+   ]
+  },
+  "B.4.4": {
+   "file": "annex_b_type_metadata.md",
+   "title": "Stream / Format Category (11)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "A.6",
+     "context": "1. **TYPE_CODE:** Stream and format types as defined in **ANNEX A.6**, including `Binary`, `DIC`, `JSON`, `XML`, `YAML`, `TOML`, `string`,…",
+     "line": 237
+    },
+    {
+     "type": "standard",
+     "target": "GDPR",
+     "context": "- (c) 0x10 - Private Data (GDPR, PII-Data, Industrial requirements, etc..)",
+     "line": 245
+    }
+   ]
+  },
+  "B.8": {
+   "file": "annex_b_type_metadata.md",
+   "title": "Serialized context",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B.2",
+     "context": "(A) The Envelope is a mandatory 64-bit structure and the first element of any serialized value (see Section B.2, aspect D).",
+     "line": 346
+    }
+   ]
+  },
+  "B.8.1": {
+   "file": "annex_b_type_metadata.md",
+   "title": "Relationship to Data and Informational Context",
+   "refs": [
+    {
+     "type": "section",
+     "target": "1.6",
+     "context": "(B) Enforcement, validation, and policy application defined in Section 1.6 (see Section 1.6 Enforcement as Architecture) operate acr…",
+     "line": 388
+    }
+   ]
+  },
+  "B.9": {
+   "file": "annex_b_type_metadata.md",
+   "title": "Security Context",
+   "refs": [
+    {
+     "type": "standard",
+     "target": "GDPR",
+     "context": "- (i) Data subject to privacy, personal, or industrial confidentiality requirements (e.g., GDPR, PII, trade secrets).",
+     "line": 419
+    }
+   ]
+  },
+  "B.9.7": {
+   "file": "annex_b_type_metadata.md",
+   "title": "Audit and traceability (normative)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "B",
+     "context": "*ANNEX B is normative. All implementations MUST interpret type registry exclusively through this ANNEX A - Type Registry*",
+     "line": 560
+    },
+    {
+     "type": "section",
+     "target": "A",
+     "context": "*ANNEX B is normative. All implementations MUST interpret type registry exclusively through this ANNEX A - Type Registry*",
+     "line": 560
+    }
+   ]
+  },
+  "C.8.1": {
+   "file": "annex_c_semantic_type_configuration.md",
+   "title": "Delegate (rpc) — typical 'with'",
+   "refs": [
+    {
+     "type": "url",
+     "target": "https://api.vendor.tld\"",
+     "context": "endpoint: \"https://api.vendor.tld\",",
+     "line": 323
+    }
+   ]
+  },
+  "D.1": {
+   "file": "annex_d_rule_normative_classes.md",
+   "title": "Purpose",
+   "refs": [
+    {
+     "type": "section",
+     "target": "E",
+     "context": "…es at and below the semantic admissibility layer defined in ANNEX E and defines **normative classes of rules** in E.L.I.A., standardizing:",
+     "line": 5
+    }
+   ]
+  },
+  "D.3.1": {
+   "file": "annex_d_rule_normative_classes.md",
+   "title": "Rule",
+   "refs": [
+    {
+     "type": "section",
+     "target": "E",
+     "context": "… and the originating definition’s Semantic Normative Class (ANNEX E).",
+     "line": 44
+    }
+   ]
+  },
+  "D.3.4": {
+   "file": "annex_d_rule_normative_classes.md",
+   "title": "Semantic Normative Class (ANNEX E)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "E",
+     "context": "### D.3.4 Semantic Normative Class (ANNEX E)",
+     "line": 62
+    }
+   ]
+  },
+  "D.5.1": {
+   "file": "annex_d_rule_normative_classes.md",
+   "title": "Semantic Class ↔ Rule Class compatibility (ANNEX E)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "E",
+     "context": "### D.5.1 Semantic Class ↔ Rule Class compatibility (ANNEX E)",
+     "line": 332
+    }
+   ]
+  },
+  "D.7": {
+   "file": "annex_d_rule_normative_classes.md",
+   "title": "Compiler obligations",
+   "refs": [
+    {
+     "type": "section",
+     "target": "E",
+     "context": "5. Validate consistency between the declared **Semantic Normative Class** (ANNEX E) and the selected rule class(es) R0–R6.",
+     "line": 374
+    }
+   ]
+  },
+  "E.1": {
+   "file": "annex_e_normative_classes.md",
+   "title": "Purpose and Positioning",
+   "refs": [
+    {
+     "type": "section",
+     "target": "D",
+     "context": "- **ANNEX D** defines the **mechanics of enforcement** (when and how rules are evaluated, admitted, rejected, followed, or audited).",
+     "line": 16
+    },
+    {
+     "type": "section",
+     "target": "E",
+     "context": "- **ANNEX E** defines the **semantic classes of constraints** that a `rule` may belong to.",
+     "line": 17
+    }
+   ]
+  },
+  "E.1.1": {
+   "file": "annex_e_normative_classes.md",
+   "title": "Applicability Checklist (Normative)",
+   "refs": [
+    {
+     "type": "section",
+     "target": "D",
+     "context": "… reviewer trace `definition → rule → enforcement mechanism (ANNEX D)` and reconstruct “why this was allowed/denied”?",
+     "line": 68
+    }
+   ]
+  },
+  "E.3": {
+   "file": "annex_e_normative_classes.md",
+   "title": "Conformance Rules",
+   "refs": [
+    {
+     "type": "section",
+     "target": "D",
+     "context": "…MUST be expressed exclusively using mechanisms defined in **ANNEX D**.",
+     "line": 421
+    }
+   ]
+  },
+  "E.4": {
+   "file": "annex_e_normative_classes.md",
+   "title": "Non-Normative Note",
+   "refs": [
+    {
+     "type": "section",
+     "target": "E",
+     "context": "B. The purpose of ANNEX E is to define **what kinds of constraints are allowed to exist**, not **which exact rules a domain must define**.",
+     "line": 429
+    }
+   ]
+  }
+ }
+}

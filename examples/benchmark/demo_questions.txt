@@ -1,0 +1,20 @@
+A-001. What is the fixed string type in E.L.I.A. and how does its capacity constraint work?
+A-002. What are the binary encoding rules for primitive types in E.L.I.A.? What is the inline threshold?
+A-003. How does E.L.I.A. distinguish between null, void, and nothing — what are the normative differences?
+A-004. What implicit type conversions are allowed between numeric primitives in E.L.I.A.?
+A-005. What is the semantic role of the Identifiers class and what specific types does it include?
+A-006. How does E.L.I.A. encode boolean values at the binary level, and what are the normative constraints?
+A-007. What are the normative properties of the Date/Time class in E.L.I.A.?
+A-008. What constraints does E.L.I.A. place on enum default values and when is explicit initialization required?
+A-009. What is the performance optimization guideline for inline vs external primitives in E.L.I.A.?
+A-010. What are the explicit conversion rules between non-numeric primitive types in E.L.I.A.?
+B-001. What specific integer types does the E.L.I.A. Integral class define and what are their bit widths?
+B-002. What normative properties govern the Decimal/floating class in E.L.I.A.?
+B-003. How are integer values encoded in binary according to E.L.I.A. encoding rules?
+B-004. What is the canonical binary encoding for floating-point and decimal values in E.L.I.A.?
+B-005. How are temporal (Date/Time) values encoded at the binary level in E.L.I.A.?
+B-006. How are identifier values (guid, riid) encoded in binary in E.L.I.A.?
+B-007. What parser obligations does E.L.I.A. define for primitive type binary decoding?
+B-008. What are the block type compatibility rules in E.L.I.A. — can block types be assigned to each other?
+B-009. What are the derived type compatibility rules for Record and Array in E.L.I.A.?
+B-010. What normative rules govern semantic type compatibility in E.L.I.A.?

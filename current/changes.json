@@ -1,0 +1,16 @@
+[
+  "MCP spec-reader v0.4.1: server [SUFFICIENT] signal (rule-of-thirds — when >33% of content filtered/trimmed, emits hint to stop follow-up calls). Prompt: bsyn gate fix (exclude block_syntax index for mechanism/pipeline/architecture HOW-queries), accumulation strategy with gated keyword pivot (requires ≥3 calls + no [SUFFICIENT] + named missing dimension), reasoning leak prohibition.",
+  "MCP spec-reader v0.4.0: 3 new aspect indices (bsyn, onma, grix — 14 total), QA mode (MiniLM embedding), NDP (normative constraint extraction), SPO answerability, content narrowing (60-80% token reduction), onto:WHERE, 8 new search_spec params.",
+  "MCP spec-reader v0.3.0: concept-anchor mechanism (CONSTRUCT_ANCHOR for 10 construct types), autoExpand budget expansion, tier:adaptive, relevance gate, verbose:none. Benchmark protocol v0.4 with 4-artifact format and token metrics.",
+  "Scoring model v2.1: onto-affinity auto-ranking (INDEX_ONTO_AFFINITY). Q7 surrogate T1 fix. 238 tests.",
+  "Scoring model v2: enriched cap (CAP_MULT=2), NDP onto-aware sort (ws→onto→penalty), domainsAsAuthorities onto:HOW tag. 238 tests.",
+  "update documentation and examples for clarity, syntax, and consistency across multiple sections",
+  "Initial public release of E.L.I.A. language specification v1.0",
+  "Added MCP spec-reader server with 5 tools: search_spec, read_chain, list_units, fulltext_search, lookup_xref",
+  "11 aspect indices: phya, sema, ont, desa, grma, bhva, phla, trma, onma, linear, xref",
+  "Ontological role tagging (WHAT/WHY/HOW/WHEN) for 67 units",
+  "Cross-reference graph: 267 refs across 148 sections",
+  "3-phase keyword enrichment pipeline (T&D → co-occurrence → waterfall)",
+  "Token budget auto-reduction (5000 tokens)",
+  "140 unit tests (Vitest)"
+]

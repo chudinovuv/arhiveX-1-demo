@@ -1,0 +1,3593 @@
+{
+    "$specVersion": "1.0.5",
+    "typeSystem_what": {
+        "keywords": [
+            "type system",
+            "type architecture",
+            "orthogonal classification",
+            "type categories",
+            "block",
+            "stream",
+            "primitive",
+            "derived",
+            "behavioral",
+            "semantic"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.0"
+                ],
+                "Note": "System type overview — identity"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.0.1",
+                    "2.0.1/table-1"
+                ],
+                "Note": "Type classification table",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "A.1"
+                ],
+                "Note": "Type Registry — canonical enumeration",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "The E.L.I.A. language employs an extended orthogonal type classification model, based not on a single criterion but on a set of independent dimensions."
+    },
+    "typeSystem_why": {
+        "keywords": [
+            "type system design",
+            "permissibility",
+            "meaning-first",
+            "why types",
+            "type paradigm"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "0.1"
+                ],
+                "Note": "Permissibility-first — WHY this type system"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "1.1",
+                    "1.2"
+                ],
+                "Note": "Design principles — foundational rationale",
+                "enumTag": "example",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.1.3"
+                ],
+                "Note": "Architectural meaning of record/class separation"
+            }
+        ],
+        "abstract": "The E.L.I.A. language is built around a paradigm that places permissibility of operations at its core (permissibility-first)."
+    },
+    "typeSystem_how": {
+        "keywords": [
+            "type metadata",
+            "TYPE_HASH",
+            "envelope",
+            "serialization",
+            "binary encoding"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "B.1"
+                ],
+                "Note": "Type metadata envelope — 64-bit layout"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.1.8.8/A.",
+                    "2.1.8.8/B.",
+                    "2.1.8.8/C.",
+                    "2.1.8.8/D."
+                ],
+                "Note": "Binary encoding aspects"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "declaration",
+                "chain": [
+                    "B.2"
+                ],
+                "Note": "Format flags and serialization",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "E.L.I.A. associates every data element with a 64-bit Type Metadata envelope  that enables deterministic parsing, validation, and serialization..."
+    },
+    "record_what": {
+        "keywords": [
+            "record",
+            "pure data",
+            "value object",
+            "immutable data",
+            "structured data",
+            "data construct"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.5.6"
+                ],
+                "Note": "Record — identity",
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.5.6/A."
+                ],
+                "Note": "A record is a pure data construct",
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.1.2"
+                ],
+                "Note": "Record — pure static truth",
+                "enumTag": "normative"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.1.4/A."
+                ],
+                "Note": "Record as data contract",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "A record  represents a structured block-materialized, schema-defined derived value composed of named fields."
+    },
+    "record_why": {
+        "keywords": [
+            "record vs class",
+            "data behavior separation",
+            "why record",
+            "rule of choice",
+            "LSP"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.1"
+                ],
+                "Note": "Record vs Class — design rationale",
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.1.3"
+                ],
+                "Note": "Architectural meaning of separation"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.1.5/B."
+                ],
+                "Note": "Rule of choice — rationale",
+                "enumTag": "normative",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "The philosophical separation between Record and Class is enforced in E.L.I.A."
+    },
+    "record_how": {
+        "keywords": [
+            "record syntax",
+            "record declaration",
+            "field schema",
+            "record normative",
+            "record form"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.5.6.5.1/A.",
+                    "2.5.6.5.1/B.",
+                    "2.5.6.5.1/C."
+                ],
+                "Note": "Declaration form, field schema, defaults",
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.5.6.5.1/D.",
+                    "2.5.6.5.1/E.",
+                    "2.5.6.5.1/F."
+                ],
+                "Note": "Inline members, inheritance, enforcement",
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "grammar",
+                "chain": [
+                    "2.5.6.5.3"
+                ],
+                "Note": "Canonical syntax"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.5.6.1"
+                ],
+                "Note": "Normative semantics",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "A record declaration MUST introduce a schema-defined derived type with a stable semantic identity (TYPE_HASH)."
+    },
+    "class_what": {
+        "keywords": [
+            "class",
+            "behavior object",
+            "active entity",
+            "mutable state",
+            "identity",
+            "lifecycle",
+            "agency"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.1"
+                ],
+                "Note": "Class — behavior object contract",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.1.1/A."
+                ],
+                "Note": "A class is therefore…"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.1.1"
+                ],
+                "Note": "Class — active responsible entity",
+                "enumTag": "normative"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.1.4/B."
+                ],
+                "Note": "Class as behavioral runtime entity",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "A Class is a *capable behavioral construct* that represents a concrete, state-bearing execution unit."
+    },
+    "class_why": {
+        "keywords": [
+            "class purpose",
+            "why class",
+            "class semantic perspective",
+            "class vs record"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.1.1/C."
+                ],
+                "Note": "Semantic perspective of class"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.1.3"
+                ],
+                "Note": "Architectural meaning of separation"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.1.5/B."
+                ],
+                "Note": "Rule of choice — rationale",
+                "enumTag": "normative",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "A class represents a concrete role realization within a domain. It is an internal behavioral carrier that fulfills one or more contracts but..."
+    },
+    "class_how": {
+        "keywords": [
+            "class syntax",
+            "class declaration",
+            "class constraints",
+            "substitutability",
+            "concurrency"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.6.1.5.1"
+                ],
+                "Note": "Class declaration normative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.6.1.4/A.",
+                    "2.6.1.4/B.",
+                    "2.6.1.4/C."
+                ],
+                "Note": "Runtime semantics, substitutability, concurrency",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.6.1.4/D.",
+                    "2.6.1.4/E.",
+                    "2.6.1.4/F."
+                ],
+                "Note": "Exportability, process participation, enforcement",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "grammar",
+                "chain": [
+                    "2.6.1.5.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ]
+    },
+    "interface_what": {
+        "keywords": [
+            "interface",
+            "behavioral declaration",
+            "contract surface",
+            "property signature",
+            "method signature"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.7.1"
+                ],
+                "Note": "Interface designation"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.7.2"
+                ],
+                "Note": "Interface semantic role"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.1.4/C."
+                ],
+                "Note": "Interface as contract surface",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "An interface represents a role declaration within a domain. It defines a set of required operations, expected inputs/outputs, and semantic..."
+    },
+    "interface_how": {
+        "keywords": [
+            "interface syntax",
+            "interface declaration",
+            "interface substitution",
+            "multiple inheritance",
+            "interface composition"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.6.7.5.1/A."
+                ],
+                "Note": "Interface normative requirements",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.6.7.4/A.",
+                    "2.6.7.4/B.",
+                    "2.6.7.4/C."
+                ],
+                "Note": "Substitution, boundaries, relationships",
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.6.7.4/D.",
+                    "2.6.7.4/E."
+                ],
+                "Note": "Enforcement, consolidated invariant",
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "grammar",
+                "chain": [
+                    "2.6.7.5.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "An interface MUST be declared using the canonical define interface form."
+    },
+    "error_what": {
+        "keywords": [
+            "error",
+            "typed error",
+            "error class",
+            "error type",
+            "failure classification"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.5.1"
+                ],
+                "Note": "Error class — identity",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.5.1.5"
+                ],
+                "Note": "Error specialization hierarchy",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.3.1"
+                ],
+                "Note": "Error as a type (data, not behavior)",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "represent an immutable failure fact suitable for deterministic classification and evidence preservation;"
+    },
+    "error_how": {
+        "keywords": [
+            "error syntax",
+            "error declaration",
+            "error envelope",
+            "error propagation",
+            "throw",
+            "logging"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.5.1.7.1/A.",
+                    "2.5.1.7.1/B.",
+                    "2.5.1.7.1/C.",
+                    "2.5.1.7.1/D."
+                ],
+                "Note": "Intrinsic, custom, throw, inheritance",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.3.1/A."
+                ],
+                "Note": "Normative boundary rules",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.3.5/A.",
+                    "8.3.5/B.",
+                    "8.3.5/C.",
+                    "8.3.5/D."
+                ],
+                "Note": "Error logging aspects",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "Tier": 3,
+                "Intent": "grammar",
+                "chain": [
+                    "2.5.1.7.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "intrinsic property MUST be initialized without the property keyword"
+    },
+    "event_what": {
+        "keywords": [
+            "event",
+            "immutable fact",
+            "domain event",
+            "event class",
+            "event kind"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.5.2"
+                ],
+                "Note": "Event class — identity",
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.5.2.4/A.",
+                    "2.5.2.4/B.",
+                    "2.5.2.4/C.",
+                    "2.5.2.4/D."
+                ],
+                "Note": "BusinessEvent, AuditEvent, IntegrationEvent, SystemEvent",
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.5.2.5"
+                ],
+                "Note": "Event semantic role"
+            }
+        ],
+        "abstract": "represent an immutable factual occurrence within a business or system context;"
+    },
+    "event_how": {
+        "keywords": [
+            "event syntax",
+            "event declaration",
+            "event emission",
+            "emit statement",
+            "event schema"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.5.2.6.1/A.",
+                    "2.5.2.6.1/B.",
+                    "2.5.2.6.1/C."
+                ],
+                "Note": "Declaration form, kind, schema",
+                "enumTag": "structural",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.5.2.6.1/D.",
+                    "2.5.2.6.1/E.",
+                    "2.5.2.6.1/F.",
+                    "2.5.2.6.1/G."
+                ],
+                "Note": "Immutability, inheritance, enforcement, determinism",
+                "enumTag": "structural",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.4.1"
+                ],
+                "Note": "Event emission authority",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "Tier": 3,
+                "Intent": "grammar",
+                "chain": [
+                    "2.5.2.6.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "An event declaration MUST introduce a schema-defined derived type with a stable semantic identity (TYPE_HASH)."
+    },
+    "event_when": {
+        "keywords": [
+            "event condition",
+            "trusted domain",
+            "untrusted domain",
+            "event boundary",
+            "audit fixation"
+        ],
+        "onto": [
+            "WHEN"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.4.3/A.",
+                    "8.4.3/B.",
+                    "8.4.3/C."
+                ],
+                "Note": "Trusted vs untrusted domain transitions",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.4.2"
+                ],
+                "Note": "Event enforcement at domain boundary",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "7.6/B."
+                ],
+                "Note": "AuditEvent MUST be emitted for…",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "E.L.I.A. distinguishes two classes of inter-domain event propagation:"
+    },
+    "flow_what": {
+        "keywords": [
+            "flow",
+            "orchestration",
+            "orchestration contract",
+            "flow stages",
+            "sequential",
+            "parallel"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.4.1"
+                ],
+                "Note": "Flow designation"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.4.2"
+                ],
+                "Note": "Flow semantic role"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.4.3"
+                ],
+                "Note": "Flow behavioral properties",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "A flow represents a process-level execution plan within a domain. It defines *when* and *under which conditions* actions are executed, and *which..."
+    },
+    "flow_why": {
+        "keywords": [
+            "flow purpose",
+            "orchestration rationale",
+            "why flow",
+            "process composition"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.4.2"
+                ],
+                "Note": "Flow semantic role — purpose"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "6.1"
+                ],
+                "Note": "DFD purpose and ideology",
+                "normTag": "semantic"
+            }
+        ],
+        "abstract": "Category: Orchestration Type"
+    },
+    "flow_how": {
+        "keywords": [
+            "flow syntax",
+            "flow declaration",
+            "SAGA",
+            "compensation",
+            "durability",
+            "recovery",
+            "stage"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.6.4.4/A.",
+                    "2.6.4.4/B.",
+                    "2.6.4.4/C."
+                ],
+                "Note": "Admission, process participation, boundaries",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.6.4.4/D.",
+                    "2.6.4.4/E.",
+                    "2.6.4.4/F.",
+                    "2.6.4.4/G."
+                ],
+                "Note": "Enforcement, events, SAGA, durability",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "grammar",
+                "chain": [
+                    "2.6.4.5.1"
+                ],
+                "Note": "Flow declaration normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "Tier": 3,
+                "Intent": "grammar",
+                "chain": [
+                    "2.6.4.5.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "Admission logic MUST reside exclusively in flows."
+    },
+    "action_what": {
+        "keywords": [
+            "action",
+            "intent execution",
+            "intent carrier",
+            "semantic bridge",
+            "state mutation"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.5.1"
+                ],
+                "Note": "Action designation"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.5.2/A."
+                ],
+                "Note": "Action is the semantic bridge",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.5.2"
+                ],
+                "Note": "Action semantic role",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "An action represents a named business function within a domain. It declares an operation that is meaningful at the business level and can be..."
+    },
+    "action_how": {
+        "keywords": [
+            "action syntax",
+            "action declaration",
+            "action flow relationship",
+            "action enforcement"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.6.5.4/A.",
+                    "2.6.5.4/B."
+                ],
+                "Note": "Relationship to Flow, to Classes",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.6.5.4/C.",
+                    "2.6.5.4/D."
+                ],
+                "Note": "Boundaries, enforcement",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.6.5.2/B."
+                ],
+                "Note": "State mutation constraints",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "grammar",
+                "chain": [
+                    "2.6.5.5.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "(a) An action MAY be invoked only from within a flow."
+    },
+    "rule_what": {
+        "keywords": [
+            "rule",
+            "semantic reasoning",
+            "admission",
+            "deterministic reasoning",
+            "purity",
+            "normative class",
+            "rule class",
+            "semantic normative class"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.6.1"
+                ],
+                "Note": "Rule designation"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.6.2"
+                ],
+                "Note": "Rule semantic role"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "D.3.1"
+                ],
+                "Note": "Formal rule definition (ANNEX D)",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "D.3.2"
+                ],
+                "Note": "Normative rule class definition (ANNEX D)"
+            },
+            {
+                "Order": 5,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "D.3.4"
+                ],
+                "Note": "Semantic Normative Class (ANNEX D → ANNEX E)",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.6.3"
+                ],
+                "Note": "Rule behavioral properties",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "A rule is a pure decision specification that evaluates semantic conditions and produces a truth value, classification, or decision outcome. Rules are classified into normative classes R0–R6 with strict purity, dependency, and evaluation-stage constraints."
+    },
+    "rule_why": {
+        "keywords": [
+            "why rule",
+            "determinism",
+            "explainability",
+            "audit justification",
+            "regulatory reasoning"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "0.8"
+                ],
+                "Note": "Determinism and explainability — thesis"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.6.2"
+                ],
+                "Note": "Rule semantic role — purpose"
+            }
+        ],
+        "abstract": "All semantic reasoning in E.L.I.A. is required to be:"
+    },
+    "rule_how": {
+        "keywords": [
+            "rule syntax",
+            "rule declaration",
+            "rule constraints",
+            "normative class",
+            "R0",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "infer clause",
+            "rule chaining",
+            "dependency purity",
+            "enforcement closure"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.6.6.4/A.",
+                    "2.6.6.4/B.",
+                    "2.6.6.4/C.",
+                    "2.6.6.4/D."
+                ],
+                "Note": "Authority, composition, boundaries, enforcement",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.6.6.5/A.",
+                    "2.6.6.5/B."
+                ],
+                "Note": "Verification algorithm: restrictions, tooling",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "D.4",
+                    "D.4.1/all",
+                    "D.4.2/all",
+                    "D.4.3/all",
+                    "D.4.4/all",
+                    "D.4.5/all",
+                    "D.4.6/all",
+                    "D.4.7/all"
+                ],
+                "Note": "Rule normative classes R0–R6 catalog (ANNEX D)",
+                "enumTag": "normative",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "D.5",
+                    "D.5/table-1"
+                ],
+                "Note": "Dependency and purity constraints matrix (ANNEX D)",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "D.5.2/all",
+                    "D.5.2.1/all",
+                    "D.5.2.2/all"
+                ],
+                "Note": "Rule chaining, closure, and deterministic sequencing (ANNEX D)",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "Tier": 2,
+                "Intent": "declaration",
+                "chain": [
+                    "2.6.6.6.1/A."
+                ],
+                "Note": "Rule declaration requirements",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 7,
+                "Tier": 3,
+                "Intent": "grammar",
+                "chain": [
+                    "2.6.6.6.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "A rule MUST NOT act as an execution substrate. Rules are classified into 7 normative classes (R0–R6) with strict dependency purity, evaluation-stage, and chaining constraints."
+    },
+    "rule_when": {
+        "keywords": [
+            "rule applicability",
+            "when rule applies",
+            "rule evaluation stage",
+            "compile-time",
+            "runtime",
+            "ingress",
+            "admission time",
+            "boundary time",
+            "stage compatibility"
+        ],
+        "onto": [
+            "WHEN",
+            "WHERE"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "D.3.3/all"
+                ],
+                "Note": "Evaluation stages: compile/resolve/bind, ingress/admission, runtime, boundary",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "D.4"
+                ],
+                "Note": "Rule classes R0–R6 with evaluation-stage assignments",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "D.6.1/all"
+                ],
+                "Note": "Record compatibility and stage-constraint rules (ANNEX D)",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "Tier": 3,
+                "Intent": "normative_rules",
+                "chain": [
+                    "D.2/all"
+                ],
+                "Note": "Scope of Annex D"
+            }
+        ],
+        "abstract": "Rules are evaluated at four distinct stages: compile/resolve/bind time (R2), ingress/admission time (R3), boundary time (R1/R4), and runtime (R0/R5/R6). Stage determines allowed inputs and surfaces."
+    },
+    "binder_what": {
+        "keywords": [
+            "binder",
+            "data transformation",
+            "transform contract",
+            "mapping",
+            "CRUD"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.2.1"
+                ],
+                "Note": "Binder designation"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.6.2.2"
+                ],
+                "Note": "Binder semantic role"
+            }
+        ],
+        "abstract": "A binder is a pure transformation specification used to bridge structural mismatches, normalize external payloads, and adapt values at..."
+    },
+    "binder_how": {
+        "keywords": [
+            "binder syntax",
+            "binder declaration",
+            "binder boundary",
+            "iterator binder",
+            "binder lifting"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.6.2.4/A.",
+                    "2.6.2.4/B.",
+                    "2.6.2.4/C."
+                ],
+                "Note": "Boundary, mapping rules, iterator lifting",
+                "enumTag": "structural",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.6.2.4/D.",
+                    "2.6.2.4/E.",
+                    "2.6.2.4/F."
+                ],
+                "Note": "Type system, serialization, invocation",
+                "enumTag": "structural",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "grammar",
+                "chain": [
+                    "2.6.2.5.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "A binder MAY be applied only at explicit boundaries using an explicit using <Binder> modifier."
+    },
+    "inline_what": {
+        "keywords": [
+            "inline",
+            "semantic intent directive",
+            "embedded behavior",
+            "AI prompt",
+            "natural language"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.8"
+                ],
+                "Note": "Inline — semantic intent directive",
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.8.1"
+                ],
+                "Note": "Inline semantic role",
+                "enumTag": "normative",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "inline is a directive for compact declarative specification of standardized operations inside an action body."
+    },
+    "inline_how": {
+        "keywords": [
+            "inline usage",
+            "inline forms",
+            "inline control",
+            "determinism classes",
+            "inline constraint"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.8.1/A.",
+                    "2.7.8.1/B.",
+                    "2.7.8.1/C."
+                ],
+                "Note": "Usage, normative principle, canonical forms",
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.8.1/D.",
+                    "2.7.8.1/F."
+                ],
+                "Note": "Canonical example, control",
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.8.2/A.",
+                    "2.7.8.2/B."
+                ],
+                "Note": "Determinism classes, reproducibility",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "reduce verbose imperative code for standardized operations;"
+    },
+    "inline_when": {
+        "keywords": [
+            "inline scope",
+            "where inline applies",
+            "inline condition",
+            "block-level",
+            "expression-level",
+            "return-level",
+            "admissibility",
+            "inline admissibility",
+            "contextual restriction"
+        ],
+        "onto": [
+            "WHEN",
+            "WHERE"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.8.1/E."
+                ],
+                "Note": "Where inline applies",
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "4.5.4"
+                ],
+                "Note": "Inline anti-patterns (prohibited)"
+            }
+        ],
+        "abstract": "reduce verbose imperative code for standardized operations;"
+    },
+    "definition_what": {
+        "keywords": [
+            "definition",
+            "semantic anchor",
+            "meaning root",
+            "normative scope",
+            "semantic boundary"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.1"
+                ],
+                "Note": "Definition — structure",
+                "enumTag": "normative",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.1/A."
+                ],
+                "Note": "Definition components",
+                "enumTag": "normative",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.1.1"
+                ],
+                "Note": "Definition semantic role"
+            }
+        ],
+        "abstract": "Definition is a first-class semantic construct that *designates meaning and obligations* for a domain concept."
+    },
+    "definition_why": {
+        "keywords": [
+            "why definition",
+            "definition not documentation",
+            "definitions not narratives",
+            "semantic boundary"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "0.6"
+                ],
+                "Note": "Definitions, Not Narratives — thesis"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.1.1"
+                ],
+                "Note": "Definition semantic role — purpose"
+            }
+        ],
+        "abstract": "A definition in E.L.I.A. is not documentation. It is a semantic boundary."
+    },
+    "definition_how": {
+        "keywords": [
+            "definition syntax",
+            "definition declaration",
+            "definition constraints",
+            "explained as",
+            "enforces"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.1.3.2/A.",
+                    "2.7.1.3.2/B.",
+                    "2.7.1.3.2/C.",
+                    "2.7.1.3.2/D."
+                ],
+                "Note": "Normative rules, explained, enforces, constraints",
+                "enumTag": "normative",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.1.3.1/A.",
+                    "2.7.1.3.1/B.",
+                    "2.7.1.3.1/C.",
+                    "2.7.1.3.1/D."
+                ],
+                "Note": "Constraint levels: constraint, must, should, may",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "grammar",
+                "chain": [
+                    "2.7.1.4.3"
+                ],
+                "Note": "Canonical syntax",
+                "enumTag": "structural"
+            }
+        ],
+        "abstract": "This section is OPTIONAL (but recommended)"
+    },
+    "explanation_what": {
+        "keywords": [
+            "explanation",
+            "explained as",
+            "non-normative",
+            "rationale",
+            "semantic attachment"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.5"
+                ],
+                "Note": "Explanation — identity",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.5.1"
+                ],
+                "Note": "Explanation semantic role"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.5.2"
+                ],
+                "Note": "Non-normative nature",
+                "normTag": "semantic"
+            }
+        ],
+        "abstract": "Explanation is a first-class semantic construct responsible for making *meaning explicit, inspectable, and traceable* for both humans and machines."
+    },
+    "explanation_how": {
+        "keywords": [
+            "explanation syntax",
+            "explanation attachment",
+            "explanation lifecycle"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.5.3"
+                ],
+                "Note": "Normative attachment forms",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.5.7.1"
+                ],
+                "Note": "Explanation declaration normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "grammar",
+                "chain": [
+                    "2.7.5.7.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "The presence and attachment of Explanation content is governed by the following normative rules:"
+    },
+    "domain_what": {
+        "keywords": [
+            "domain",
+            "semantic authority",
+            "semantic space",
+            "bounded context",
+            "Conway Space"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.9"
+                ],
+                "Note": "Domain — identity",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.8.1/A."
+                ],
+                "Note": "Domain fulfills three roles",
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.9.3"
+                ],
+                "Note": "Domain ontological position"
+            }
+        ],
+        "abstract": "binds abstract meaning to real-world responsibility;"
+    },
+    "domain_why": {
+        "keywords": [
+            "why domain",
+            "domain not service",
+            "domain purpose",
+            "semantic authority",
+            "accountability"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "0.9"
+                ],
+                "Note": "Domains as semantic authorities — thesis"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.9.8/A."
+                ],
+                "Note": "Ontological difference domain vs module",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "5.0.1"
+                ],
+                "Note": "Authority framing — purpose"
+            }
+        ],
+        "abstract": "A domain in E.L.I.A. is not a service and not an infrastructure unit. A domain is a semantic authority."
+    },
+    "domain_how": {
+        "keywords": [
+            "domain syntax",
+            "domain declaration",
+            "domain structure",
+            "four-layer",
+            "domain export",
+            "merges"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.9.4/A.",
+                    "2.7.9.4/B.",
+                    "2.7.9.4/C.",
+                    "2.7.9.4/D."
+                ],
+                "Note": "Authority, interaction, normative, structural",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.9.8/B.",
+                    "2.7.9.8/C.",
+                    "2.7.9.8/D.",
+                    "2.7.9.8/E."
+                ],
+                "Note": "Authority, responsibility, boundaries, evolution",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.9.10.1"
+                ],
+                "Note": "Domain declaration normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 4,
+                "Tier": 3,
+                "Intent": "grammar",
+                "chain": [
+                    "2.7.9.10.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "Every semantic construct MUST belong to exactly one Domain."
+    },
+    "delegate_what": {
+        "keywords": [
+            "delegate",
+            "integration binding",
+            "trust boundary",
+            "external capability"
+        ],
+        "target": [
+            "what is a delegate in ELIA type system",
+            "delegate identity, classification, and semantic role",
+            "what does delegate construct represent and define"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.4"
+                ],
+                "Note": "Delegate — identity",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.4.2/A."
+                ],
+                "Note": "Delegate defines…"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.4.1.1/A.",
+                    "2.7.4.1.1/B.",
+                    "2.7.4.1.1/C."
+                ],
+                "Note": "Classification: Cross-ABI, Cross-Process, Intra-Domain"
+            }
+        ],
+        "abstract": "Delegate is a first-class semantic construct that establishes an explicit trust and execution boundary between E.L.I.A."
+    },
+    "delegate_how": {
+        "keywords": [
+            "delegate syntax",
+            "delegate declaration",
+            "delegate pipeline",
+            "bind to",
+            "mapped to",
+            "retry",
+            "circuit breaker"
+        ],
+        "target": [
+            "how to declare a delegate with syntax and binding",
+            "delegate declaration pipeline, bind to and mapped to",
+            "how delegate retry and circuit breaker work"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.4.5.1/A."
+                ],
+                "Note": "Delegate normative rules",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.4.4.5/A.",
+                    "2.7.4.4.5/B.",
+                    "2.7.4.4.5/C.",
+                    "2.7.4.4.5/D."
+                ],
+                "Note": "Mapping: structural, pipeline, special, order",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.4.4.10/A.",
+                    "2.7.4.4.10/B.",
+                    "2.7.4.4.10/C."
+                ],
+                "Note": "Enforcement levels, policy, composition",
+                "enumTag": "behavioral",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.4.4.13/A.",
+                    "2.7.4.4.13/B.",
+                    "2.7.4.4.13/C.",
+                    "2.7.4.4.13/D."
+                ],
+                "Note": "Side effects, recovery, fallback, retry",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "Tier": 3,
+                "Intent": "grammar",
+                "chain": [
+                    "2.7.4.5.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "A Delegate declaration defines a typed external interaction contract and MAY additionally define an external binding target and a deterministic..."
+    },
+    "delegate_when": {
+        "keywords": [
+            "delegate condition",
+            "build-time",
+            "runtime",
+            "delegate mode",
+            "security posture"
+        ],
+        "onto": [
+            "WHEN"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.5.4/A.",
+                    "8.5.4/B."
+                ],
+                "Note": "Build-time vs runtime signals",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.5.5/A.",
+                    "8.5.5/B.",
+                    "8.5.5/C.",
+                    "8.5.5/D."
+                ],
+                "Note": "Security posture by delegate mode",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            }
+        ],
+        "abstract": "E.L.I.A. produces both preventive signals (build-time) and authoritative enforcement (runtime)."
+    },
+    "dataInterface_what": {
+        "keywords": [
+            "data interface",
+            "data surface",
+            "data boundary",
+            "CRUD",
+            "database driver",
+            "RPC driver"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.2"
+                ],
+                "Note": "Data Interface — identity",
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.2.1/A.",
+                    "2.7.2.1/B.",
+                    "2.7.2.1/C."
+                ],
+                "Note": "Declaration, configuration, operation surfaces"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.2.0.1/A.",
+                    "2.7.2.0.1/B.",
+                    "2.7.2.0.1/C."
+                ],
+                "Note": "Categories: structural, database, RPC",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "A Data Interface is a first-class semantic construct that projects defined meaning onto concrete data surfaces."
+    },
+    "dataInterface_how": {
+        "keywords": [
+            "data interface syntax",
+            "data interface declaration",
+            "binder roles",
+            "CRUD generation",
+            "transform"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.2.3/A.",
+                    "2.7.2.3/B.",
+                    "2.7.2.3/C."
+                ],
+                "Note": "Declaration, compatibility, operation generation",
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.2.4.1/A.",
+                    "2.7.2.4.1/B.",
+                    "2.7.2.4.1/C."
+                ],
+                "Note": "Inheritance, modifier, configuration merging",
+                "enumTag": "identity",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.2.5/A.",
+                    "2.7.2.5/B.",
+                    "2.7.2.5/C."
+                ],
+                "Note": "General rules, binder roles, binding classes",
+                "enumTag": "example",
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "Tier": 3,
+                "Intent": "grammar",
+                "chain": [
+                    "2.7.2.4.3"
+                ],
+                "Note": "AST Grammar"
+            }
+        ],
+        "abstract": "A Data Interface MUST declare exactly one RecordType and one KeyType"
+    },
+    "semanticInterface_what": {
+        "keywords": [
+            "semantic interface",
+            "behavioral contract",
+            "governance",
+            "obligation surface",
+            "semantic binding"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.3"
+                ],
+                "Note": "Semantic Interface — identity",
+                "enumTag": "structural",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.3.1"
+                ],
+                "Note": "Semantic role",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.3.3.1/A.",
+                    "2.7.3.3.1/B.",
+                    "2.7.3.3.1/C."
+                ],
+                "Note": "Three components: declaration, governance, enforcement",
+                "enumTag": "structural",
+                "normTag": "semantic"
+            }
+        ],
+        "abstract": "A Semantic Interface is a first-class semantic construct that *projects defined meaning into admissible behavioral interaction*."
+    },
+    "semanticInterface_why": {
+        "keywords": [
+            "why semantic interface",
+            "emergent contract",
+            "contract without execution",
+            "semantic composition"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "0.7"
+                ],
+                "Note": "Contracts as emergent semantics — thesis"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.3.1.1"
+                ],
+                "Note": "Primary functions — purpose"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.3.1.2"
+                ],
+                "Note": "Position in semantic hierarchy",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "E.L.I.A. does not introduce a single “contract” keyword. Instead, a contract emerges from the semantic composition of constructs:"
+    },
+    "semanticInterface_how": {
+        "keywords": [
+            "semantic interface syntax",
+            "semantic interface declaration",
+            "inheritance model",
+            "conflict resolution",
+            "supersede",
+            "combine"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.3.3/B.",
+                    "2.7.3.3/C."
+                ],
+                "Note": "Scope, lifecycle, visibility",
+                "enumTag": "structural",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.3.3.4/B.",
+                    "2.7.3.3.4/C.",
+                    "2.7.3.3.4/D."
+                ],
+                "Note": "Inheritance: single, multiple, precedence",
+                "enumTag": "normative",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.3.3.5/A.",
+                    "2.7.3.3.5/B.",
+                    "2.7.3.3.5/C.",
+                    "2.7.3.3.5/D."
+                ],
+                "Note": "Conflict resolution: supersede, combine, retire, deprecated",
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.3.4.1/A.",
+                    "2.7.3.4.1/B.",
+                    "2.7.3.4.1/C.",
+                    "2.7.3.4.1/D."
+                ],
+                "Note": "Declaration aspects",
+                "enumTag": "structural",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "Tier": 3,
+                "Intent": "grammar",
+                "chain": [
+                    "2.7.3.4.3"
+                ],
+                "Note": "Canonical syntax"
+            }
+        ],
+        "abstract": "A Semantic Interface:"
+    },
+    "surrogate_what": {
+        "keywords": [
+            "surrogate",
+            "data surrogate",
+            "behavioral surrogate",
+            "semantic scaffolding",
+            "probabilistic boundary"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.6"
+                ],
+                "Note": "Data Surrogate — identity",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.7"
+                ],
+                "Note": "Behavioral Surrogate — identity",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.6.1"
+                ],
+                "Note": "Data surrogate semantic role"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.7.7.1"
+                ],
+                "Note": "Behavioral surrogate semantic role"
+            }
+        ],
+        "abstract": "A Data Surrogate is a first-class data artefact that becomes *semantically visible* by attaching Explanation mechanics (and optionally..."
+    },
+    "surrogate_why": {
+        "keywords": [
+            "surrogate purpose",
+            "surrogate evolution",
+            "enforcement continuity",
+            "semantic erasure",
+            "security erasure",
+            "domain evolution",
+            "semantic drift prevention"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "1.4.6/all"
+                ],
+                "Note": "Surrogates concern — why they exist in enforcement model",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "4.2.1/all"
+                ],
+                "Note": "Natural semantic degradation — evolution pressure"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.6.3"
+                ],
+                "Note": "Data surrogate enforcement attachment — why implicit attachment matters",
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.7.3"
+                ],
+                "Note": "Behavioral surrogate enforcement — why explicit attachment matters",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 5,
+                "Tier": 3,
+                "Intent": "full",
+                "chain": [
+                    "2.4.1"
+                ],
+                "Note": "any type — semantic erasure point",
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "Tier": 3,
+                "Intent": "full",
+                "chain": [
+                    "2.4.2"
+                ],
+                "Note": "tuple type — security erasure point",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "Surrogates preserve semantic integrity and enforcement continuity during evolution. any erases semantics (preserving security), tuple erases security (preserving semantics) — both are controlled degradation points in the enforcement model."
+    },
+    "surrogate_how": {
+        "keywords": [
+            "surrogate declaration",
+            "surrogate formation",
+            "surrogate enforcement",
+            "fact materialization"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.6.2"
+                ],
+                "Note": "Data surrogate formation normative",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "declaration",
+                "chain": [
+                    "2.7.7.2"
+                ],
+                "Note": "Behavioral surrogate formation normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.6.3"
+                ],
+                "Note": "Data surrogate enforcement attachment",
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.7.7.3"
+                ],
+                "Note": "Behavioral surrogate enforcement interaction",
+                "normTag": "semantic"
+            }
+        ],
+        "abstract": "A Data Surrogate MUST be one of the following:"
+    },
+    "enforcement_what": {
+        "keywords": [
+            "enforcement",
+            "enforcement graph",
+            "enforcement pipeline",
+            "compliance architecture"
+        ],
+        "target": [
+            "what is enforcement architecture for delegate trust boundaries",
+            "what is enforcement graph and compliance pipeline",
+            "what is delegate trust boundary enforcement"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "7.0"
+                ],
+                "Note": "Enforcement & compliance architecture",
+                "enumTag": "normative",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "7.8"
+                ],
+                "Note": "Enforcement primitives — responsibility matrix",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "7.9"
+                ],
+                "Note": "Enforcement graph diagram",
+                "enumTag": "normative"
+            }
+        ],
+        "abstract": "The architectural enforcement and compliance model of E.L.I.A. as an executable, traceable, and auditable pipeline."
+    },
+    "enforcement_why": {
+        "keywords": [
+            "why enforcement",
+            "enforcement principles",
+            "anti-drift",
+            "compliance by construction"
+        ],
+        "target": [
+            "why enforcement exists for delegate trust boundaries",
+            "why trust boundary enforcement and compliance by construction matter",
+            "why delegate boundaries need enforcement architecture"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "0.10"
+                ],
+                "Note": "Anti-drift by construction — thesis"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "7.5/B."
+                ],
+                "Note": "Semantic enforcement — normative intent",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "E.L.I.A. exists to address a structural failure common to modern systems:"
+    },
+    "enforcement_how": {
+        "keywords": [
+            "enforcement pipeline",
+            "admission control",
+            "exportable surfaces",
+            "cross-border",
+            "follow",
+            "enforces",
+            "rope semantics"
+        ],
+        "target": [
+            "how enforcement pipeline enforces delegate trust boundary step by step",
+            "how delegate trust boundary is enforced via admission control",
+            "how cross-border enforcement controls delegate boundary crossings"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "7.1/A.",
+                    "7.1/B."
+                ],
+                "Note": "Canonical pipeline and properties",
+                "enumTag": "structural",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "7.2/A.",
+                    "7.2/B.",
+                    "7.2/C."
+                ],
+                "Note": "Exportable surfaces: allowed, prohibited, rules",
+                "enumTag": "normative"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "7.3/A.",
+                    "7.3/C."
+                ],
+                "Note": "Admission control semantics and sources",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "7.4/A.",
+                    "7.4/B.",
+                    "7.4/C.",
+                    "7.4/D."
+                ],
+                "Note": "Cross-border: configuration, targets, semantics, rules",
+                "enumTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "7.5/A.",
+                    "7.5.1/A.",
+                    "7.5.1/B."
+                ],
+                "Note": "Follow/enforces targets, properties, constraints",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "The enforcement pipeline describes how meaning becomes admissible execution and how violations surface as observable facts."
+    },
+    "enforcement_when": {
+        "keywords": [
+            "admission failure",
+            "enforcement condition",
+            "when enforcement applies",
+            "AuditEvent emission"
+        ],
+        "onto": [
+            "WHEN",
+            "WHERE"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "7.3/D."
+                ],
+                "Note": "Admission failure conditions",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "7.5/C."
+                ],
+                "Note": "Violation MUST be compile-time error",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "7.6/B.",
+                    "7.6/C."
+                ],
+                "Note": "AuditEvent emission and loss conditions",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "Admission control defines whether an execution is eligible to enter the domain’s execution graph."
+    },
+    "semanticModel_what": {
+        "keywords": [
+            "semantic model",
+            "semantic layer",
+            "semantic hierarchy",
+            "semantic subordination"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "4.0"
+                ],
+                "Note": "Semantic Model — identity"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "4.1"
+                ],
+                "Note": "Semantic layer in the language model",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "4.3"
+                ],
+                "Note": "Core semantic constructs",
+                "normTag": "semantic"
+            }
+        ],
+        "abstract": "Semantic model in E.L.I.A. is declarative and deterministic (consists of finite set of primitives)."
+    },
+    "semanticModel_why": {
+        "keywords": [
+            "why semantic model",
+            "meaning before mechanics",
+            "semantic decay",
+            "meaning resolution"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "0.4"
+                ],
+                "Note": "Meaning before mechanics — thesis"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "0.2"
+                ],
+                "Note": "Semantic decay — thesis"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "4.5.3/A.",
+                    "4.5.3/B.",
+                    "4.5.3/C.",
+                    "4.5.3/D.",
+                    "4.5.3/E."
+                ],
+                "Note": "Consequences of violation"
+            }
+        ],
+        "abstract": "The internal logic of E.L.I.A. is built upon the same deep information concepts that underlie modern Large Language Models, but applies them in a..."
+    },
+    "semanticModel_how": {
+        "keywords": [
+            "meaning resolution",
+            "semantic graph",
+            "resolution phases",
+            "semantic construct",
+            "inline resolution"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "4.1.2"
+                ],
+                "Note": "Level responsibilities normative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "4.1.3"
+                ],
+                "Note": "Hierarchy normative constraints",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "4.6.2"
+                ],
+                "Note": "Resolution phases",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "4.6.3/B.",
+                    "4.6.3/C."
+                ],
+                "Note": "Inline resolution: toolchain view, resolved outcome"
+            },
+            {
+                "Order": 5,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "4.4/A.",
+                    "4.4/B."
+                ],
+                "Note": "Determinism classes, reproducibility",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "Defines *strategic semantic intent*. It establishes priority, value ordering, and interpretative frames under which multiple meanings are allowed to coexist."
+    },
+    "domainAuthority_what": {
+        "keywords": [
+            "four-layer model",
+            "4-layer authority",
+            "Layer 1",
+            "Layer 2",
+            "Layer 3",
+            "Layer 4",
+            "level 1",
+            "level 2",
+            "level 3",
+            "level 4",
+            "semantic carriers",
+            "layer boundary",
+            "boundary transition"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "5.0.2"
+                ],
+                "Note": "Four-layer authority model",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "5.1/B.",
+                    "5.2/A.",
+                    "5.2/B."
+                ],
+                "Note": "L1/L2 semantic carriers",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "5.3/A.",
+                    "5.4/A."
+                ],
+                "Note": "L3/L4 semantic carriers",
+                "enumTag": "example",
+                "normTag": "declarative"
+            }
+        ],
+        "abstract": "Domain Semantic Authority is layered. Semantic meaning emerges through explicit language constructs that differ by Layer."
+    },
+    "domainAuthority_how": {
+        "keywords": [
+            "domain authority layers",
+            "layer semantics",
+            "domain export",
+            "domain obligation",
+            "delegate materialization"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "5.1/A.",
+                    "5.1/C."
+                ],
+                "Note": "L1 form and behavior",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "5.1.1/A.",
+                    "5.1.1/B."
+                ],
+                "Note": "L1 local laws and cross-border"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "5.2.1/A.",
+                    "5.2.1/B."
+                ],
+                "Note": "L2 domain identity requirements",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "5.3/B.",
+                    "5.3/C."
+                ],
+                "Note": "L3 behavior and example",
+                "enumTag": "example",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "5.4/B.",
+                    "5.4/C."
+                ],
+                "Note": "L4 behavior and accountability",
+                "normTag": "declarative"
+            }
+        ],
+        "abstract": "Layer 1 defines the semantic space in which domains may exist. It establishes the *rules of the world*, not the authority of a specific domain."
+    },
+    "persistence_how": {
+        "keywords": [
+            "persist instruction",
+            "persistence",
+            "distributed node",
+            "retention",
+            "TTL",
+            "crypto-erase"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.6.1/A."
+                ],
+                "Note": "persist instruction defines…"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.6.2/A.",
+                    "8.6.2/B."
+                ],
+                "Note": "Node-level semantics and rules",
+                "enumTag": "normative"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.6.3/A.",
+                    "8.6.3/B."
+                ],
+                "Note": "Temporal retention and guarantees",
+                "enumTag": "normative"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.6.5/A.",
+                    "8.6.5/B."
+                ],
+                "Note": "AST verification and runtime",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "Persistence MAY occur only where a persist instruction is explicitly declared inside a flow."
+    },
+    "stream_what": {
+        "keywords": [
+            "stream",
+            "controlled boundary",
+            "exchange surface",
+            "stream carrier",
+            "binary stream",
+            "text stream"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.3"
+                ],
+                "Note": "Stream types — identity",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.3.0.3"
+                ],
+                "Note": "Stream semantic role"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "2.3.4/B."
+                ],
+                "Note": "Structural stream types enumeration",
+                "enumTag": "normative",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "Stream types represent sequential, potentially unbounded data carriers designed for controlled input/output, transport, and incremental..."
+    },
+    "stream_how": {
+        "keywords": [
+            "stream direction",
+            "stream typing",
+            "stream schema",
+            "stream enforcement",
+            "backpressure"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.7.1/A.",
+                    "8.7.1/B."
+                ],
+                "Note": "Stream boundary properties, implicit I/O",
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.7.2/A.",
+                    "8.7.2/B."
+                ],
+                "Note": "Direction declaration and rules",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.7.3/A.",
+                    "8.7.3/B."
+                ],
+                "Note": "Typing and constraints",
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.7.4/A.",
+                    "8.7.4/B."
+                ],
+                "Note": "Dictionary and collection streams",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "A stream is a semantic I/O boundary, not a transport primitive."
+    },
+    "dfd_what": {
+        "keywords": [
+            "DFD",
+            "domain driven flow",
+            "multi-layer projection",
+            "strategy layer",
+            "domain layer",
+            "integration layer"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "6.0"
+                ],
+                "Note": "DFD — identity"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "6.1"
+                ],
+                "Note": "Purpose and ideology",
+                "normTag": "semantic"
+            }
+        ]
+    },
+    "dfd_how": {
+        "keywords": [
+            "DFD layers",
+            "DFD projection",
+            "capability class",
+            "integration class",
+            "profile",
+            "regenerative"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "6.2/A.",
+                    "6.2/B."
+                ],
+                "Note": "Semantic responsibility split, regenerative rules",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "6.2.1/C.",
+                    "6.2.1/D."
+                ],
+                "Note": "L1 characteristics and language mapping",
+                "enumTag": "identity",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "6.2.2/C.",
+                    "6.2.2/D."
+                ],
+                "Note": "L2 characteristics and language mapping",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "6.2.3/B.",
+                    "6.2.3/C."
+                ],
+                "Note": "L3 characteristics and language mapping",
+                "enumTag": "identity",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "Tier": 3,
+                "Intent": "normative_rules",
+                "chain": [
+                    "6.3"
+                ],
+                "Note": "Projection rules and role ownership",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "Layer 1 defines intent, prohibitions, and obligations."
+    },
+    "antiPatterns_what": {
+        "keywords": [
+            "anti-pattern",
+            "prohibited pattern",
+            "design mistake",
+            "hidden state",
+            "implicit call"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "5.6"
+                ],
+                "Note": "Design anti-patterns normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "4.5.2"
+                ],
+                "Note": "Prohibited anti-patterns general"
+            }
+        ],
+        "abstract": "The following patterns are explicitly prohibited, as they violate Domain Semantic Authority, semantic inspectability, and responsibility boundaries."
+    },
+    "antiPatterns_why": {
+        "keywords": [
+            "anti-pattern consequence",
+            "semantic ambiguity",
+            "loss of auditability",
+            "irreversible drift"
+        ],
+        "onto": [
+            "WHY"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "4.5.3/A.",
+                    "4.5.3/B.",
+                    "4.5.3/C."
+                ],
+                "Note": "Consequences: ambiguity, audit loss, inability to reason"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "4.5.3/D.",
+                    "4.5.3/E."
+                ],
+                "Note": "Consequences: hidden policy, irreversible drift"
+            }
+        ],
+        "abstract": "Violation of the semantic hierarchy invariants defined above produces structural damage to the language model, not merely local defects."
+    },
+    "syntaxConstraints_how": {
+        "keywords": [
+            "syntax constraint",
+            "admitted syntax",
+            "forbidden syntax",
+            "enforced outcome",
+            "language constraint"
+        ],
+        "onto": [
+            "HOW",
+            "WHERE"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.8.1/A.",
+                    "8.8.1/B.",
+                    "8.8.1/C."
+                ],
+                "Note": "Domain: admitted, forbidden, enforced",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.8.3/A.",
+                    "8.8.3/B.",
+                    "8.8.3/C."
+                ],
+                "Note": "Definition: admitted, forbidden, enforced",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.8.4/A.",
+                    "8.8.4/B."
+                ],
+                "Note": "Record: admitted, forbidden",
+                "enumTag": "normative"
+            },
+            {
+                "Order": 4,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.8.7/A.",
+                    "8.8.7/B.",
+                    "8.8.7/C."
+                ],
+                "Note": "Rule: admitted, forbidden, enforced",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "Tier": 3,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.8.8/A.",
+                    "8.8.8/B.",
+                    "8.8.8/C."
+                ],
+                "Note": "Action: admitted, forbidden, enforced",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "Tier": 3,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.8.9/A.",
+                    "8.8.9/B."
+                ],
+                "Note": "Flow: admitted, forbidden",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "define domain \"<Name>\" with version, effective_date, deprecated_date."
+    },
+    "resilience_what": {
+        "keywords": [
+            "resilience",
+            "resilience model",
+            "bounded failure",
+            "isolation",
+            "recovery"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.0"
+                ],
+                "Note": "Resilience Model — identity",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "semantic_role",
+                "chain": [
+                    "8.0.1"
+                ],
+                "Note": "Module as runtime resilience unit"
+            }
+        ],
+        "abstract": "Data and behavior serve fundamentally different roles in a resilient system and are therefore subject to different rules, guarantees, and failure models."
+    },
+    "resilience_how": {
+        "keywords": [
+            "resilience patterns",
+            "timeout",
+            "retry",
+            "circuit breaker",
+            "SAGA",
+            "compensation",
+            "backpressure"
+        ],
+        "onto": [
+            "HOW"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "Tier": 1,
+                "Intent": "normative_rules",
+                "chain": [
+                    "2.6.4.4/F.",
+                    "2.6.4.4/G."
+                ],
+                "Note": "SAGA semantics, durability/recovery",
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.5.1/A."
+                ],
+                "Note": "Delegate reliability declaration"
+            },
+            {
+                "Order": 3,
+                "Tier": 2,
+                "Intent": "normative_rules",
+                "chain": [
+                    "8.5.3/A.",
+                    "8.5.3/B."
+                ],
+                "Note": "Cross-border and data direction",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "Admission logic MUST reside exclusively in flows."
+    }
+}

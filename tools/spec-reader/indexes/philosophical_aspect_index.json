@@ -1,0 +1,643 @@
+{
+    "$specVersion": "1.0.5",
+    "permissibilityFirst": {
+        "keywords": [
+            "permissibility",
+            "permission boundary",
+            "admissible",
+            "constraint propagation",
+            "factual type",
+            "permissive type",
+            "type as boundary",
+            "what may be done"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Permissibility-First Paradigm",
+                "chain": [
+                    "0.1",
+                    "0.1.1"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Type System Realization",
+                "chain": [
+                    "2.0",
+                    "2.0.1"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Design Principles Foundation",
+                "chain": [
+                    "1.1",
+                    "1.2"
+                ],
+                "enumTag": "example",
+                "normTag": "declarative"
+            }
+        ],
+        "abstract": "The E.L.I.A. language is built around a paradigm that places permissibility of operations at its core (permissibility-first).",
+        "aspects": {
+            "ont": [
+                "meaningFirst",
+                "concernSeparation",
+                "boundaryPrinciples"
+            ],
+            "desa": [
+                "typeSystemDesign",
+                "designPrinciplesFoundation"
+            ],
+            "sema": [
+                "semanticClassification",
+                "semanticTypes"
+            ],
+            "phya": [
+                "datatypes",
+                "behavioral_types",
+                "authority_types"
+            ]
+        }
+    },
+    "semanticDecay": {
+        "keywords": [
+            "semantic decay",
+            "Lambert-Beer",
+            "information decay",
+            "meaning decay",
+            "probabilistic inference",
+            "semantic drift",
+            "attention mechanism",
+            "multi-step reasoning",
+            "LLM",
+            "semantic fixation"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Semantic Decay and Probabilistic Systems",
+                "chain": [
+                    "0.2"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Deep Information Foundations",
+                "chain": [
+                    "0.4.1"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Semantic Model — Fixation Mechanisms",
+                "chain": [
+                    "4.0"
+                ]
+            }
+        ],
+        "abstract": "The E.L.I.A. language is built on a single, observable fact about modern information systems and large language models: meaning decays as it moves...",
+        "aspects": {
+            "ont": [
+                "meaningFirst",
+                "temporalEvolution"
+            ],
+            "desa": [
+                "semanticModelDesign",
+                "designPrinciplesFoundation"
+            ],
+            "sema": [
+                "semanticModel"
+            ]
+        }
+    },
+    "securitySemanticCoupling": {
+        "keywords": [
+            "security",
+            "confidentiality",
+            "sensitivity",
+            "semantic attribute",
+            "security label",
+            "classification",
+            "compliance by construction"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Security as Intrinsic Semantic Attribute",
+                "chain": [
+                    "0.1"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Enforcement & Compliance Architecture",
+                "chain": [
+                    "7.0",
+                    "7.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 3,
+                "H2": "Mutability and Security Constraints",
+                "chain": [
+                    "A.13/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "The E.L.I.A. language is built around a paradigm that places permissibility of operations at its core (permissibility-first).",
+        "aspects": {
+            "ont": [
+                "enforcementPrinciples",
+                "boundaryPrinciples"
+            ],
+            "desa": [
+                "securityDesign",
+                "enforcementDesign",
+                "complianceDesign"
+            ],
+            "sema": [
+                "enforcement",
+                "semanticEnforcement"
+            ]
+        }
+    },
+    "meaningBeforeMechanics": {
+        "keywords": [
+            "meaning before mechanics",
+            "meaning precedes execution",
+            "embedding vs attention",
+            "bias vs reasoning",
+            "semantic continuity",
+            "attention constrained by meaning",
+            "definition",
+            "explained as",
+            "meaning first"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Core Idea — Meaning Before Mechanics",
+                "chain": [
+                    "0.4",
+                    "0.4.1"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Model Primitives",
+                "chain": [
+                    "4.0",
+                    "4.0.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Design Principle — Meaning First",
+                "chain": [
+                    "1.1"
+                ],
+                "enumTag": "example",
+                "normTag": "declarative"
+            }
+        ],
+        "abstract": "The internal logic of E.L.I.A. is built upon the same deep information concepts that underlie modern Large Language Models, but applies them in a...",
+        "aspects": {
+            "ont": [
+                "meaningFirst",
+                "declarativeAuthority",
+                "factAndIntent"
+            ],
+            "desa": [
+                "semanticModelDesign",
+                "designPrinciplesFoundation"
+            ],
+            "sema": [
+                "semanticModel",
+                "definition",
+                "explanation"
+            ]
+        }
+    },
+    "meaningAsArtifact": {
+        "keywords": [
+            "meaning artifact",
+            "versioned meaning",
+            "immutable meaning",
+            "semantic versioning",
+            "window of return",
+            "explained as",
+            "past closed form",
+            "meaning not implicit",
+            "meaning not inferred"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Meaning as a Stable Artifact",
+                "chain": [
+                    "0.5"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Explanation Construct",
+                "chain": [
+                    "2.7.5",
+                    "2.7.5.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Definition Construct",
+                "chain": [
+                    "2.7.8",
+                    "2.7.8.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "Meaning in E.L.I.A. is treated as a first-class, versioned artifact.",
+        "aspects": {
+            "ont": [
+                "temporalEvolution",
+                "declarativeAuthority"
+            ],
+            "desa": [
+                "definitionAggregation"
+            ],
+            "sema": [
+                "explanation",
+                "definition"
+            ],
+            "grma": [
+                "explanationSyntax",
+                "definitionSyntax"
+            ]
+        }
+    },
+    "definitionsNotNarratives": {
+        "keywords": [
+            "definition not documentation",
+            "semantic boundary",
+            "definition before behavior",
+            "behavior requires definition",
+            "semantically incorrect",
+            "self-serving narrative"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Definitions, Not Narratives",
+                "chain": [
+                    "0.6"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Definition Semantic Role",
+                "chain": [
+                    "2.7.8",
+                    "2.7.8.1/all",
+                    "2.7.8.2/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Domain Semantic Authority",
+                "chain": [
+                    "5.0",
+                    "5.0.1/all"
+                ]
+            }
+        ],
+        "abstract": "A definition in E.L.I.A. is not documentation. It is a semantic boundary.",
+        "aspects": {
+            "ont": [
+                "declarativeAuthority",
+                "domainSemanticContour",
+                "factAndIntent"
+            ],
+            "desa": [
+                "definitionAggregation",
+                "domainStructure"
+            ],
+            "sema": [
+                "definition",
+                "domainAuthority"
+            ],
+            "grma": [
+                "definitionSyntax"
+            ],
+            "bhva": [
+                "definitionNormatives"
+            ]
+        }
+    },
+    "contractsAsEmergentSemantics": {
+        "keywords": [
+            "emergent contract",
+            "semantic composition",
+            "contract without execution",
+            "violation of meaning",
+            "violation of execution",
+            "enforces",
+            "export",
+            "no contract keyword",
+            "semantic violation"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Contracts as Emergent Semantics",
+                "chain": [
+                    "0.7"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Interface — Contract Surface",
+                "chain": [
+                    "2.7.3",
+                    "2.7.3.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Rule — Admissibility Operationalization",
+                "chain": [
+                    "2.6.4",
+                    "2.6.4.1/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Enforcement Pipeline",
+                "chain": [
+                    "7.0",
+                    "7.2/all"
+                ],
+                "enumTag": "normative"
+            }
+        ],
+        "abstract": "E.L.I.A. does not introduce a single \"contract\" keyword. Instead, a contract emerges from the semantic composition of constructs:",
+        "aspects": {
+            "ont": [
+                "enforcementMechanics",
+                "boundaryPrinciples",
+                "concernSeparation"
+            ],
+            "desa": [
+                "semanticContractDesign",
+                "enforcementDesign",
+                "interfaceDesign"
+            ],
+            "sema": [
+                "semantic_interface",
+                "enforcement",
+                "definition"
+            ],
+            "grma": [
+                "semanticInterfaceSyntax",
+                "ruleSyntax",
+                "interfaceSyntax"
+            ],
+            "bhva": [
+                "ruleNormatives",
+                "interfaceNormatives",
+                "semanticInterfaceNormatives"
+            ]
+        }
+    },
+    "determinismAndExplainability": {
+        "keywords": [
+            "deterministic",
+            "side-effect free",
+            "explainable",
+            "rule reasoning",
+            "regulatory reasoning",
+            "audit justification",
+            "compliance automation",
+            "why admissible",
+            "semantic fact"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Determinism and Explainability",
+                "chain": [
+                    "0.8"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Rule Construct — Deterministic Reasoning",
+                "chain": [
+                    "2.6.4",
+                    "2.6.4.2/all",
+                    "2.6.4.3/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Normative Classes of Rules",
+                "chain": [
+                    "D.1/all",
+                    "D.2/all"
+                ],
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "All semantic reasoning in E.L.I.A. is required to be:",
+        "aspects": {
+            "ont": [
+                "enforcementMechanics",
+                "ruleNormativeClasses"
+            ],
+            "desa": [
+                "ruleDesign",
+                "complianceDesign"
+            ],
+            "sema": [
+                "semanticEnforcement"
+            ],
+            "grma": [
+                "ruleSyntax"
+            ],
+            "bhva": [
+                "ruleNormatives"
+            ]
+        }
+    },
+    "domainsAsAuthorities": {
+        "onto": ["HOW"],
+        "keywords": [
+            "domain authority",
+            "semantic authority",
+            "domain not service",
+            "semantic space",
+            "shared intent",
+            "accountability",
+            "truth ownership",
+            "admissible behavior",
+            "emitted facts"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Domains as Semantic Authorities",
+                "chain": [
+                    "0.9"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Domain Construct",
+                "chain": [
+                    "2.7.8",
+                    "2.7.8.1/all",
+                    "2.7.8.2/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Domain Semantic Authority Model",
+                "chain": [
+                    "5.0",
+                    "5.0.1/all",
+                    "5.0.2/all"
+                ]
+            }
+        ],
+        "abstract": "A domain in E.L.I.A. is not a service and not an infrastructure unit. A domain is a semantic authority.",
+        "aspects": {
+            "ont": [
+                "domainSemanticContour",
+                "domainVsModule",
+                "declarativeAuthority"
+            ],
+            "desa": [
+                "domainStructure",
+                "domainAutonomyPattern"
+            ],
+            "sema": [
+                "domain",
+                "domainAuthority",
+                "semanticBoundary"
+            ],
+            "grma": [
+                "domainSyntax"
+            ],
+            "bhva": [
+                "domainNormatives"
+            ]
+        }
+    },
+    "antiDriftByConstruction": {
+        "keywords": [
+            "anti-drift",
+            "semantic drift impossible",
+            "form preserves meaning",
+            "behavior faster than meaning",
+            "visible auditable rejectable",
+            "why ELIA exists",
+            "structural failure"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Anti-Drift by Construction",
+                "chain": [
+                    "0.10",
+                    "0.3"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Design Principles — Stability Guarantees",
+                "chain": [
+                    "1.0",
+                    "1.1",
+                    "1.3"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 3,
+                "H2": "Enforcement & Compliance Architecture",
+                "chain": [
+                    "7.0",
+                    "7.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "semantic"
+            }
+        ],
+        "abstract": "E.L.I.A. exists to address a structural failure common to modern systems:",
+        "aspects": {
+            "ont": [
+                "meaningFirst",
+                "enforcementPrinciples",
+                "antiPatterns"
+            ],
+            "desa": [
+                "enforcementDesign",
+                "antiPatternGuide",
+                "designPrinciplesFoundation"
+            ],
+            "sema": [
+                "enforcement",
+                "semanticModel"
+            ]
+        }
+    },
+    "purposeOfLanguage": {
+        "keywords": [
+            "purpose",
+            "meaning-first language",
+            "semantic system",
+            "business intent",
+            "inspectable artifact",
+            "capture express enforce"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Purpose of the Language",
+                "chain": [
+                    "0.3"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Design Principles Overview",
+                "chain": [
+                    "1.0"
+                ],
+                "normTag": "semantic"
+            }
+        ],
+        "abstract": "E.L.I.A. is a meaning-first language and system model created to capture, express, and enforce meaning through form.",
+        "aspects": {
+            "ont": [
+                "meaningFirst"
+            ],
+            "desa": [
+                "designPrinciplesFoundation"
+            ],
+            "sema": [
+                "semanticModel"
+            ]
+        }
+    }
+}

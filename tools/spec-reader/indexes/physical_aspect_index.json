@@ -1,0 +1,3004 @@
+{
+    "$specVersion": "1.0.5",
+    "typeMetadata": {
+        "keywords": [
+            "type",
+            "metadata",
+            "format",
+            "flags",
+            "hash",
+            "schema",
+            "table",
+            "registry"
+        ],
+        "seq": [
+            {
+                "Order": 0,
+                "H2": "Terms and Definitions",
+                "chain": [
+                    "B.1",
+                    "B.1.1/table-1"
+                ]
+            },
+            {
+                "Order": 1,
+                "H2": "Type Metadata Structure",
+                "chain": [
+                    "B.2",
+                    "B.2/A.",
+                    "B.2/B.",
+                    "B.2/C.",
+                    "B.2/D."
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "Meta Header",
+                "chain": [
+                    "B.2",
+                    "B.2.1",
+                    "B.2.1/table-1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H3": "Type Data",
+                "chain": [
+                    "B.2",
+                    "B.2.2",
+                    "B.2.2/table-1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "H2": "Type Categories (CATEGORY)",
+                "chain": [
+                    "B.3"
+                ]
+            },
+            {
+                "Order": 5,
+                "H2": "Type Categories (CATEGORY)",
+                "chain": [
+                    "B.6",
+                    "B.6/A."
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "Processing Algorithm",
+                "chain": [
+                    "B.7",
+                    "B.7/A."
+                ]
+            }
+        ],
+        "abstract": "E.L.I.A. associates every data element with a 64‑bit Type Metadata envelope  that enables deterministic parsing, validation, and serialization..."
+    },
+    "typeSerialization": {
+        "keywords": [
+            "serialization",
+            "deserialization",
+            "envelope",
+            "security",
+            "metadata",
+            "payload",
+            "parsing",
+            "algorithm"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Terms and Definitions",
+                "chain": [
+                    "B.1",
+                    "B.1.1/table-1"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Envelope Structure",
+                "chain": [
+                    "B.2",
+                    "B.2/A.-D."
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Serialized context",
+                "chain": [
+                    "B.8",
+                    "B.8/block-1",
+                    "B.8/(A)-(F)"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Processing Algorithm",
+                "chain": [
+                    "B.7",
+                    "B.7/A."
+                ]
+            },
+            {
+                "Order": 5,
+                "H3": "Relationship to Data and Informational Context",
+                "chain": [
+                    "B.8.1/(A)",
+                    "B.8.1/(B)"
+                ]
+            }
+        ],
+        "abstract": "E.L.I.A. associates every data element with a 64‑bit Type Metadata envelope  that enables deterministic parsing, validation, and serialization..."
+    },
+    "securityContext": {
+        "keywords": [
+            "security",
+            "context",
+            "metadata",
+            "confidentiality",
+            "integrity",
+            "access control",
+            "policy",
+            "type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Terms and Definitions",
+                "chain": [
+                    "B.1",
+                    "B.1.1/table-1"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Envelope Structure",
+                "chain": [
+                    "B.2",
+                    "B.2/C.",
+                    "B.2/D.",
+                    "B.2.1/table-2"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Security Context",
+                "chain": [
+                    "B.9",
+                    "B.9.1",
+                    "B.9.2",
+                    "B.9.3",
+                    "B.9.4",
+                    "B.9.5",
+                    "B.9.6",
+                    "B.9.7"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "E.L.I.A. associates every data element with a 64‑bit Type Metadata envelope  that enables deterministic parsing, validation, and serialization..."
+    },
+    "datatypes": {
+        "keywords": [
+            "stream",
+            "block",
+            "inline",
+            "opaque",
+            "primitive",
+            "data",
+            "type",
+            "boundary",
+            "interaction",
+            "semantics",
+            "transformational"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Terms and Definitions",
+                "chain": [
+                    "2.0",
+                    "2.0/A.",
+                    "2.0/B.",
+                    "2.0.1/table-1"
+                ]
+            },
+            {
+                "Order": 2,
+                "H1": "Forms of Semantic Expression",
+                "chain": [
+                    "2.0.2.1",
+                    "2.0.2.2",
+                    "2.0.2.4"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Data Types (Passive)",
+                "chain": [
+                    "2.0.3.1"
+                ]
+            },
+            {
+                "Order": 5,
+                "H3": "Transformational Capabilities",
+                "chain": [
+                    "2.0.3.3.2/1."
+                ]
+            },
+            {
+                "Order": 6,
+                "H1": "Classification Axes",
+                "chain": [
+                    "2.0.4.1",
+                    "2.0.4.2",
+                    "2.0.4.3",
+                    "2.0.4.4"
+                ]
+            },
+            {
+                "Order": 7,
+                "H1": "Special Boundary Cases",
+                "chain": [
+                    "2.0.5",
+                    "2.0.5.1",
+                    "2.0.5.2"
+                ]
+            },
+            {
+                "Order": 8,
+                "H1": "Inline-declared Types",
+                "chain": [
+                    "2.0.6",
+                    "2.0.6/(B)",
+                    "2.0.6.2",
+                    "2.0.6.3",
+                    "2.0.6.4",
+                    "2.0.6.5/2."
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 9,
+                "H1": "Type Aspect Model",
+                "chain": [
+                    "2.0.8/table-1",
+                    "2.0.8.1/1.",
+                    "2.0.8.1/2."
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 10,
+                "H1": "Data Type Codes Structure",
+                "chain": [
+                    "A.2/table-1"
+                ]
+            },
+            {
+                "Order": 11,
+                "$ref": "/typeSerialization"
+            },
+            {
+                "Order": 12,
+                "$ref": "/typeMetadata"
+            },
+            {
+                "Order": 13,
+                "$ref": "/securityContext"
+            },
+            {
+                "Order": 14,
+                "H1": "Data Types",
+                "chain": [
+                    "1.4.1/all"
+                ],
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "The E.L.I.A. language employs an extended orthogonal type classification model, based not on a single criterion but on a set of independent dimensions."
+    },
+    "primitiveTypesRegistry": {
+        "keywords": [
+            "primitive",
+            "int8",
+            "uint8",
+            "int16",
+            "uint16",
+            "int32",
+            "uint32",
+            "int64",
+            "uint64",
+            "float",
+            "double",
+            "decimal",
+            "bool",
+            "null",
+            "void",
+            "date",
+            "time",
+            "timestamp",
+            "timespan",
+            "guid",
+            "riid",
+            "enum",
+            "any"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Overview",
+                "chain": [
+                    "A.1",
+                    "A.1.1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Data Type Codes Structure",
+                "chain": [
+                    "A.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Primitive Data Types (CATEGORY = 00)",
+                "chain": [
+                    "A.3/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 4,
+                "H2": "Serialization Determinism (Normative)",
+                "chain": [
+                    "A.11/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "H2": "Mutability Constraints (Normative)",
+                "chain": [
+                    "A.13/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "This annex defines the canonical Type Registry for the E.L.I.A. type system. It enumerates all primitive, block, derived, and stream carrier..."
+    },
+    "blockTypesRegistry": {
+        "keywords": [
+            "block",
+            "opaque",
+            "structured",
+            "record",
+            "string",
+            "tuple",
+            "base64",
+            "ben",
+            "len"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Overview",
+                "chain": [
+                    "A.1",
+                    "A.1.1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Data Type Codes Structure",
+                "chain": [
+                    "A.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Block Data Types (CATEGORY = 01)",
+                "chain": [
+                    "A.4/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Serialization Determinism (Normative)",
+                "chain": [
+                    "A.11/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "H2": "Mutability Constraints (Normative)",
+                "chain": [
+                    "A.13/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "H2": "Block ⇄ Stream Promotion and Demotion Rules (Normative)",
+                "chain": [
+                    "A.9/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 7,
+                "H2": "Security and Classification Propagation (Normative)",
+                "chain": [
+                    "A.14/all"
+                ],
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "This annex defines the canonical Type Registry for the E.L.I.A. type system. It enumerates all primitive, block, derived, and stream carrier..."
+    },
+    "derivedTypesRegistry": {
+        "keywords": [
+            "record",
+            "array",
+            "dictionary",
+            "class",
+            "collection",
+            "interface",
+            "error",
+            "event",
+            "typed array"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Overview",
+                "chain": [
+                    "A.1/all",
+                    "A.1.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Data Type Codes Structure",
+                "chain": [
+                    "A.2/A.",
+                    "A.2/B./table-1"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Derived Data Types (CATEGORY = 10)",
+                "chain": [
+                    "A.5/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Default Value Semantics (Normative)",
+                "chain": [
+                    "A.10/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "H2": "Serialization Determinism (Normative)",
+                "chain": [
+                    "A.11/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "H2": "Identity and Equality Semantics (Normative)",
+                "chain": [
+                    "A.12/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 7,
+                "H2": "Mutability Constraints (Normative)",
+                "chain": [
+                    "A.13/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 8,
+                "H2": "Security and Classification Propagation (Normative)",
+                "chain": [
+                    "A.14/all"
+                ],
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "This annex defines the canonical Type Registry for the E.L.I.A. type system. It enumerates all primitive, block, derived, and stream carrier..."
+    },
+    "streamTypesRegistry": {
+        "keywords": [
+            "stream",
+            "carrier",
+            "binary",
+            "text",
+            "string",
+            "dic",
+            "json",
+            "xml",
+            "yaml",
+            "toml",
+            "csv",
+            "avro",
+            "protobuf",
+            "msgpack",
+            "bson",
+            "ion",
+            "parquet",
+            "orc",
+            "sequential",
+            "unbounded",
+            "incremental",
+            "document",
+            "columnar",
+            "row-oriented"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Overview",
+                "chain": [
+                    "A.1",
+                    "A.1.1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Data Type Codes Structure",
+                "chain": [
+                    "A.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Stream Carrier Data Types (CATEGORY = 11)",
+                "chain": [
+                    "A.6/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Serialization Determinism (Normative)",
+                "chain": [
+                    "A.11/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "H2": "Mutability Constraints (Normative)",
+                "chain": [
+                    "A.13/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "H2": "Stream ⇄ Block Promotion and Demotion Rules (Normative)",
+                "chain": [
+                    "A.10/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 7,
+                "H2": "Serialization Determinism (Normative)",
+                "chain": [
+                    "A.11/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 8,
+                "H2": "Security and Classification Propagation (Normative)",
+                "chain": [
+                    "A.14/all"
+                ],
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "This annex defines the canonical Type Registry for the E.L.I.A. type system. It enumerates all primitive, block, derived, and stream carrier..."
+    },
+    "semanticTypesRegistry": {
+        "keywords": [
+            "event",
+            "error",
+            "reference",
+            "semantic type",
+            "domain",
+            "definition",
+            "explanation",
+            "semantic interface",
+            "exptree",
+            "nothing",
+            "riid",
+            "guid"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Overview",
+                "chain": [
+                    "A.1",
+                    "A.1.1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Types (Normative)",
+                "chain": [
+                    "A.7/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Serialization Determinism (Normative)",
+                "chain": [
+                    "A.11/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "H2": "Normative Notes",
+                "chain": [
+                    "A.8/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "H2": "Mutability Constraints (Normative)",
+                "chain": [
+                    "A.13/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "This annex defines the canonical Type Registry for the E.L.I.A. type system. It enumerates all primitive, block, derived, and stream carrier..."
+    },
+    "non-value": {
+        "keywords": [
+            "nothing",
+            "null",
+            "void",
+            "non-value",
+            "semantic marker",
+            "absence of value",
+            "non-existence",
+            "semantic placeholder"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "2.1.6 Special/control Class)",
+                "chain": [
+                    "2.1.6",
+                    "2.1.6.1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "A.10.1 Non-Value Semantic Marker: nothing (Normative)",
+                "chain": [
+                    "A.10.1/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "Special/control primitives represent semantic control markers, not domain data."
+    },
+    "primitive_types": {
+        "keywords": [
+            "primitive",
+            "primitive types",
+            "null",
+            "void",
+            "guid",
+            "riid",
+            "any",
+            "GUID format",
+            "RIID format",
+            "identifier encoding",
+            "literal format",
+            "nominal typing",
+            "type system overview"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Primitives Types",
+                "chain": [
+                    "2.1",
+                    "2.1/(A)",
+                    "2.1/(B)"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Identifiers Class (GUID, RIID)",
+                "chain": [
+                    "2.1.5/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Identifier Encoding",
+                "chain": [
+                    "2.1.9.6",
+                    "2.1.9.8/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "H2": "Type Compatibility and Conversion Rules",
+                "chain": [
+                    "2.1.10/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "$ref": "/primitiveTypesRegistry"
+            },
+            {
+                "Order": 6,
+                "H3": "Primitive Category (00)",
+                "chain": [
+                    "B.4",
+                    "B.4.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 7,
+                "$ref": "/datatypes"
+            }
+        ],
+        "abstract": "Primitive types are used to encode primitive information — irreducible factual values that have no internal structure at the language level. Includes GUID/RIID identifier encoding, literal formats, and the complete type compatibility/conversion matrix."
+    },
+    "integral_type": {
+        "keywords": ["integral", "integer", "int8", "int16", "int32", "int64", "uint8", "uint16", "uint32", "uint64", "signed", "unsigned", "bit width", "integer encoding", "varint", "binary"],
+        "seq": [
+            {"Order": 1, "H1": "Integral Class", "chain": ["2.1.1", "2.1.1.1", "2.1.1.2", "2.1.1.3"]},
+            {"Order": 2, "H2": "Integer Encoding", "chain": ["2.1.9.2"]},
+            {"Order": 3, "$ref": "/primitive_types"}
+        ],
+        "abstract": "The Integral class defines signed and unsigned integer types (int8–int64, uint8–uint64) with fixed bit widths, two's complement encoding, and explicit overflow semantics."
+    },
+    "decimal_floating_type": {
+        "keywords": ["decimal", "floating", "float", "double", "floating-point", "IEEE 754", "precision", "rounding", "decimal encoding", "normative"],
+        "seq": [
+            {"Order": 1, "H1": "Decimal / Floating Class", "chain": ["2.1.2", "2.1.2.1", "2.1.2.2", "2.1.2.3"]},
+            {"Order": 2, "H2": "Floating-point and Decimal Encoding", "chain": ["2.1.9.3"]},
+            {"Order": 3, "$ref": "/primitive_types"}
+        ],
+        "abstract": "The Decimal/floating class defines float, double, and decimal types with IEEE 754 encoding, precision guarantees, and normative rounding rules."
+    },
+    "boolean_type": {
+        "keywords": ["boolean", "bool", "true", "false", "boolean encoding", "binary boolean", "single byte", "0x00", "0x01"],
+        "seq": [
+            {"Order": 1, "H1": "Boolean Class", "chain": ["2.1.3"]},
+            {"Order": 2, "H2": "Boolean Encoding", "chain": ["2.1.9.4"]},
+            {"Order": 3, "$ref": "/primitive_types"}
+        ],
+        "abstract": "The Boolean class defines a single bool type with normative binary encoding (0x00=false, 0x01=true) and constraints prohibiting any other byte values."
+    },
+    "datetime_type": {
+        "keywords": ["date", "time", "datetime", "timestamp", "timespan", "temporal", "date literal", "time literal", "temporal encoding", "calendar", "normative"],
+        "seq": [
+            {"Order": 1, "H1": "Date/Time Class", "chain": ["2.1.4", "2.1.4.1", "2.1.4.2", "2.1.4.3"]},
+            {"Order": 2, "H2": "Temporal Encoding", "chain": ["2.1.9.5"]},
+            {"Order": 3, "$ref": "/primitive_types"}
+        ],
+        "abstract": "The Date/Time class defines temporal primitive types (date, time, datetime, timestamp, timespan) with normative encoding rules and calendar-independent representation."
+    },
+    "enum_type": {
+        "keywords": ["enum", "enumeration", "ordinal", "enum default", "enum initialization", "enum member", "enum value", "enum declaration", "finite value set", "named values"],
+        "seq": [
+            {"Order": 1, "H1": "Enum", "chain": ["2.1.7", "2.1.7.1", "2.1.7.2", "2.1.7.3"]},
+            {"Order": 2, "H2": "Enum Syntax", "chain": ["2.1.7.4", "2.1.7.4.1", "2.1.7.4.2", "2.1.7.4.3"]},
+            {"Order": 3, "$ref": "/primitive_types"}
+        ],
+        "abstract": "Enum defines finite named value sets with explicit ordinal semantics, explicit initialization requirements, and compile-time validation of exhaustiveness."
+    },
+    "fixed_string_type": {
+        "keywords": ["fixed string", "string capacity", "fixed length", "string[N]", "byte capacity", "no length prefix", "fixed width serialization", "capacity constraint"],
+        "seq": [
+            {"Order": 1, "H1": "Fixed String Class", "chain": ["2.1.8", "2.1.8.1", "2.1.8.2", "2.1.8.3"]},
+            {"Order": 2, "H2": "Fixed String Syntax", "chain": ["2.1.8.4", "2.1.8.4.1", "2.1.8.4.2"]},
+            {"Order": 3, "$ref": "/primitive_types"}
+        ],
+        "abstract": "Fixed String is a primitive type with compile-time capacity constraint — always serializes to exactly N bytes with no length prefix, used for protocol-level fixed-width fields."
+    },
+    "type_conversion_rules": {
+        "keywords": ["type conversion", "type compatibility", "implicit conversion", "explicit conversion", "narrowing", "widening", "conversion matrix", "assignment compatibility", "type casting", "non-numeric conversion", "conversion rules"],
+        "seq": [
+            {"Order": 1, "H1": "Type Compatibility and Conversion Rules", "chain": ["2.1.10", "2.1.10.1"]},
+            {"Order": 2, "H2": "Implicit Assignment", "chain": ["2.1.10.2.1"]},
+            {"Order": 3, "H2": "Explicit Conversion — Numeric", "chain": ["2.1.10.2.2"]},
+            {"Order": 4, "H2": "Explicit Conversion — Non-Numeric", "chain": ["2.1.10.2.3"]},
+            {"Order": 5, "H2": "Special/Control Type Rules", "chain": ["2.1.10.2.4"]},
+            {"Order": 6, "H2": "Normative Rules", "chain": ["2.1.10.6"]},
+            {"Order": 7, "$ref": "/primitive_types"}
+        ],
+        "abstract": "Normative type conversion rules: implicit assignment (widening only), explicit conversion matrices for numeric and non-numeric primitives, special/control type rules, and the fundamental principle of nominal typing."
+    },
+    "primitive_encoding_rules": {
+        "keywords": ["binary encoding", "encoding rules", "canonical encoding", "inline threshold", "48-bit", "parser obligations", "validation", "endianness", "little-endian", "big-endian", "performance optimization", "inline primitives", "external primitives", "binary decoding"],
+        "seq": [
+            {"Order": 1, "H1": "Binary Encoding Rules for Primitives", "chain": ["2.1.9", "2.1.9.1"]},
+            {"Order": 2, "H2": "Normative Encoding Rules", "chain": ["2.1.9.8/all"]},
+            {"Order": 3, "H2": "Parser Obligations", "chain": ["2.1.9.9", "2.1.9.9.1", "2.1.9.9.2"]},
+            {"Order": 4, "H2": "Performance Implications", "chain": ["2.1.9.10", "2.1.9.10.1", "2.1.9.10.2", "2.1.9.10.3"]},
+            {"Order": 5, "$ref": "/primitive_types"}
+        ],
+        "abstract": "Binary encoding rules for all primitive types: canonical principles, 48-bit inline threshold, endianness requirements, parser obligations with validation algorithm, and performance optimization guidelines for inline vs external primitives."
+    },
+    "block_types": {
+        "keywords": [
+            "block",
+            "opaque",
+            "structured",
+            "record",
+            "string",
+            "tuple",
+            "base64",
+            "ben",
+            "len",
+            "blob",
+            "binary",
+            "uninterpreted",
+            "undecipherable",
+            "black box",
+            "compatibility",
+            "assignment"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Block Types",
+                "chain": [
+                    "2.2",
+                    "2.2.0.1"
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Designation",
+                "chain": [
+                    "2.2.0.2",
+                    "2.2.0.3"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H3": "Block Category (01)",
+                "chain": [
+                    "B.4",
+                    "B.4.2/all",
+                    "B.4.2.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "$ref": "/blockTypesRegistry"
+            },
+            {
+                "Order": 5,
+                "$ref": "/datatypes"
+            }
+        ],
+        "abstract": "Block types are used to model opaque or structurally fixed or dynamic data payloads whose internal representation is either intentionally hidden..."
+    },
+    "opaque_block_types": {
+        "keywords": [
+            "opaque",
+            "blob",
+            "binary",
+            "uninterpreted",
+            "undecipherable",
+            "black box",
+            "string",
+            "tuple",
+            "base64",
+            "ben",
+            "len"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "$ref": "/block_types"
+            },
+            {
+                "Order": 2,
+                "H1": "Opaque blocks class",
+                "chain": [
+                    "2.2.1",
+                    "2.2.1/A.",
+                    "2.2.1.1",
+                    "2.2.1.2",
+                    "2.2.1.3"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Syntax",
+                "chain": [
+                    "2.2.1.4.2/all"
+                ]
+            }
+        ],
+        "abstract": "Opaque block types represent indivisible, immutable binary payloads with explicitly declared or limited with 26-bits size semantics."
+    },
+    "structured_block": {
+        "keywords": [
+            "structured",
+            "record",
+            "string",
+            "tuple",
+            "base64",
+            "ben",
+            "len"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "$ref": "/block_types"
+            },
+            {
+                "Order": 2,
+                "H1": "Structured blocks class",
+                "chain": [
+                    "2.2.2",
+                    "2.2.2/A.",
+                    "2.2.2.0.1",
+                    "2.2.2.0.3"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Normative Properties",
+                "chain": [
+                    "2.2.2.0.3"
+                ]
+            },
+            {
+                "Order": 4,
+                "H1": "Binary Encoding Rules for Block Types",
+                "chain": [
+                    "2.2.4",
+                    "2.2.4/A.",
+                    "2.2.4.1/all",
+                    "2.2.4.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "Structural blocks mainly represent derived types with schema-defined, immutable data compositions built from primitives and block values."
+    },
+    "derived_types": {
+        "keywords": [
+            "derived",
+            "record",
+            "array",
+            "dictionary",
+            "class",
+            "collection",
+            "interface",
+            "error",
+            "event",
+            "derived array",
+            "compatibility"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Derived Types",
+                "chain": [
+                    "2.5",
+                    "2.5/A.",
+                    "2.5/B.",
+                    "2.5/C.",
+                    "2.5.0.1",
+                    "2.5.0.3"
+                ],
+                "enumTag": "identity",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Normative rules",
+                "chain": [
+                    "2.5.0.2/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "$ref": "/derivedTypesRegistry"
+            },
+            {
+                "Order": 4,
+                "H2": "Derived Category (10)",
+                "chain": [
+                    "B.4",
+                    "B.4.3/all",
+                    "B.4.3.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "$ref": "/datatypes"
+            },
+            {
+                "Order": 6,
+                "H2": "Constraints and Enforcement",
+                "chain": [
+                    "B.5/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "Derived types define enveloped semantic specializations that apply only to data-carrying and declarative constructs."
+    },
+    "specialized_types": {
+        "keywords": [
+            "error",
+            "event",
+            "tuple",
+            "any",
+            "specialized",
+            "reference",
+            "semantic interface",
+            "exptree"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Specialized Types",
+                "chain": [
+                    "2.4",
+                    "2.4.0.1/all",
+                    "2.4.0.2/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Types Summary",
+                "chain": [
+                    "2.4.0.3.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Normative Properties",
+                "chain": [
+                    "2.4.0.4/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "H2": "Type Aspect Model",
+                "chain": [
+                    "2.4.0.5/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "H3": "Specialized Types",
+                "chain": [
+                    "B.4.3.1",
+                    "B.4.3.1/(A)",
+                    "B.4.3.1/(B)"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "H2": "Security Context",
+                "chain": [
+                    "B.9",
+                    "B.9/2.",
+                    "B.9/3.",
+                    "B.9.5/all",
+                    "B.9.6/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 7,
+                "H2": "Default Value Semantics (Normative)",
+                "chain": [
+                    "A.10/all",
+                    "A.11/all",
+                    "A.12/all",
+                    "A.13/all",
+                    "A.14/all"
+                ],
+                "normTag": "declarative"
+            }
+        ],
+        "abstract": "Specialized Types are fundamental data constructs whose semantics are rigidly defined by the language itself."
+    },
+    "stream_types": {
+        "keywords": [
+            "stream",
+            "carrier",
+            "binary",
+            "text",
+            "string",
+            "dic",
+            "json",
+            "xml",
+            "yaml",
+            "toml",
+            "csv",
+            "avro",
+            "protobuf",
+            "msgpack",
+            "bson",
+            "ion",
+            "parquet",
+            "orc",
+            "sequential",
+            "unbounded",
+            "incremental",
+            "document",
+            "columnar",
+            "row-oriented"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Stream Types",
+                "chain": [
+                    "2.3",
+                    "2.3.0.1/all",
+                    "2.3.0.3/all",
+                    "2.3.0.4/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Stream / Format Category (11)",
+                "chain": [
+                    "B.4.4/all",
+                    "B.4.2.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.3.0.2/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "$ref": "/datatypes"
+            },
+            {
+                "Order": 5,
+                "$ref": "/streamTypesRegistry"
+            }
+        ],
+        "abstract": "Stream types represent sequential, potentially unbounded data carriers designed for controlled input/output, transport, and incremental..."
+    },
+    "stream_carrier_types": {
+        "keywords": [
+            "stream carrier",
+            "binary",
+            "text",
+            "string",
+            "dic",
+            "json",
+            "xml",
+            "yaml",
+            "toml",
+            "csv",
+            "avro",
+            "protobuf",
+            "msgpack",
+            "bson",
+            "ion",
+            "parquet",
+            "orc"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Stream Carrier Types",
+                "chain": [
+                    "2.3.1",
+                    "2.3.1/A.",
+                    "2.3.1.1/all",
+                    "2.3.1.3/all",
+                    "2.3.1.4/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.3.1.2/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "$ref": "/stream_types"
+            }
+        ],
+        "abstract": "Stream carriers represent potentially unbounded, sequential data exchange formats intended for transport of large payloads, continuous data, or..."
+    },
+    "stream_structural_types": {
+        "keywords": [
+            "structural stream",
+            "document stream",
+            "columnar stream",
+            "row-oriented stream",
+            "sequential stream",
+            "unbounded stream",
+            "incremental stream"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Structural Stream class",
+                "chain": [
+                    "2.3.4",
+                    "2.3.4/A.-C.",
+                    "2.3.4.1/all",
+                    "2.3.4.2/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "$ref": "/stream_types"
+            },
+            {
+                "Order": 5,
+                "H3": "Block → Stream Promotion Rules (Normative)",
+                "chain": [
+                    "B.4.2.1/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "Structural stream mainly represent derived types with schema-defined, immutable data compositions built from primitives and block values."
+    },
+    "stream_raw_string_types": {
+        "keywords": [
+            "string stream",
+            "raw string",
+            "string",
+            "base64",
+            "base32",
+            "serialization"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "RAW String Class",
+                "chain": [
+                    "2.3.2",
+                    "2.3.2/A.",
+                    "2.3.2.1/all",
+                    "2.3.2.2/all",
+                    "2.3.2.4/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H3": "Regular String",
+                "chain": [
+                    "2.3.2.3.1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H3": "Base64 String",
+                "chain": [
+                    "2.3.2.3.2/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 4,
+                "$ref": "/stream_types"
+            },
+            {
+                "Order": 5,
+                "H3": "Block → Stream Promotion Rules (Normative)",
+                "chain": [
+                    "B.4.2.1/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "RAW String represents a specialized stream type for large or unbounded textual data that must be processed and transported as a stream rather..."
+    },
+    "stream_raw_binary_types": {
+        "keywords": [
+            "binary stream",
+            "raw binary",
+            "binary",
+            "bytes",
+            "serialization"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "RAW Binary Class",
+                "chain": [
+                    "2.3.3",
+                    "2.3.3/A.",
+                    "2.3.3.1/all",
+                    "2.3.3.2/all",
+                    "2.3.3.4/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.3.3.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "$ref": "/stream_types"
+            },
+            {
+                "Order": 4,
+                "$ref": "/opaque_block_types"
+            },
+            {
+                "Order": 5,
+                "H3": "Block → Stream Promotion Rules (Normative)",
+                "chain": [
+                    "B.4.2.1/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "RAW Binary represents large or streaming binary data that cannot be safely or efficiently represented as bounded opaque blocks."
+    },
+    "error_type": {
+        "keywords": [
+            "error",
+            "exception",
+            "failure",
+            "fault",
+            "problem",
+            "issue",
+            "derived type",
+            "semantic type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Error",
+                "chain": [
+                    "2.4.0.3.1.2/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Error Class",
+                "chain": [
+                    "2.5.1",
+                    "2.5.1/(A)-(B)",
+                    "2.5.1.1/all",
+                    "2.5.1.6/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "$ref": "/specialized_types"
+            },
+            {
+                "Order": 4,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 5,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.5.1.2/all",
+                    "2.5.1.3/all",
+                    "2.5.1.4"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "H2": "Syntax",
+                "chain": [
+                    "2.5.1.7",
+                    "2.5.1.7.1/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 7,
+                "H2": "AST Grammar",
+                "chain": [
+                    "2.5.1.7.2/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.5.1.7.3/all"
+                ]
+            }
+        ],
+        "abstract": "A specialized derived block-materialized data type representing an immutable failure or violation fact."
+    },
+    "event_type": {
+        "keywords": [
+            "event",
+            "signal",
+            "notification",
+            "message",
+            "derived type",
+            "semantic type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Event",
+                "chain": [
+                    "2.4.0.3.1.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Event Class",
+                "chain": [
+                    "2.5.2",
+                    "2.5.2/(A)-(B)",
+                    "2.5.2.1/all",
+                    "2.5.2.5/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "$ref": "/specialized_types"
+            },
+            {
+                "Order": 4,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 5,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.5.2.2/all",
+                    "2.5.2.3/all",
+                    "2.5.2.4/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "H2": "Syntax",
+                "chain": [
+                    "2.5.2.6",
+                    "2.5.2.6.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 7,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.5.2.6.2/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.5.2.6.3/all"
+                ]
+            },
+            {
+                "Order": 9,
+                "chain": [
+                    "8.8.6/all"
+                ],
+                "H2": "Event",
+                "enumTag": "normative",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "a specialized derived block-materialized data type representing an immutable factual occurrence."
+    },
+    "array_type": {
+        "keywords": [
+            "array",
+            "collection",
+            "inline array",
+            "derived type",
+            "typed array"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Typed array class",
+                "chain": [
+                    "2.5.5",
+                    "2.5.5/A.",
+                    "2.5.5/B.",
+                    "2.5.3.1/all",
+                    "2.5.3.4/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.5.3.2/all",
+                    "2.5.3.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Constraints and Enforcement",
+                "chain": [
+                    "B.5/1.",
+                    "B.5/4."
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 5,
+                "H2": "Syntax",
+                "chain": [
+                    "2.5.3.5",
+                    "2.5.3.5.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.5.3.5.2/all"
+                ]
+            },
+            {
+                "Order": 7,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.5.3.5.3/all"
+                ]
+            }
+        ],
+        "abstract": "A Collection is a semantic derived type representing an iterable container abstraction conceptually based on a one-dimensional array (rank = 1)."
+    },
+    "derived_array_type": {
+        "keywords": [
+            "derived array",
+            "array",
+            "collection",
+            "derived type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Derived array class",
+                "chain": [
+                    "2.5.4",
+                    "2.5.4.1",
+                    "2.5.4.3/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "2.5.4.2 Normative properties",
+                "chain": [
+                    "2.5.4.2/all",
+                    "2.5.4.5/all"
+                ],
+                "enumTag": "example",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.5.3.2/all",
+                    "2.5.3.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "H2": "Constraints and Enforcement",
+                "chain": [
+                    "B.5/1.",
+                    "B.5/4."
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 6,
+                "H2": "Syntax",
+                "chain": [
+                    "2.5.4.6",
+                    "2.5.4.6.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 7,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.5.4.6.2/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.5.4.6.3/all"
+                ]
+            }
+        ],
+        "abstract": "A derived array is a named, first-class array type declared at the domain level."
+    },
+    "collection_type": {
+        "keywords": [
+            "collection",
+            "array",
+            "derived type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Collection Types",
+                "chain": [
+                    "2.5.5",
+                    "2.5.5.1/all",
+                    "2.5.5.3/all",
+                    "2.5.5.4/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.5.5.2/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "B.5 Constraints and Enforcement",
+                "chain": [
+                    "B.5/1."
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "$ref": "/stream_structural_types"
+            },
+            {
+                "Order": 5,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 6,
+                "H2": "Syntax",
+                "chain": [
+                    "2.5.5.5",
+                    "2.5.5.5.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 7,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.5.5.5.2/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.5.5.5.3/all"
+                ]
+            }
+        ],
+        "abstract": "A Collection is a semantic derived type representing an iterable container abstraction conceptually based on a one-dimensional array (rank = 1)."
+    },
+    "record_type": {
+        "keywords": [
+            "record",
+            "block type",
+            "derived type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "2.5.6 Record (brief)",
+                "chain": [
+                    "2.5.6",
+                    "2.5.6/A.",
+                    "2.5.6.2/all",
+                    "2.5.6.3/all",
+                    "2.5.6.4/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.5.6.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Constraints and Enforcement",
+                "chain": [
+                    "B.5/2.",
+                    "B.5/3."
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 5,
+                "H2": "Syntax",
+                "chain": [
+                    "2.5.6.5",
+                    "2.5.6.5.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.5.6.5.2/all"
+                ]
+            },
+            {
+                "Order": 7,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.5.6.5.3/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "chain": [
+                    "8.8.4/all"
+                ],
+                "H2": "Record (data-only)",
+                "enumTag": "normative"
+            }
+        ],
+        "abstract": "A record  represents a structured block-materialized, schema-defined derived value composed of named fields."
+    },
+    "dictionary_type": {
+        "keywords": [
+            "dictionary",
+            "map",
+            "associative array",
+            "derived type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Dictionary Types",
+                "chain": [
+                    "2.5.7",
+                    "2.5.7/A.",
+                    "2.5.7.1/all",
+                    "2.5.7.3/all",
+                    "2.5.7.4/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.5.7",
+                    "2.5.7.2/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "$ref": "/stream_carrier_types"
+            },
+            {
+                "Order": 4,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.5.7.5.2/all"
+                ]
+            },
+            {
+                "Order": 5,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.5.7.5.3/block-1",
+                    "2.5.7.5.3/A."
+                ],
+                "enumTag": "example"
+            }
+        ],
+        "abstract": "A dictionary represents a key–value derived container with explicitly typed keys and values, intended for structured associative data."
+    },
+    "any_type": {
+        "keywords": [
+            "any",
+            "derived type",
+            "block type",
+            "primitive type",
+            "erase semantics",
+            "preserve security context",
+            "type erasure"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Any Type",
+                "chain": [
+                    "2.4.1",
+                    "2.4.1.1/all",
+                    "2.4.1.2/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.4.1.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "$ref": "/specialized_types"
+            },
+            {
+                "Order": 4,
+                "$ref": "/datatypes"
+            },
+            {
+                "Order": 5,
+                "$ref": "/block_types"
+            },
+            {
+                "Order": 6,
+                "$ref": "/primitive_types"
+            },
+            {
+                "Order": 7,
+                "$ref": "/derived_types"
+            }
+        ],
+        "abstract": "any is a special polymorphic primitive or block-materialized data container that guarantees preservation of the physical properties of the..."
+    },
+    "tuple_type": {
+        "keywords": [
+            "tuple",
+            "record",
+            "derived type",
+            "block type",
+            "structured block",
+            "preserve semantic context",
+            "erase security context"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Tuple Types",
+                "chain": [
+                    "2.4.2",
+                    "2.4.2/A.",
+                    "2.4.2.1/all",
+                    "2.4.2.3/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.4.2.2/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "$ref": "/specialized_types"
+            },
+            {
+                "Order": 4,
+                "$ref": "/block_types"
+            },
+            {
+                "Order": 5,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 6,
+                "$ref": "/primitive_types"
+            },
+            {
+                "Order": 7,
+                "H2": "Syntax",
+                "chain": [
+                    "2.4.2.4.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 8,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.4.2.4.2/all"
+                ]
+            },
+            {
+                "Order": 9,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.4.2.4.3/all"
+                ]
+            }
+        ],
+        "abstract": "tuple is a flexible data composition construct that combines multiple values into a single structured block."
+    },
+    "version_type": {
+        "keywords": [
+            "version",
+            "schema version",
+            "format version",
+            "data version",
+            "type version",
+            "semantic version"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Version",
+                "chain": [
+                    "2.4.3",
+                    "2.4.3.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.4.3.2/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "H2": "Serialization and Packaging",
+                "chain": [
+                    "2.4.3.5/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "$ref": "/specialized_types"
+            },
+            {
+                "Order": 5,
+                "H2": "Canonical Syntax",
+                "chain": [
+                    "2.4.3.4/all",
+                    "2.4.3.3/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "version is an immutable factual record composed of four ordered components — major, minor, build, and revision — used to express..."
+    },
+    "reference_type": {
+        "keywords": [
+            "reference",
+            "pointer",
+            "handle",
+            "semantic type",
+            "person",
+            "derived type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Reference Types",
+                "chain": [
+                    "2.4.4",
+                    "2.4.4/A.",
+                    "2.4.4/B.",
+                    "2.4.4.1/all",
+                    "2.4.4.2/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Normative properties",
+                "chain": [
+                    "2.4.4.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Syntax",
+                "chain": [
+                    "2.4.4.4",
+                    "2.4.4.4.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.4.4.4.2"
+                ]
+            },
+            {
+                "Order": 5,
+                "H3": "2.4.4.4.3 Canonical Syntax",
+                "chain": [
+                    "2.4.4.4.3/all"
+                ],
+                "enumTag": "example"
+            },
+            {
+                "Order": 6,
+                "$ref": "/specialized_types"
+            }
+        ],
+        "abstract": "reference is a specialized embedded data type used to form explicit, canonical references to objects beyond the current application or domain boundary."
+    },
+    "expTree_type": {
+        "keywords": [
+            "exptree",
+            "expression tree",
+            "compilator",
+            "envelope",
+            "permission derivation",
+            "infer connection",
+            "permission derivation as data"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Expression Tree (ExpTree) Type",
+                "chain": [
+                    "2.4.5",
+                    "2.4.5/A.",
+                    "2.4.5/B.",
+                    "2.4.5.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Syntax",
+                "chain": [
+                    "2.4.5.2.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.4.5.2.2/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.4.5.2.3/all"
+                ]
+            },
+            {
+                "Order": 5,
+                "$ref": "$bsyn/inferSyntax"
+            }
+        ],
+        "abstract": "The exptree is a specialized block-materialized data type that encodes permission derivation, validation, and enforcement logic strictly as data. Connected to the infer construct for rule-based evaluation."
+    },
+    "behavioral_types": {
+        "keywords": [
+            "binder",
+            "class",
+            "object",
+            "interface",
+            "rule",
+            "inline",
+            "flow",
+            "action",
+            "behavioral type",
+            "function type",
+            "method type",
+            "operation type",
+            "derived type",
+            "semantic type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Behavioral Types",
+                "chain": [
+                    "2.6",
+                    "2.6/A.",
+                    "2.6/B.",
+                    "2.6.2",
+                    "2.6.2/A.",
+                    "2.6.2/B.",
+                    "2.6.2/C."
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "$ref": "/semanticTypesRegistry"
+            },
+            {
+                "Order": 3,
+                "H1": "Semantic Types",
+                "chain": [
+                    "2.7"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Behavioral Types",
+                "chain": [
+                    "1.4.2/all"
+                ],
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "Behavioral types represent active semantic constructs in E.L.I.A. They embody *executable intent, authority, and responsibility* and are..."
+    },
+    "capable_types": {
+        "keywords": [
+            "capable type",
+            "capability",
+            "derived type",
+            "semantic type",
+            "class",
+            "inline"
+        ],
+        "seq": [
+            {
+                "Order": 3,
+                "H3": "Capable Types class",
+                "chain": [
+                    "2.6.0.1/all",
+                    "2.7",
+                    "2.7.0.1/all"
+                ],
+                "enumTag": "identity",
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "$ref": "/behavioral_types"
+            }
+        ],
+        "abstract": "Capable types represent where behavior actually runs. They own execution context, may hold state, invoke algorithms, and apply transformations."
+    },
+    "orchestration_type": {
+        "keywords": [
+            "orchestration",
+            "orchestration type",
+            "derived type",
+            "semantic type"
+        ],
+        "seq": [
+            {
+                "Order": 4,
+                "H3": "2.6.0.2 Orchestration Types class",
+                "chain": [
+                    "2.6.0.2/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "$ref": "/behavioral_types"
+            }
+        ],
+        "abstract": "Purpose: composition and coordination — definition of multi-step execution topology."
+    },
+    "authority_types": {
+        "keywords": [
+            "authority",
+            "authority type",
+            "derived type",
+            "semantic type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.6.0.3 Authority Types class",
+                "chain": [
+                    "2.6.0.3/all"
+                ],
+                "enumTag": "identity",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "$ref": "/behavioral_types"
+            }
+        ],
+        "abstract": "Authority types define semantic permission, obligation, and contractual boundaries."
+    },
+    "class_type": {
+        "keywords": [
+            "class",
+            "object",
+            "derived type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Class Types",
+                "chain": [
+                    "2.5.8/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H1": "Class - behavior object contract",
+                "chain": [
+                    "2.6.1",
+                    "2.6.1.1/all",
+                    "2.6.1.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Behavioral Properties",
+                "chain": [
+                    "2.6.1.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Interaction Constraints",
+                "chain": [
+                    "2.6.1.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "$ref": "/capable_types"
+            },
+            {
+                "Order": 6,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 10,
+                "H2": "Syntax",
+                "chain": [
+                    "2.6.1.5.1/all"
+                ]
+            },
+            {
+                "Order": 11,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.6.1.5.2/all"
+                ]
+            },
+            {
+                "Order": 12,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.6.1.5.3/all"
+                ]
+            },
+            {
+                "Order": 13,
+                "chain": [
+                    "8.8.10/all"
+                ],
+                "H2": "Class (behavioral)",
+                "enumTag": "normative",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "A Class is a *capable behavioral construct* and derived type that represents a concrete, state-bearing execution unit."
+    },
+    "inline_type": {
+        "keywords": [
+            "inline",
+            "derived type",
+            "AI prompt",
+            "semantic type",
+            "behavioral type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Inline — Embedded Behavior Contract",
+                "chain": [
+                    "2.6.3",
+                    "2.6.3/(A)",
+                    "2.6.3/(B)",
+                    "2.6.3/(C)",
+                    "2.6.3.1/all",
+                    "2.6.3.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Behavioral Properties",
+                "chain": [
+                    "2.6.3.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Interaction Constraints",
+                "chain": [
+                    "2.6.3.4/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "$ref": "/capable_types"
+            },
+            {
+                "Order": 6,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 10,
+                "H2": "Syntax",
+                "chain": [
+                    "2.6.3.5.1/all"
+                ]
+            },
+            {
+                "Order": null,
+                "H3": "AST Grammar",
+                "chain": []
+            },
+            {
+                "Order": null,
+                "H3": "Canonic Declaration",
+                "chain": []
+            }
+        ],
+        "abstract": "An Inline construct is a *capable behavioral construct* that is materialized as a behavior surrogate and provides a localized, embedded..."
+    },
+    "binder": {
+        "keywords": [
+            "binder",
+            "instantiation",
+            "via binder",
+            "type cast",
+            "crud",
+            "mutation",
+            "capable type",
+            "derived type",
+            "semantic type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Binder Types",
+                "chain": [
+                    "2.6.2",
+                    "2.6.2/A.",
+                    "2.6.2.1/all",
+                    "2.6.2.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Behavioral Properties",
+                "chain": [
+                    "2.6.2.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Interaction Constraints",
+                "chain": [
+                    "2.6.2.4/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "$ref": "/capable_types"
+            },
+            {
+                "Order": 5,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 6,
+                "$ref": "/block_types"
+            },
+            {
+                "Order": 7,
+                "$ref": "/primitive_types"
+            },
+            {
+                "Order": 8,
+                "$ref": "/stream_structural_types"
+            },
+            {
+                "Order": 9,
+                "$ref": "/stream_types"
+            },
+            {
+                "Order": 10,
+                "H2": "Syntax",
+                "chain": [
+                    "2.6.2.5.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 11,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.6.2.5.2/all"
+                ]
+            },
+            {
+                "Order": 12,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.6.2.5.3/all"
+                ]
+            }
+        ],
+        "abstract": "A Binder is a *capable behavioral construct* that defines a deterministic transformation contract: it maps an input value or structure into..."
+    },
+    "interface_type": {
+        "keywords": [
+            "interface",
+            "derived type",
+            "behavioral type",
+            "semantic type",
+            "authority type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Interface Types",
+                "chain": [
+                    "2.5.9/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H1": "Interface - behavior object contract",
+                "chain": [
+                    "2.6.1",
+                    "2.6.1/(A)",
+                    "2.6.7.1/all",
+                    "2.6.7.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Behavioral Properties",
+                "chain": [
+                    "2.6.7.3/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 4,
+                "H2": "Interaction Constraints",
+                "chain": [
+                    "2.6.7.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "$ref": "/derived_types"
+            },
+            {
+                "Order": 6,
+                "$ref": "/authority_types"
+            },
+            {
+                "Order": 7,
+                "H4": "Compiler Obligations",
+                "chain": [
+                    "2.6.7.5.1.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 8,
+                "H4": "AST Grammar",
+                "chain": [
+                    "2.6.7.5.2/all"
+                ]
+            },
+            {
+                "Order": 9,
+                "H4": "Canonic Declaration",
+                "chain": [
+                    "2.6.7.5.3/A.",
+                    "2.6.7.5.3/B.",
+                    "2.6.7.5.3/C."
+                ]
+            },
+            {
+                "Order": 10,
+                "chain": [
+                    "8.8.5/all"
+                ],
+                "H2": "Interface",
+                "enumTag": "normative",
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "An Interface is an *authority behavioral construct* that defines a declarative contract of capability and responsibility without providing..."
+    },
+    "rule_type": {
+        "keywords": [
+            "rule",
+            "derived type",
+            "behavioral type",
+            "semantic reasoning",
+            "authority type",
+            "normative class",
+            "rule class",
+            "R0",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "evaluation stage",
+            "purity"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Rule — Semantic Reasoning Unit",
+                "chain": [
+                    "2.6.6",
+                    "2.6.6.1/all",
+                    "2.6.6.2/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Formal Rule Definition (ANNEX D)",
+                "chain": [
+                    "D.3",
+                    "D.3.1/all",
+                    "D.3.2/all",
+                    "D.3.3/all",
+                    "D.3.4/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "H2": "Normative Rule Classes R0–R6 (ANNEX D)",
+                "chain": [
+                    "D.4"
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 4,
+                "$ref": "$ont/ruleNormativeClasses"
+            },
+            {
+                "Order": 5,
+                "H2": "Dependency and Purity Constraints (ANNEX D)",
+                "chain": [
+                    "D.5",
+                    "D.5/table-1",
+                    "D.5.1/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "$ref": "/authority_types"
+            },
+            {
+                "Order": 7,
+                "H2": "Behavioral Properties",
+                "chain": [
+                    "2.6.6.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 8,
+                "H2": "Interaction Constraints",
+                "chain": [
+                    "2.6.6.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 9,
+                "H2": "Verification Algorithm Constraints",
+                "chain": [
+                    "2.6.6.5/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 10,
+                "H2": "Syntax",
+                "chain": [
+                    "2.6.6.6.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 11,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.6.6.6.2/all"
+                ]
+            },
+            {
+                "Order": 12,
+                "H3": "Canonic Declaration",
+                "chain": [
+                    "2.6.6.6.3/all"
+                ]
+            },
+            {
+                "Order": 13,
+                "chain": [
+                    "8.8.7/all"
+                ],
+                "H2": "Rule",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "A Rule is an *authority behavioral construct* that defines deterministic semantic reasoning logic. Rules are classified into normative classes R0–R6, each with strict constraints on inputs, evaluation stage, and enforcement participation."
+    },
+    "action_type": {
+        "keywords": [
+            "action",
+            "behavioral type",
+            "semantic type",
+            "authority type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Action — Intent Execution Contract",
+                "chain": [
+                    "2.6.5",
+                    "2.6.5/(A)",
+                    "2.6.5.1/all",
+                    "2.6.5.2/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Behavioral Properties",
+                "chain": [
+                    "2.6.5.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "H2": "Interaction Constraints",
+                "chain": [
+                    "2.6.5.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Syntax",
+                "chain": [
+                    "2.6.5.5",
+                    "2.6.5.5.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.6.5.5.2/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H3": "Canonical Declaration",
+                "chain": [
+                    "2.6.5.5.3/all"
+                ]
+            },
+            {
+                "Order": 7,
+                "$ref": "/authority_types"
+            },
+            {
+                "Order": 8,
+                "chain": [
+                    "8.8.8/all"
+                ],
+                "H2": "Action",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "An Action is an *authority behavioral construct* that declares a business-meaningful intent which may be executed as part of a flow once admitted."
+    },
+    "flow_type": {
+        "keywords": [
+            "flow",
+            "data flow",
+            "control flow",
+            "behavioral type",
+            "semantic type",
+            "orchestration type"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Flow — Orchestration Contract",
+                "chain": [
+                    "2.6.4",
+                    "2.6.4/(A)",
+                    "2.6.4.1/all",
+                    "2.6.4.2/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Behavioral Properties",
+                "chain": [
+                    "2.6.4.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "H2": "Interaction Constraints",
+                "chain": [
+                    "2.6.4.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Syntax",
+                "chain": [
+                    "2.6.4.5/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.6.4.5.2/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H3": "Canonical Declaration",
+                "chain": [
+                    "2.6.4.5.3/all"
+                ]
+            },
+            {
+                "Order": 7,
+                "$ref": "/orchestration_type"
+            },
+            {
+                "Order": 8,
+                "chain": [
+                    "8.8.9/all"
+                ],
+                "H2": "Flow",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "A Flow is an *orchestration behavioral construct* that defines a transactional, multi-step execution topology."
+    },
+    "method_type": {
+        "keywords": [
+            "method",
+            "method type",
+            "method declaration",
+            "method body",
+            "callable",
+            "domain-internal logic",
+            "imperative execution",
+            "standalone method",
+            "class member method",
+            "execution unit",
+            "algorithmic behavior"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Method — Domain / Module Execution Unit",
+                "chain": [
+                    "2.6.8",
+                    "2.6.8/(A)"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H2": "Designation",
+                "chain": [
+                    "2.6.8.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Semantic Role",
+                "chain": [
+                    "2.6.8.2/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Behavioral Properties",
+                "chain": [
+                    "2.6.8.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "H2": "Interaction Constraints",
+                "chain": [
+                    "2.6.8.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 6,
+                "H2": "Syntax",
+                "chain": [
+                    "2.6.8.5",
+                    "2.6.8.5.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 7,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.6.8.5.2/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "H3": "Canonical Declaration",
+                "chain": [
+                    "2.6.8.5.3/all"
+                ]
+            },
+            {
+                "Order": 9,
+                "$ref": "/capable_types"
+            }
+        ],
+        "abstract": "A Method is a *capable behavioral construct* that represents a named, callable unit of domain and module-internal logic. It executes computation, transformation, validation, or queries — an imperative execution substrate with full control-flow capability."
+    }
+}

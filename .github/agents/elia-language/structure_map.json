@@ -1,0 +1,122 @@
+{
+  "title": "Document Structure Navigation Map",
+  "description": "Validation map for spec document structure. $ref paths navigate the list nesting hierarchy.",
+  "structure": [
+    {
+      "nodeType": "Canvas",
+      "chain": "@patterns: canvas.document.filename -> helpers.filenameToChain",
+      "title": "@patterns: canvas.document.title",
+      "type": ["document"],
+      "structure": [
+        {
+          "nodeType": "Section",
+          "chain": "@patterns: section.header.document",
+          "title": "@patterns: section.search.byTitle",
+          "type": ["H1", "H2", "H3", "H4", "H5", "H6"],
+          "structure": [
+            {
+              "nodeType": "Paragraph",
+              "type": ["paragraph"],
+              "structure": [
+                {
+                  "nodeType": "TextBlock",
+                  "type": ["text-block"]
+                },
+                {
+                  "nodeType": "CodeBlock",
+                  "type": ["code-block"],
+                  "title": "@patterns: textBlock.codeBlock"
+                },
+                {
+                  "nodeType": "Reference",
+                  "type": ["internal-reference", "section-reference", "web-reference", "person-reference"]
+                },
+                {
+                  "nodeType": "Note",
+                  "type": ["note"],
+                  "structure": [
+                    { "$ref": "#/structure/0/structure/0/structure/0/structure/0" },
+                    { "$ref": "#/structure/0/structure/0/structure/0/structure/1" }
+                  ]
+                }
+              ]
+            },
+            {
+              "nodeType": "Paragraph",
+              "type": ["sequential-paragraph"],
+              "structure": [
+                { "$ref": "#/structure/0/structure/0/structure/0/structure" }
+              ]
+            },
+            {
+              "nodeType": "List",
+              "type": ["numbered-list"],
+              "structure": [
+                {
+                  "nodeType": "ListItem",
+                  "type": ["list-item-level1"],
+                  "structure": [
+                    {
+                      "nodeType": "ListItem",
+                      "type": ["list-item-level2"],
+                      "structure": [
+                        {
+                          "nodeType": "ListItem",
+                          "type": ["list-item-level3"],
+                          "structure": [
+                            { "$ref": "#/structure/0/structure/0/structure/0/structure" }
+                          ]
+                        },
+                        { "$ref": "#/structure/0/structure/0/structure/3" },
+                        { "$ref": "#/structure/0/structure/0/structure/0/structure" }
+                      ]
+                    },
+                    { "$ref": "#/structure/0/structure/0/structure/3" },
+                    { "$ref": "#/structure/0/structure/0/structure/0/structure" }
+                  ]
+                }
+              ]
+            },
+            {
+              "nodeType": "List",
+              "type": ["unnumbered-list"],
+              "structure": [
+                {
+                  "nodeType": "ListItem",
+                  "type": ["unnumbered-item"],
+                  "structure": [
+                    { "$ref": "#/structure/0/structure/0/structure/0/structure" }
+                  ]
+                }
+              ]
+            },
+            {
+              "nodeType": "Aspect",
+              "type": ["aspect"],
+              "structure": [
+                { "$ref": "#/structure/0/structure/0/structure/0/structure" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nodeType": "Canvas",
+      "chain": "@patterns: canvas.annex.filename -> helpers.annexFilenameToChain",
+      "title": "@patterns: canvas.annex.title",
+      "type": ["annex"],
+      "structure": [
+        {
+          "nodeType": "Section",
+          "chain": "@patterns: section.header.annex",
+          "title": "@patterns: section.search.byTitle",
+          "type": ["H1", "H2", "H3", "H4", "H5", "H6"],
+          "structure": [
+            { "$ref": "#/structure/0/structure/0/structure" }
+          ]
+        }
+      ]
+    }
+  ]
+}

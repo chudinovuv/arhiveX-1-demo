@@ -1,0 +1,2377 @@
+{
+    "$specVersion": "1.0.5",
+    "semanticTypesRegistry": {
+        "keywords": [
+            "event",
+            "error",
+            "reference",
+            "semantic type",
+            "domain",
+            "definition",
+            "explanation",
+            "semantic interface",
+            "data surrogate",
+            "behavioral surrogate",
+            "delegate",
+            "exptree",
+            "nothing",
+            "riid",
+            "guid",
+            "compatibility",
+            "type interaction",
+            "normative"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Overview",
+                "chain": [
+                    "A.1",
+                    "A.1.1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Types (Normative)",
+                "chain": [
+                    "A.7",
+                    "A.7/table-1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H3": "Data Surrogates (Normative)",
+                "chain": [
+                    "A.7.1/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H3": "Behavioral Surrogates (Normative)",
+                "chain": [
+                    "A.7.2/all"
+                ]
+            },
+            {
+                "Order": 5,
+                "H3": "Delegate Constructs (Normative)",
+                "chain": [
+                    "A.7.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "H2": "Normative Notes",
+                "chain": [
+                    "A.8/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 7,
+                "H2": "Serialization Determinism (Normative)",
+                "chain": [
+                    "A.11/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 8,
+                "H2": "Mutability Constraints (Normative)",
+                "chain": [
+                    "A.13/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "This annex defines the canonical Type Registry for the E.L.I.A. type system. It enumerates all primitive, block, derived, and stream carrier..."
+    },
+    "semanticClassification": {
+        "keywords": [
+            "semantic form",
+            "semantic role",
+            "interaction surface",
+            "composition",
+            "capable",
+            "orchestration",
+            "authority",
+            "non-exclusivity",
+            "classification"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Semantic Types",
+                "chain": [
+                    "2.7"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Core aspects",
+                "chain": [
+                    "2.7.0.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Principles of Semantic Type Classification",
+                "chain": [
+                    "2.7.0.2",
+                    "2.7.0.2/(A)-(B)"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 4,
+                "H3": "Classification Axes",
+                "chain": [
+                    "2.7.0.2.1/all",
+                    "2.7.0.2.2/all",
+                    "2.7.0.2.3/all",
+                    "2.7.0.2.4/all",
+                    "2.7.0.2.5/all"
+                ]
+            },
+            {
+                "Order": 5,
+                "H2": "Concern Separation",
+                "chain": [
+                    "1.4.3/all",
+                    "1.4.5/all",
+                    "1.4.6/all"
+                ]
+            }
+        ],
+        "abstract": "Semantic Types define what data means and what is admissible to do with it within a domain."
+    },
+    "explanation": {
+        "keywords": [
+            "explanation",
+            "explained",
+            "non-normative",
+            "rationale",
+            "intent description",
+            "semantic attachment",
+            "annotation",
+            "human-readable"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Explanation",
+                "chain": [
+                    "2.7.5",
+                    "2.7.5/A.",
+                    "2.7.5/B.",
+                    "2.7.5/C."
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Role",
+                "chain": [
+                    "2.7.5.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Non-Normative Nature",
+                "chain": [
+                    "2.7.5.2/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 4,
+                "H2": "Normative Attachment Forms",
+                "chain": [
+                    "2.7.5.3/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 5,
+                "H2": "Relationship to Other Semantic Constructs",
+                "chain": [
+                    "2.7.5.4/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "Lifecycle and Stability",
+                "chain": [
+                    "2.7.5.5/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 7,
+                "H2": "Interaction Surface",
+                "chain": [
+                    "2.7.5.6/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "H2": "Syntax",
+                "chain": [
+                    "2.7.5.7",
+                    "2.7.5.7.1/all",
+                    "2.7.5.7.2/all",
+                    "2.7.5.7.3/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "Explanation is a first-class semantic construct responsible for making *meaning explicit, inspectable, and traceable* for both humans and machines."
+    },
+    "definition": {
+        "keywords": [
+            "definition",
+            "define",
+            "semantic anchor",
+            "meaning root",
+            "normative scope",
+            "subordination",
+            "canonical",
+            "norms",
+            "policies"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Definition",
+                "chain": [
+                    "2.7.1",
+                    "2.7.1/A."
+                ],
+                "enumTag": "normative",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Role",
+                "chain": [
+                    "2.7.1.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Interaction Surface",
+                "chain": [
+                    "2.7.1.2/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Normative Properties",
+                "chain": [
+                    "2.7.1.3",
+                    "2.7.1.3.1/all",
+                    "2.7.1.3.2/all",
+                    "2.7.1.3.3/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 5,
+                "H2": "Syntax",
+                "chain": [
+                    "2.7.1.4",
+                    "2.7.1.4.1/all",
+                    "2.7.1.4.2/all",
+                    "2.7.1.4.3/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "H2": "Meaning-First Architecture",
+                "chain": [
+                    "1.1/all"
+                ],
+                "enumTag": "example",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 7,
+                "H2": "Determinism by Construction",
+                "chain": [
+                    "1.2/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "H2": "Canonical",
+                "chain": [
+                    "1.4.5/all"
+                ]
+            },
+            {
+                "Order": 9,
+                "chain": [
+                    "8.8.3/all"
+                ],
+                "H2": "Definition",
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "Definition is a first-class semantic construct that *designates meaning and obligations* for a domain concept."
+    },
+    "dataSurrogate": {
+        "keywords": [
+            "data surrogate",
+            "probabilistic",
+            "estimation",
+            "approximation",
+            "semantic scaffolding",
+            "fact materialization",
+            "transit semantics"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Data Surrogate",
+                "chain": [
+                    "2.7.6"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Role",
+                "chain": [
+                    "2.7.6.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Formation (Normative)",
+                "chain": [
+                    "2.7.6.2/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 4,
+                "H2": "Structural Enforcement Attachment (Normative)",
+                "chain": [
+                    "2.7.6.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "H2": "Relationship to the Semantic Field",
+                "chain": [
+                    "2.7.6.4/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "Transit and Fact‑Materialization Semantics (Normative)",
+                "chain": [
+                    "2.7.6.5/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 7,
+                "H2": "Declaration Syntax (Normative)",
+                "chain": [
+                    "2.7.6.6/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "H2": "Compiler and Probabilistic Reasoning State (Normative)",
+                "chain": [
+                    "2.7.6.7/all"
+                ]
+            },
+            {
+                "Order": 9,
+                "$ref": "./explanation"
+            },
+            {
+                "Order": 10,
+                "$ref": "$phya/specialized_types"
+            },
+            {
+                "Order": 11,
+                "$ref": "./data_interface"
+            }
+        ],
+        "abstract": "A Data Surrogate is a first-class data artefact that becomes *semantically visible* by attaching Explanation mechanics (and optionally..."
+    },
+    "behavioralSurrogate": {
+        "keywords": [
+            "behavioral surrogate",
+            "probabilistic behavior",
+            "AI boundary",
+            "semantic checkpoint",
+            "reasoning state",
+            "enforcement interaction"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Behavioral Surrogate",
+                "chain": [
+                    "2.7.7"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Role",
+                "chain": [
+                    "2.7.7.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Formation (Normative)",
+                "chain": [
+                    "2.7.7.2/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Enforcement Interaction Semantics (Normative)",
+                "chain": [
+                    "2.7.7.3/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 5,
+                "H2": "Relationship to the Semantic Field",
+                "chain": [
+                    "2.7.7.4/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "Declaration Syntax (Normative)",
+                "chain": [
+                    "2.7.7.5/all"
+                ]
+            },
+            {
+                "Order": 7,
+                "H2": "Compiler and Reasoning Checkpoint Semantics (Normative)",
+                "chain": [
+                    "2.7.7.6/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "$ref": "./explanation"
+            },
+            {
+                "Order": 9,
+                "$ref": "$phya/behavioral_types"
+            },
+            {
+                "Order": 10,
+                "$ref": "./inline"
+            }
+        ],
+        "abstract": "A Behavioral Surrogate is a behavioral construct that becomes *semantically inspectable and governable* by attaching Explanation mechanics..."
+    },
+    "inline": {
+        "keywords": [
+            "inline",
+            "semantic intent",
+            "embedded behavior",
+            "AI prompt",
+            "natural language directive",
+            "prompt",
+            "determinism",
+            "intent directive"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Inline - Semantic Intent Directive",
+                "chain": [
+                    "2.7.8"
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Role",
+                "chain": [
+                    "2.7.8.1"
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Inline — Embedded Behavior Contract",
+                "chain": [
+                    "2.6.3",
+                    "2.6.3.1/all",
+                    "2.6.3.2/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H3": "Behavioral Properties",
+                "chain": [
+                    "2.6.3.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "H3": "Interaction Constraints",
+                "chain": [
+                    "2.6.3.4/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 6,
+                "H2": "Relationships, Boundaries, and Determinism",
+                "chain": [
+                    "2.7.8.2",
+                    "2.7.8.2.1/all",
+                    "2.7.8.2.2/all",
+                    "2.7.8.2.3/all",
+                    "2.7.8.2.4/all",
+                    "2.7.8.2.5/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 7,
+                "H2": "`inline` examples (illustrative)",
+                "chain": [
+                    "2.7.8.3/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "H2": "inline — Semantic Intent Directive",
+                "chain": [
+                    "4.3.8/all"
+                ]
+            },
+            {
+                "Order": 9,
+                "H2": "Meaning Resolution with inline",
+                "chain": [
+                    "4.6.3/all"
+                ]
+            },
+            {
+                "Order": 10,
+                "H3": "`inline` anti-patterns (prohibited)",
+                "chain": [
+                    "4.5.4/all"
+                ]
+            },
+            {
+                "Order": 11,
+                "H2": "Syntax",
+                "chain": [
+                    "2.6.3.5.1/all"
+                ]
+            },
+            {
+                "Order": 12,
+                "$ref": "$phya/capable_types"
+            },
+            {
+                "Order": 13,
+                "H2": "$ref: $bsyn/inlineSyntax",
+                "chain": [
+                    "$bsyn/inlineSyntax"
+                ]
+            }
+        ],
+        "abstract": "inline is a directive for compact declarative specification of standardized operations inside an action body."
+    },
+    "data_interface": {
+        "keywords": [
+            "data interface",
+            "data surface",
+            "data boundary",
+            "CRUD",
+            "binder",
+            "driver",
+            "RPC",
+            "database",
+            "TOML",
+            "YAML",
+            "JSON",
+            "XML",
+            "dictionary",
+            "array",
+            "collection",
+            "opaque"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Data Interface",
+                "chain": [
+                    "2.7.2",
+                    "2.7.2/(A)-(C)"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Role",
+                "chain": [
+                    "2.7.2.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Interaction Surface",
+                "chain": [
+                    "2.7.2.2/all"
+                ],
+                "enumTag": "structural"
+            },
+            {
+                "Order": 4,
+                "H2": "Data Category",
+                "chain": [
+                    "2.7.2.0",
+                    "2.7.2.0.1/all",
+                    "2.7.2.0.2/all",
+                    "2.7.2.0.3/all",
+                    "2.7.2.0.4/all",
+                    "2.7.2.0.5/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "H2": "Normative Properties",
+                "chain": [
+                    "2.7.2.3/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "H2": "Category Behavior and Operation Generation.",
+                "chain": [
+                    "2.7.2.5",
+                    "2.7.2.5/A.-D.",
+                    "2.7.2.5.1/all",
+                    "2.7.2.5.2/all",
+                    "2.7.2.5.3/all",
+                    "2.7.2.5.4/all",
+                    "2.7.2.5.5/all",
+                    "2.7.2.5.6/all",
+                    "2.7.2.5.7/all",
+                    "2.7.2.5.8/all"
+                ],
+                "enumTag": "example",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 7,
+                "H2": "Database Driver",
+                "chain": [
+                    "2.7.2.6",
+                    "2.7.2.6.1/all",
+                    "2.7.2.6.2/all",
+                    "2.7.2.6.3/all"
+                ],
+                "enumTag": "normative"
+            },
+            {
+                "Order": 8,
+                "H2": "RPC Driver",
+                "chain": [
+                    "2.7.2.7",
+                    "2.7.2.7/A.",
+                    "2.7.2.7.1/all",
+                    "2.7.2.7.2/all",
+                    "2.7.2.7.3/all",
+                    "2.7.2.7.4/all",
+                    "2.7.2.7.5/all"
+                ],
+                "enumTag": "normative"
+            },
+            {
+                "Order": 9,
+                "H2": "Syntax",
+                "chain": [
+                    "2.7.2.4",
+                    "2.7.2.4.1/all"
+                ],
+                "enumTag": "identity",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 10,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.7.2.4.3"
+                ]
+            },
+            {
+                "Order": 11,
+                "H3": "Canonical Syntax",
+                "chain": [
+                    "2.7.2.4.4"
+                ]
+            },
+            {
+                "Order": 12,
+                "H2": "Data Interface — defining data form",
+                "chain": [
+                    "4.3.3/all"
+                ]
+            },
+            {
+                "Order": 13,
+                "H2": "Data Interface — Practical 'with' Parameters",
+                "chain": [
+                    "C.7",
+                    "C.7.1/all",
+                    "C.7.2/all",
+                    "C.7.3/all",
+                    "C.7.4/all",
+                    "C.7.5/all",
+                    "C.7.6/all",
+                    "C.7.7/all",
+                    "C.7.8/all"
+                ]
+            },
+            {
+                "Order": 14,
+                "H2": "Data Types",
+                "chain": [
+                    "1.4.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 15,
+                "H2": "Boundary carriers and admissible crossings",
+                "chain": [
+                    "1.3.5/all"
+                ]
+            },
+            {
+                "Order": 16,
+                "$ref": "./explanation"
+            }
+        ],
+        "abstract": "A Data Interface is a first-class semantic construct that projects defined meaning onto concrete data surfaces."
+    },
+    "semantic_interface": {
+        "keywords": [
+            "semantic interface",
+            "behavioral contract",
+            "admissible behavior",
+            "authority projection",
+            "obligation surface",
+            "enforcement binding",
+            "governance",
+            "semantic binding"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Semantic Interface",
+                "chain": [
+                    "2.7.3",
+                    "2.7.3/(A)-(C)"
+                ],
+                "enumTag": "structural",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Role",
+                "chain": [
+                    "2.7.3.1",
+                    "2.7.3.1.1/all",
+                    "2.7.3.1.2/all",
+                    "2.7.3.1.3/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Interaction Surface",
+                "chain": [
+                    "2.7.3.2/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Normative Properties",
+                "chain": [
+                    "2.7.3.3",
+                    "2.7.3.3/A.",
+                    "2.7.3.3/B.",
+                    "2.7.3.3/C.",
+                    "2.7.3.3.1/all",
+                    "2.7.3.3.2/all",
+                    "2.7.3.3.3/all",
+                    "2.7.3.3.4/all",
+                    "2.7.3.3.5/all",
+                    "2.7.3.3.6/all",
+                    "2.7.3.3.7/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 5,
+                "H3": "Enforcement Model Alignment",
+                "chain": [
+                    "2.7.3.3.8/all",
+                    "2.7.3.3.9/all",
+                    "2.7.3.3.10/all",
+                    "2.7.3.3.11/all",
+                    "2.7.3.3.12/all",
+                    "2.7.3.3.13/all",
+                    "2.7.3.3.14/all",
+                    "2.7.3.3.15/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "Semantic Binding Mechanisms",
+                "chain": [
+                    "2.7.3.5",
+                    "2.7.3.5.1/all",
+                    "2.7.3.5.2/all",
+                    "2.7.3.5.3/all",
+                    "2.7.3.5.4/all",
+                    "2.7.3.5.5/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 7,
+                "H2": "Syntax",
+                "chain": [
+                    "2.7.3.4",
+                    "2.7.3.4.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 8,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.7.3.4.2/all"
+                ]
+            },
+            {
+                "Order": 9,
+                "H3": "Canonical Syntax",
+                "chain": [
+                    "2.7.3.4.3/all"
+                ]
+            },
+            {
+                "Order": 10,
+                "H2": "Semantic Interface — the mechanism for binding meanings",
+                "chain": [
+                    "4.3.2/all"
+                ]
+            },
+            {
+                "Order": 11,
+                "H2": "Semantic Interfaces as Interpretative Contracts",
+                "chain": [
+                    "5.1.2/all"
+                ]
+            },
+            {
+                "Order": 12,
+                "H2": "Prohibition of Implicit Interaction",
+                "chain": [
+                    "5.1.3/all"
+                ]
+            },
+            {
+                "Order": 13,
+                "H2": "Semantic Enforcement (follow / enforces)",
+                "chain": [
+                    "7.5",
+                    "7.5.1/all",
+                    "7.5.2/all",
+                    "7.5.3/all",
+                    "7.5.4/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 14,
+                "H2": "Exportable Surfaces",
+                "chain": [
+                    "7.2/all"
+                ],
+                "enumTag": "normative"
+            },
+            {
+                "Order": 15,
+                "H2": "Exported obligation surfaces",
+                "chain": [
+                    "1.3.4/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 16,
+                "H2": "Exported Authority Surfaces",
+                "chain": [
+                    "1.5.4/all"
+                ]
+            },
+            {
+                "Order": 17,
+                "$ref": "./explanation"
+            }
+        ],
+        "abstract": "A Semantic Interface is a first-class semantic construct that *projects defined meaning into admissible behavioral interaction*."
+    },
+    "delegate": {
+        "keywords": [
+            "delegate",
+            "trust boundary",
+            "execution boundary",
+            "ABI",
+            "cross-process",
+            "pipeline",
+            "retry",
+            "circuit breaker",
+            "capability",
+            "external runtime",
+            "bind to",
+            "field binding",
+            "scalar binding",
+            ".value",
+            "this reference",
+            "mapped to",
+            "using library",
+            "using tool",
+            "options",
+            "startup validation",
+            "dependency validation"
+        ],
+        "target": [
+            "what is delegate construct and its semantic role",
+            "delegate type definition, signature, binding and mapping",
+            "delegate normative properties and classification rules",
+            "delegate capability vs authority separation",
+            "delegate composition, versioning, and failure recovery"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Delegate",
+                "chain": [
+                    "2.7.4",
+                    "2.7.4/(A)-(B)"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Role",
+                "chain": [
+                    "2.7.4.2",
+                    "2.7.4.2/A.",
+                    "2.7.4.2/B.",
+                    "2.7.4.2.1/all",
+                    "2.7.4.2.2/all",
+                    "2.7.4.2.3/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Classification Rules",
+                "chain": [
+                    "2.7.4.1",
+                    "2.7.4.1.1/all",
+                    "2.7.4.1.2/all",
+                    "2.7.4.1.3/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H3": "Classification by Failure Recovery Strategy",
+                "chain": [
+                    "2.7.4.1.4",
+                    "2.7.4.1.4.1/all",
+                    "2.7.4.1.4.2/all"
+                ]
+            },
+            {
+                "Order": 5,
+                "H2": "Interaction Surface",
+                "chain": [
+                    "2.7.4.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "H2": "Normative Properties",
+                "chain": [
+                    "2.7.4.4.1/all",
+                    "2.7.4.4.2/all",
+                    "2.7.4.4.3/all",
+                    "2.7.4.4.4/all",
+                    "2.7.4.4.5/all",
+                    "2.7.4.4.6/all",
+                    "2.7.4.4.7/all",
+                    "2.7.4.4.8/all",
+                    "2.7.4.4.9/all",
+                    "2.7.4.4.10/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 7,
+                "H3": "Cross-Border Enforcement",
+                "chain": [
+                    "2.7.4.4.11/all",
+                    "2.7.4.4.12/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 8,
+                "H3": "Failure Recovery and Side Effects",
+                "chain": [
+                    "2.7.4.4.13/all",
+                    "2.7.4.4.15/all",
+                    "2.7.4.4.16/all",
+                    "2.7.4.4.17/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 9,
+                "H3": "Explanation Mechanics",
+                "chain": [
+                    "2.7.4.4.14/all",
+                    "2.7.4.4.18/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 10,
+                "H3": "Composition and Reusability",
+                "chain": [
+                    "2.7.4.4.19/all",
+                    "2.7.4.4.20/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 11,
+                "H2": "Syntax",
+                "chain": [
+                    "2.7.4.5",
+                    "2.7.4.5.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 12,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.7.4.5.2/all"
+                ]
+            },
+            {
+                "Order": 13,
+                "H3": "Canonical Syntax",
+                "chain": [
+                    "2.7.4.5.3/all"
+                ]
+            },
+            {
+                "Order": 14,
+                "H2": "Delegate Materialization Pipeline",
+                "chain": [
+                    "5.3.1/all"
+                ]
+            },
+            {
+                "Order": 15,
+                "H2": "Cross‑Border Enforcement",
+                "chain": [
+                    "7.4/all"
+                ],
+                "enumTag": "behavioral"
+            },
+            {
+                "Order": 16,
+                "H2": "Delegate — Practical `with` Parameters",
+                "chain": [
+                    "C.6",
+                    "C.6.1/all",
+                    "C.6.2/all",
+                    "C.6.3/all",
+                    "C.6.4/all",
+                    "C.6.5/all"
+                ]
+            },
+            {
+                "Order": 17,
+                "H2": "Boundary carriers and admissible crossings",
+                "chain": [
+                    "1.3.5/all"
+                ]
+            },
+            {
+                "Order": 18,
+                "H2": "Semantic Contracts",
+                "chain": [
+                    "1.4.3/all"
+                ]
+            },
+            {
+                "Order": 19,
+                "H2": "Integration Directives and Dependency Lifecycle",
+                "chain": [
+                    "3.3.1/all",
+                    "3.3.4/all",
+                    "3.3.5/all",
+                    "3.3.6/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 20,
+                "$ref": "./explanation"
+            },
+            {
+                "Order": 21,
+                "H2": "$ref: $bsyn/invokeSyntax",
+                "chain": [
+                    "$bsyn/invokeSyntax"
+                ]
+            },
+            {
+                "Order": 22,
+                "chain": [
+                    "8.8.11/all"
+                ],
+                "H2": "Delegate (integrational)",
+                "enumTag": "normative",
+                "normTag": "semantic"
+            }
+        ],
+        "abstract": "Delegate is a first-class semantic construct that establishes an explicit trust and execution boundary between E.L.I.A."
+    },
+    "domain": {
+        "keywords": [
+            "domain",
+            "Conway Space",
+            "semantic authority",
+            "authority anchor",
+            "obligation boundary",
+            "interpretation frame",
+            "semantic container",
+            "domain vs module",
+            "cell domain"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Domain",
+                "chain": [
+                    "2.7.9",
+                    "2.7.9/A.-D."
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Role",
+                "chain": [
+                    "2.7.8.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Domain as Functional Unit of Conway Space",
+                "chain": [
+                    "2.7.9.2/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 4,
+                "H2": "Ontological Position",
+                "chain": [
+                    "2.7.9.3/all"
+                ]
+            },
+            {
+                "Order": 5,
+                "H2": "Normative Properties",
+                "chain": [
+                    "2.7.9.4/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 6,
+                "H2": "Lifecycle and Evolution",
+                "chain": [
+                    "2.7.9.5/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 7,
+                "H2": "Declarative Compliance",
+                "chain": [
+                    "2.7.9.6/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 8,
+                "H2": "Determinism and Auditability",
+                "chain": [
+                    "2.7.9.7/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 9,
+                "H2": "Domain vs Module (Normative Distinction)",
+                "chain": [
+                    "2.7.9.8/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 10,
+                "H2": "Non‑Reductive Interpretations and Clarifications",
+                "chain": [
+                    "2.7.9.9/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 11,
+                "H2": "Syntax",
+                "chain": [
+                    "2.7.9.10",
+                    "2.7.9.10.1/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 12,
+                "H3": "AST Grammar",
+                "chain": [
+                    "2.7.9.10.2/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 13,
+                "H3": "Canonical Declaration",
+                "chain": [
+                    "2.7.9.10.3/all"
+                ]
+            },
+            {
+                "Order": 14,
+                "H2": "Domain as the unit of semantic and technological authority",
+                "chain": [
+                    "1.3.3/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 15,
+                "H2": "Domain Authority as the Root of Legitimacy",
+                "chain": [
+                    "1.5.1/all"
+                ]
+            },
+            {
+                "Order": 16,
+                "H2": "Prohibition of Implicit Authority",
+                "chain": [
+                    "1.5.5/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 17,
+                "$ref": "./domainAuthority"
+            },
+            {
+                "Order": 18,
+                "$ref": "./explanation"
+            },
+            {
+                "Order": 19,
+                "H2": "$ref: $bsyn/domainModuleSyntax",
+                "chain": [
+                    "$bsyn/domainModuleSyntax"
+                ]
+            },
+            {
+                "Order": 20,
+                "chain": [
+                    "8.8.1/all"
+                ],
+                "H2": "Domain",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 21,
+                "$ref": "$desa/domainStructure"
+            }
+        ],
+        "abstract": "binds abstract meaning to real-world responsibility;"
+    },
+    "semanticBoundary": {
+        "keywords": [
+            "boundary",
+            "module",
+            "domain",
+            "Layer 1",
+            "Layer 2",
+            "Layer 3",
+            "Layer 4",
+            "export",
+            "import",
+            "visibility",
+            "admissible crossing"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Explicit Semantic Boundaries",
+                "chain": [
+                    "1.3",
+                    "1.3/block-1",
+                    "1.3.1/all",
+                    "1.3.2",
+                    "1.3.3",
+                    "1.3.4/all",
+                    "1.3.5/all",
+                    "1.3.7/all",
+                    "1.3.8/all",
+                    "1.3.9/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "Domain - Semantic Container (brief)",
+                "chain": [
+                    "2.7.0.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Export Semantics and Requirements (Normative)",
+                "chain": [
+                    "2.7.0.4",
+                    "2.7.0.4.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Exported obligation surfaces",
+                "chain": [
+                    "1.3.4/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "H2": "Technical boundaries and platform constraints",
+                "chain": [
+                    "1.3.6/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "Exported Authority Surfaces",
+                "chain": [
+                    "1.5.4/all"
+                ]
+            },
+            {
+                "Order": 7,
+                "H2": "Separation of Semantics from Tooling",
+                "chain": [
+                    "1.9.1/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 8,
+                "H2": "Human-Machine Semantic Symmetry",
+                "chain": [
+                    "1.11/all"
+                ]
+            },
+            {
+                "Order": 9,
+                "H1": "Domain Boundaries and Conway Space",
+                "chain": [
+                    "5.1.1/all"
+                ]
+            },
+            {
+                "Order": 10,
+                "H2": "Semantic Interfaces as Interpretative Contracts",
+                "chain": [
+                    "5.1.2/all"
+                ]
+            },
+            {
+                "Order": 11,
+                "H2": "Exported Primitives as Semantic Dialogue",
+                "chain": [
+                    "5.2.2/all"
+                ]
+            },
+            {
+                "Order": 12,
+                "H2": "Prohibition of Implicit Interaction",
+                "chain": [
+                    "5.1.3/all"
+                ]
+            },
+            {
+                "Order": 13,
+                "$ref": "./explanation"
+            }
+        ],
+        "abstract": "Explicit semantic boundaries define where meaning is authoritative, where it may be relied upon, and where it is explicitly prohibited from emerging."
+    },
+    "enforcement": {
+        "keywords": [
+            "enforcement",
+            "enforces",
+            "enforced",
+            "follow",
+            "requires",
+            "admission",
+            "rule",
+            "rule chain",
+            "compliance",
+            "enforcement graph",
+            "enforcement pipeline",
+            "directionality",
+            "reading order",
+            "AuditEvent"
+        ],
+        "target": [
+            "how enforcement and compliance enforce delegate trust boundaries",
+            "enforcement architecture, pipeline, and enforcement graph",
+            "how delegate trust boundary is enforced through follow and enforces",
+            "admission control, cross-border enforcement, and compliance"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Enforcement as Architecture",
+                "chain": [
+                    "1.6",
+                    "1.6/A.",
+                    "1.6.1/all",
+                    "1.6.2/all",
+                    "1.6.3/all",
+                    "1.6.4/all",
+                    "1.6.5/all",
+                    "1.6.6/all",
+                    "1.6.7/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H1": "Enforcement Pipeline Overview",
+                "chain": [
+                    "7.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 3,
+                "H2": "Exportable Surfaces",
+                "chain": [
+                    "7.2/all"
+                ],
+                "enumTag": "normative"
+            },
+            {
+                "Order": 4,
+                "H2": "Admission Control (Rope Semantics)",
+                "chain": [
+                    "7.3/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "H2": "Cross‑Border Enforcement",
+                "chain": [
+                    "7.4/all"
+                ],
+                "enumTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "H2": "Semantic Enforcement (follow / enforces)",
+                "chain": [
+                    "7.5",
+                    "7.5.1/all",
+                    "7.5.2/all",
+                    "7.5.3/all",
+                    "7.5.4/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "structural"
+            },
+            {
+                "Order": 7,
+                "H2": "AuditEvent Coupling",
+                "chain": [
+                    "7.6/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 8,
+                "H2": "Error Mapping & Traceability",
+                "chain": [
+                    "7.7/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 9,
+                "H2": "Enforcement Primitives — Responsibility Matrix",
+                "chain": [
+                    "7.8/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 10,
+                "H2": "Enforcement Graph ↔ Primitives (ASCII Diagram)",
+                "chain": [
+                    "7.9/all"
+                ],
+                "enumTag": "normative"
+            },
+            {
+                "Order": 11,
+                "H2": "Worked Example — Policy Rule, Domain Border, and Classification",
+                "chain": [
+                    "7.10/all"
+                ],
+                "enumTag": "example",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 12,
+                "H2": "Worked Example — Definition as Aggregated Normative Scope",
+                "chain": [
+                    "7.11/all"
+                ],
+                "enumTag": "example",
+                "normTag": "structural"
+            },
+            {
+                "Order": 13,
+                "H2": "Enforcement",
+                "chain": [
+                    "2.7.1.3.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 14,
+                "H2": "Enforcement Mechanics — Directionality Model",
+                "chain": [
+                    "2.7.0.5",
+                    "2.7.0.5.1/all",
+                    "2.7.0.5.2/all",
+                    "2.7.0.5.3/all",
+                    "2.7.0.5.4/all",
+                    "2.7.0.5.5/all",
+                    "2.7.0.5.6/all",
+                    "2.7.0.5.7/all"
+                ]
+            },
+            {
+                "Order": 15,
+                "H2": "$ref: $ont/enforcementMechanics",
+                "chain": [
+                    "$ont/enforcementMechanics"
+                ]
+            },
+            {
+                "Order": 16,
+                "H2": "$ref: $bsyn/followSyntax",
+                "chain": [
+                    "$bsyn/followSyntax"
+                ]
+            }
+        ],
+        "abstract": "Enforcement in E.L.I.A. is a first-class architectural construct, not an implementation technique, runtime policy, or auxiliary validation layer."
+    },
+    "semanticModel": {
+        "keywords": [
+            "semantic model",
+            "semantic subordination",
+            "semantic hierarchy",
+            "level responsibilities",
+            "semantic degradation",
+            "meaning resolution",
+            "semantic graph",
+            "rule",
+            "enforcement"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Semantic Model",
+                "chain": [
+                    "4"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "H2": "Semantic Layer in the Language Model",
+                "chain": [
+                    "4.1",
+                    "4.1.1/all",
+                    "4.1.2/all",
+                    "4.1.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "Evolution management",
+                "chain": [
+                    "4.2",
+                    "4.2.1/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Core Semantic Constructs",
+                "chain": [
+                    "4.3",
+                    "4.3.1/all",
+                    "4.3.2/all",
+                    "4.3.3/all",
+                    "4.3.4/all",
+                    "4.3.5/all",
+                    "4.3.6/all",
+                    "4.3.7/all",
+                    "4.3.8/all"
+                ]
+            },
+            {
+                "Order": 5,
+                "H2": "Relationships, Boundaries, and Determinism",
+                "chain": [
+                    "4.4",
+                    "4.4.1/all",
+                    "4.4.2/all",
+                    "4.4.3/all",
+                    "4.4.4/all",
+                    "4.4.5/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "H2": "Semantic Hierarchy Invariants and Anti-Patterns",
+                "chain": [
+                    "4.5",
+                    "4.5.1/all",
+                    "4.5.2/all",
+                    "4.5.3",
+                    "4.5.4/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 7,
+                "H2": "Meaning Resolution",
+                "chain": [
+                    "4.6",
+                    "4.6/(A)-(B)",
+                    "4.6.1/all",
+                    "4.6.2/all",
+                    "4.6.3/all",
+                    "4.6.4/all",
+                    "4.6.5/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 8,
+                "H2": "$ref: $desa/semanticModelDesign",
+                "chain": [
+                    "$desa/semanticModelDesign"
+                ]
+            }
+        ],
+        "abstract": "Semantic model in E.L.I.A. is declarative and deterministic (consists of finite set of primitives)."
+    },
+    "domainAuthority": {
+        "keywords": [
+            "domain authority",
+            "four-layer model",
+            "semantic contour",
+            "authority framing",
+            "Layer 1",
+            "Layer 2",
+            "Layer 3",
+            "Layer 4",
+            "cell domain",
+            "domain autonomy"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Domain Semantic Authority",
+                "chain": [
+                    "5.0"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H2": "Authority Framing",
+                "chain": [
+                    "5.0.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Four‑Layer Authority Model",
+                "chain": [
+                    "5.0.2",
+                    "5.0.2/(A)-(D)",
+                    "5.0.2.1/all",
+                    "5.0.2.2/all",
+                    "5.0.2.3/all",
+                    "5.0.2.4/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Derived Artifacts by Authority Transition",
+                "chain": [
+                    "5.0.3/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "H1": "Layer 1 — Semantic Space (Conway Space)",
+                "chain": [
+                    "5.1",
+                    "5.1/A.-C.",
+                    "5.1.1/all",
+                    "5.1.2/all",
+                    "5.1.3/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H1": "Layer 2 — Domain Semantic Authority",
+                "chain": [
+                    "5.2",
+                    "5.2/A.-B.",
+                    "5.2.1/all",
+                    "5.2.2/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 7,
+                "H1": "Layer 3 — Integration & Enforcement Projection",
+                "chain": [
+                    "5.3",
+                    "5.3/A.-C.",
+                    "5.3.1/all"
+                ]
+            },
+            {
+                "Order": 8,
+                "H1": "Layer 4 — Physical Execution & Runtime Reality",
+                "chain": [
+                    "5.4/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 9,
+                "H1": "Domain Autonomy and Resilience",
+                "chain": [
+                    "5.5",
+                    "5.5/(A)-(B)",
+                    "5.5.1/all",
+                    "5.5.2/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 10,
+                "H2": "Actions as Intent Carriers",
+                "chain": [
+                    "5.5.3",
+                    "5.5.3/A.",
+                    "5.5.3.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 11,
+                "H1": "Design Anti-Patterns (Normative)",
+                "chain": [
+                    "5.6",
+                    "5.6.1/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 12,
+                "H2": "Architectural decisions you will pay for later",
+                "chain": [
+                    "5.6.2",
+                    "5.6.2.1/all",
+                    "5.6.2.2/all",
+                    "5.6.2.3/all",
+                    "5.6.2.4/all"
+                ]
+            },
+            {
+                "Order": 13,
+                "H2": "Events Used as Commands",
+                "chain": [
+                    "5.6.3/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 14,
+                "H2": "Modules Acting as Domains",
+                "chain": [
+                    "5.6.4/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 15,
+                "H2": "$ref: $ont/domainSemanticContour",
+                "chain": [
+                    "$ont/domainSemanticContour"
+                ]
+            }
+        ],
+        "abstract": "Before introducing purpose and structure, it is important to clarify why a domain may legitimately contain semantic interfaces."
+    },
+    "semanticEnforcement": {
+        "keywords": [
+            "enforcement",
+            "rule normative class",
+            "normative class",
+            "R0",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "semantic verification",
+            "conformance"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "$ref": "./enforcement"
+            },
+            {
+                "Order": 2,
+                "H1": "ANNEX D — Rule Normative Classes",
+                "chain": [
+                    "D.1/all",
+                    "D.2/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "H2": "Definitions",
+                "chain": [
+                    "D.3",
+                    "D.3.1/all",
+                    "D.3.2/all",
+                    "D.3.3/all",
+                    "D.3.4/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Normative rule classes (catalog)",
+                "chain": [
+                    "D.4",
+                    "D.4.1/all",
+                    "D.4.2/all",
+                    "D.4.3/all",
+                    "D.4.4/all",
+                    "D.4.5/all",
+                    "D.4.6/all",
+                    "D.4.7/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 5,
+                "H2": "Dependency and purity constraints (summary)",
+                "chain": [
+                    "D.5",
+                    "D.5/table-1",
+                    "D.5.1/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "Classification inheritance from referenced data",
+                "chain": [
+                    "D.6/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 7,
+                "H2": "Rule chaining, dependency closure, and evaluation sequencing",
+                "chain": [
+                    "D.5.2/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 8,
+                "H2": "Classification inheritance from referenced data",
+                "chain": [
+                    "D.6/all",
+                    "D.6.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 9,
+                "H2": "Domain effectiveness metrics (SARMAX-compatible)",
+                "chain": [
+                    "D.7/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 10,
+                "H2": "Execution Evidence Records (EER)",
+                "chain": [
+                    "D.8/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 11,
+                "H2": "Closure Execution Model (Bridge to ANNEX D1)",
+                "chain": [
+                    "D.9/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 12,
+                "H2": "Semantic Responsibility Boundary",
+                "chain": [
+                    "D.10/all"
+                ]
+            },
+            {
+                "Order": 13,
+                "$ref": "$ont/compilerEnforcementModel"
+            },
+            {
+                "Order": 14,
+                "H1": "ANNEX E — Normative Classes",
+                "chain": [
+                    "E.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 15,
+                "H2": "Applicability Checklist (Normative)",
+                "chain": [
+                    "E.1.1/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 16,
+                "H2": "Normative Classes",
+                "chain": [
+                    "E.2",
+                    "E.2.1/all",
+                    "E.2.2/all",
+                    "E.2.3/all",
+                    "E.2.4/all",
+                    "E.2.5/all",
+                    "E.2.6/all",
+                    "E.2.7/all"
+                ],
+                "enumTag": "example",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 17,
+                "H2": "Conformance Rules",
+                "chain": [
+                    "E.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 18,
+                "H2": "Semantic Verification (Semantic Tests)",
+                "chain": [
+                    "6.3.4/all"
+                ],
+                "normTag": "semantic"
+            }
+        ],
+        "abstract": "This annex defines the computational, classificatory, and enforcement semantics of rules.",
+        "onto": [
+            "HOW",
+            "WHEN"
+        ]
+    },
+    "semanticConfiguration": {
+        "keywords": [
+            "configuration",
+            "with",
+            "delegate config",
+            "data interface config",
+            "parameter families",
+            "connectivity",
+            "auth",
+            "timeout",
+            "retry",
+            "caching",
+            "transport"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "**ANNEX C — Semantic Type Configuration**",
+                "chain": [
+                    "C.1/all",
+                    "C.2/all",
+                    "C.3/all",
+                    "C.4/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "'with' — Common Parameter Families",
+                "chain": [
+                    "C.5",
+                    "C.5.1/all",
+                    "C.5.2/all",
+                    "C.5.3/all",
+                    "C.5.4/all",
+                    "C.5.5/all",
+                    "C.5.6/all",
+                    "C.5.7/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "Delegate — Practical `with` Parameters",
+                "chain": [
+                    "C.6",
+                    "C.6.1/all",
+                    "C.6.2/all",
+                    "C.6.3/all",
+                    "C.6.4/all",
+                    "C.6.5/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "Data Interface — Practical 'with' Parameters",
+                "chain": [
+                    "C.7",
+                    "C.7.1/all",
+                    "C.7.2/all",
+                    "C.7.3/all",
+                    "C.7.4/all",
+                    "C.7.5/all",
+                    "C.7.6/all",
+                    "C.7.7/all",
+                    "C.7.8/all"
+                ]
+            },
+            {
+                "Order": 5,
+                "H2": "Minimal Examples (illustrative)",
+                "chain": [
+                    "C.8",
+                    "C.8.1/all",
+                    "C.8.2/all"
+                ]
+            }
+        ],
+        "abstract": "This annex is fully dedicated to the configuration layer of Semantic Types, with a strict focus on the constructs that bind declared semantic...",
+        "onto": [
+            "HOW"
+        ]
+    },
+    "semanticTypes": {
+        "keywords": [
+            "Behavioral Surrogate",
+            "Data Surrogate",
+            "Delegate",
+            "semantic interface",
+            "data interface",
+            "event",
+            "error",
+            "domain"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Terms and Definitions",
+                "chain": [
+                    "2.7/table-1"
+                ]
+            },
+            {
+                "Order": 2,
+                "$ref": "./semanticTypesRegistry"
+            }
+        ],
+        "abstract": "Semantic Types define what data means and what is admissible to do with it within a domain."
+    },
+    "semanticSurrogates": {
+        "keywords": [
+            "surrogate",
+            "data surrogate",
+            "behavioral surrogate",
+            "semantic scaffolding",
+            "semantic degradation",
+            "probabilistic boundary"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Surrogates",
+                "chain": [
+                    "1.4.6/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H2": "Enforcement-Driven Audit Events",
+                "chain": [
+                    "1.6.5/all"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 3,
+                "H2": "Natural semantic degradation",
+                "chain": [
+                    "4.2.1/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "$ref": "./dataSurrogate"
+            },
+            {
+                "Order": 5,
+                "$ref": "./behavioralSurrogate"
+            }
+        ],
+        "abstract": "Surrogates serve exclusively to preserve semantic integrity, enforce phase-wise determinism, and maintain continuity of authority across multi-step,..."
+    },
+    "non-value": {
+        "keywords": [
+            "nothing",
+            "null",
+            "void",
+            "non-value",
+            "semantic marker",
+            "absence of value",
+            "non-existence",
+            "semantic placeholder"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "Special/control Class",
+                "chain": [
+                    "2.1.6",
+                    "2.1.6.1"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "Non-Value Semantic Marker: `nothing` (Normative)",
+                "chain": [
+                    "A.10.1/all"
+                ],
+                "normTag": "structural"
+            }
+        ],
+        "abstract": "Special/control primitives represent semantic control markers, not domain data."
+    },
+    "domainDrivenFlow": {
+        "keywords": [
+            "DFD",
+            "domain driven flow",
+            "strategy layer",
+            "domain layer",
+            "integration layer",
+            "semantic projection",
+            "capability class"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H1": "DFD as a Multi‑Layer Semantic Projection",
+                "chain": [
+                    "6.2",
+                    "6.2/A.-B.",
+                    "6.2/block-1"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "Layer 1 — Conceptual / Strategy Layer",
+                "chain": [
+                    "6.2.1",
+                    "6.2.1/A.-D.",
+                    "6.2.1.1/all",
+                    "6.2.1.2/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "H2": "Layer 2 — Business Logic / Domain Layer",
+                "chain": [
+                    "6.2.2",
+                    "6.2.2/A.-E.",
+                    "6.2.2.1/all",
+                    "6.2.2.3/all",
+                    "6.2.2.4/all",
+                    "6.2.2.5/all",
+                    "6.2.2.6/all",
+                    "6.2.2.7/all",
+                    "6.2.2.8/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Layer 3 — Infrastructure / Integration Layer",
+                "chain": [
+                    "6.2.3",
+                    "6.2.3/A.-C.",
+                    "6.2.3.1/all",
+                    "6.2.3.2/all",
+                    "6.2.3.3/all",
+                    "6.2.3.4/all",
+                    "6.2.3.5/all"
+                ]
+            },
+            {
+                "Order": 5,
+                "H2": "Integration Classes (Capability Classes)",
+                "chain": [
+                    "6.4",
+                    "6.4.1/all",
+                    "6.4.2/all",
+                    "6.4.3/all",
+                    "6.4.4/all",
+                    "6.4.5/all",
+                    "6.4.6/all",
+                    "6.4.7/all"
+                ]
+            }
+        ],
+        "abstract": "Layer 1 defines intent, prohibitions, and obligations.",
+        "onto": [
+            "HOW"
+        ]
+    }
+}

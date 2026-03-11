@@ -1,0 +1,59 @@
+
+definition "Section"
+        version "1.0.0"
+        explained as "
+        A major division within a document, typically denoted by headers (H1, H2, H3, H4),
+        used to organize content into hierarchical categories."
+        enforced ["Aspect", "Sequential Paragraphs", "Numbered Lists Level-1", "Paragraph"];
+
+definition "Aspect"
+     version "1.0.0"
+     explained as "
+     A distinct section within a document that focuses on a specific topic or theme,
+      often containing multiple paragraphs or lists. May be accomplished or associated by Section H3 or H2 with Name Aspect."
+      enforced ["Sequential Paragraphs", "Numbered Lists Level-1", "Paragraph"];
+
+definition "Sequential Paragraphs"
+     version "1.0.0"
+     explained as "
+    Standalone Aspect that contains multiple paragraphs in sequence,
+     often used to provide detailed explanations or narratives."
+     enforced ["Paragraph", "Numbered Lists Level-1", "TextBlock"];
+
+definition "Numbered Lists Level-1"
+     version "1.0.0"
+     explained as "
+    Standalone Aspect that contains lists with numbered items,
+     typically used for enumerations or ordered instructions."
+
+definition "Paragraph"
+     version "1.0.0"
+     explained as "
+    A single block of text within a Sequential Paragraphs section, or aspect, or numbered list of 1 level."
+
+
+definition "Text Block"
+     version "1.0.0"
+     explained as "
+    The fundamental unit of content in a document, which can be a paragraph, list item, or any other discrete piece of text."
+     enforced ["Markdown", "Plain Text"];
+
+
+definition "Markdown"
+     version "1.0.0"
+     explained as "RFC 7763 compliant markdown syntax for formatting text in documents."
+enforced ["RFC 7763"];
+
+definition "Canvas"
+     version "1.0.0"
+     explained as "
+    The overall structure of a document that contains multiple sections, aspects, paragraphs, and lists,
+     providing a framework for organizing content."
+     enforced ["Markdown"];
+
+definition "References"
+     version "1.0.0"
+     explained as "
+    Citations or links to external documents or resources."
+
+#"Text Block", "Canvas", "Section", "Aspect", "Sequential Paragraphs", "Numbered Lists Level-1", "Paragraph"

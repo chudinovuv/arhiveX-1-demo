@@ -1,0 +1,119 @@
+﻿{
+    "$specVersion": "1.0.5",
+    "indices": [
+    {
+        "alias": "phya",
+        "file": "physical_aspect_index.json",
+        "onto": ["WHAT"],
+        "profile": {
+            "unitPattern": "registry",
+            "defaultGranularity": "H2-all",
+            "keywordSources": ["headings", "tables"],
+            "namingSuffix": "Registry",
+            "autoRefThreshold": 3,
+            "affinityRefs": ["sema", "ont"]
+        }
+    },
+    {
+        "alias": "sema",
+        "file": "semantic_aspect_index.json",
+        "onto": ["WHAT"],
+        "profile": {
+            "unitPattern": "conceptual",
+            "defaultGranularity": "mixed",
+            "keywordSources": ["headings", "bold", "backtick"],
+            "namingSuffix": "",
+            "autoRefThreshold": 3,
+            "affinityRefs": ["ont", "desa"]
+        }
+    },
+    {
+        "alias": "ont",
+        "file": "ontologic_aspect_index.json",
+        "onto": ["WHY", "WHAT"],
+        "profile": {
+            "unitPattern": "conceptual",
+            "defaultGranularity": "mixed",
+            "keywordSources": ["headings", "bold", "backtick"],
+            "namingSuffix": "",
+            "autoRefThreshold": 3,
+            "affinityRefs": ["sema", "desa"]
+        }
+    },
+    {
+        "alias": "desa",
+        "file": "design_aspect_index.json",
+        "onto": ["HOW", "WHY", "WHERE"],
+        "profile": {
+            "unitPattern": "conceptual",
+            "defaultGranularity": "mixed",
+            "keywordSources": ["headings", "bold", "backtick"],
+            "namingSuffix": "",
+            "autoRefThreshold": 3,
+            "affinityRefs": ["ont", "sema"]
+        }
+    },
+    {
+        "alias": "grma",
+        "file": "grammar_aspect_index.json",
+        "onto": ["HOW"]
+    },
+    {
+        "alias": "bhva",
+        "file": "behavioral_aspect_index.json",
+        "onto": ["HOW", "WHEN", "WHERE"],
+        "profile": {
+            "unitPattern": "registry",
+            "defaultGranularity": "H2-all",
+            "keywordSources": ["headings", "errorCodes", "constants", "bold"],
+            "namingSuffix": "Normatives",
+            "autoRefThreshold": 3,
+            "affinityRefs": ["desa", "sema"]
+        }
+    },
+    {
+        "alias": "phla",
+        "file": "philosophical_aspect_index.json",
+        "onto": ["WHY"],
+        "profile": {
+            "unitPattern": "conceptual",
+            "defaultGranularity": "H2-all",
+            "keywordSources": ["headings", "bold"],
+            "namingSuffix": "",
+            "autoRefThreshold": 3,
+            "affinityRefs": ["ont"]
+        }
+    },
+    {
+        "alias": "trma",
+        "file": "terminology_aspect_index.json",
+        "onto": ["WHAT"]
+    },
+    {
+        "alias": "onma",
+        "file": "ontological_role_index.json",
+        "onto": ["WHAT", "WHY", "HOW", "WHEN", "WHERE"],
+        "scope": "Ontological role index: concept × WHAT/WHY/HOW/WHEN/WHERE. Routes questions by ontological type — WHAT (identity/designation), WHY (rationale/purpose), HOW (mechanism/syntax/rules), WHEN (conditions/timing), WHERE (applicability/admissibility/contextual scope). 67+ units across 22 constructs."
+    },
+    {
+        "alias": "bsyn",
+        "file": "block_syntax_aspect_index.json",
+        "onto": ["HOW"],
+        "scope": "Block syntax aspect index: construct-level syntax reference for §3. Covers domain/module/using/import/follow/required/default/emit/invoke/variable/inline/method/infer/control-flow/instructions/expressions/literals. ~15 units mapping HOW-questions about construct syntax, normative rules, contextual admissibility, and compilation validation.",
+        "profile": {
+            "unitPattern": "catalog",
+            "defaultGranularity": "H2-all",
+            "keywordSources": ["headings", "bold", "backtick"],
+            "namingSuffix": "Syntax",
+            "autoRefThreshold": 3,
+            "affinityRefs": ["desa", "bhva", "grma"]
+        }
+    },
+    {
+        "alias": "grix",
+        "file": "grammar_index.json",
+        "onto": ["HOW", "WHAT"],
+        "scope": "Grammar instruction index: 6-level syntactic classification (block, identifier, construct, operator, declaration, slot). Maps ~125 unique syntactic elements with admissibility matrix, slot companions, and spec/example cross-references. For translator, RAG, and syntax validation."
+    }
+]
+}

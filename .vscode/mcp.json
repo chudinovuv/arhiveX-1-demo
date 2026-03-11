@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "elia-spec-reader": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["tools/spec-reader/dist/server.js"]
+    }
+  }
+}

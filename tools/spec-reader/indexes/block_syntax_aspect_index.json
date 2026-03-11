@@ -1,0 +1,1438 @@
+{
+    "blockSyntaxOverview": {
+        "keywords": [
+            "block syntax",
+            "structural context",
+            "section map",
+            "syntax overview",
+            "block structure"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.0"
+                ],
+                "H1": "Block Syntax"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.0.1/all"
+                ],
+                "H2": "Structural Contexts"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.0.2/all"
+                ],
+                "H2": "Section Map"
+            }
+        ]
+    },
+    "domainModuleSyntax": {
+        "keywords": [
+            "domain declaration",
+            "module declaration",
+            "module body",
+            "module visibility",
+            "module normative rules",
+            "domain relationship"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.1"
+                ],
+                "H1": "domain"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.2/all"
+                ],
+                "H1": "module",
+                "enumTag": "example",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.2.1/all"
+                ],
+                "H2": "Declaration Syntax",
+                "enumTag": "example",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.2.2/all"
+                ],
+                "H2": "Module Body Content",
+                "enumTag": "structural",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.2.3/all"
+                ],
+                "H2": "Visibility Inside Module",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 6,
+                "chain": [
+                    "3.2.4/all"
+                ],
+                "H2": "Relationship to Domain"
+            },
+            {
+                "Order": 7,
+                "chain": [
+                    "3.2.5/all"
+                ],
+                "H2": "Normative Rules",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 8,
+                "chain": [
+                    "3.2.6/all"
+                ],
+                "H2": "Cross-reference Summary"
+            },
+            {
+                "Order": 9,
+                "H2": "$ref: $sema/domain",
+                "chain": [
+                    "$sema/domain"
+                ]
+            },
+            {
+                "Order": 10,
+                "H2": "$ref: $desa/domainStructure",
+                "chain": [
+                    "$desa/domainStructure"
+                ]
+            },
+            {
+                "Order": 11,
+                "H2": "$ref: $desa/modulePackaging",
+                "chain": [
+                    "$desa/modulePackaging"
+                ]
+            },
+            {
+                "Order": 12,
+                "H2": "$ref: $ont/domainVsModule",
+                "chain": [
+                    "$ont/domainVsModule"
+                ]
+            },
+            {
+                "Order": 13,
+                "H2": "$ref: $bhva/domainNormatives",
+                "chain": [
+                    "$bhva/domainNormatives"
+                ]
+            },
+            {
+                "Order": 14,
+                "chain": [
+                    "8.8.1/all"
+                ],
+                "H2": "Domain (admissibility)",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 15,
+                "chain": [
+                    "8.8.2/all"
+                ],
+                "H2": "Module (admissibility)",
+                "enumTag": "normative",
+                "normTag": "declarative"
+            }
+        ]
+    },
+    "usingDirectiveSyntax": {
+        "keywords": [
+            "using library",
+            "using domain",
+            "using module",
+            "using tool",
+            "using vs import",
+            "via binder",
+            "inline projection modifier",
+            "integration directive"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.3/all"
+                ],
+                "H1": "using",
+                "enumTag": "identity",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.3.1/all"
+                ],
+                "H2": "using library",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.3.2/all"
+                ],
+                "H2": "using domain",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.3.3/all"
+                ],
+                "H2": "using module",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.3.4/all"
+                ],
+                "H2": "using tool",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 6,
+                "chain": [
+                    "3.3.5/all"
+                ],
+                "H2": "Distinction: using vs import"
+            },
+            {
+                "Order": 7,
+                "chain": [
+                    "3.3.6/all"
+                ],
+                "H2": "Normative Summary",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 8,
+                "chain": [
+                    "3.3.7/all"
+                ],
+                "H2": "via \\<BinderName\\> — Inline Projection Modifier",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 9,
+                "H2": "$ref: $desa/delegateIntegration",
+                "chain": [
+                    "$desa/delegateIntegration"
+                ]
+            }
+        ]
+    },
+    "importSyntax": {
+        "keywords": [
+            "import module",
+            "import domain",
+            "import bare",
+            "source dependency",
+            "source inclusion",
+            "using vs import",
+            "declaration order"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.4/all"
+                ],
+                "H1": "import — Source-Level Dependency Declaration",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.4.1/all"
+                ],
+                "H2": "import module — Source Module Inclusion",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.4.2/all"
+                ],
+                "H2": "import domain — Source Domain Inclusion",
+                "normTag": "declarative"
+            }
+        ]
+    },
+    "followSyntax": {
+        "keywords": [
+            "follow",
+            "semantic gate",
+            "predicate form",
+            "rule reference",
+            "definition reference",
+            "compound predicate",
+            "aggregate validation",
+            "rejection model",
+            "follow placement"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.5/all"
+                ],
+                "H1": "follow",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.5.1/all"
+                ],
+                "H2": "Syntax Forms"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.5.2/all"
+                ],
+                "H2": "Failure Handling Mode: aggregate",
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.5.3/all"
+                ],
+                "H2": "Semantic Rejection Model",
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.5.4/all"
+                ],
+                "H2": "Scope and Operators"
+            },
+            {
+                "Order": 6,
+                "chain": [
+                    "3.5.5/all"
+                ],
+                "H2": "Normative Rules",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 7,
+                "chain": [
+                    "3.5.6/all"
+                ],
+                "H2": "Placement Rules",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 8,
+                "chain": [
+                    "3.5.7/all"
+                ],
+                "H2": "Canonical Examples"
+            },
+            {
+                "Order": 9,
+                "chain": [
+                    "3.5.8/all"
+                ],
+                "H2": "Decision Matrix: follow vs Related Constructs"
+            },
+            {
+                "Order": 10,
+                "chain": [
+                    "3.5.9/all"
+                ],
+                "H2": "Cross-reference Summary"
+            },
+            {
+                "Order": 11,
+                "H2": "$ref: $sema/enforcement",
+                "chain": [
+                    "$sema/enforcement"
+                ]
+            },
+            {
+                "Order": 12,
+                "H2": "$ref: $desa/enforcementDesign",
+                "chain": [
+                    "$desa/enforcementDesign"
+                ]
+            },
+            {
+                "Order": 13,
+                "H2": "$ref: $ont/enforcementMechanics",
+                "chain": [
+                    "$ont/enforcementMechanics"
+                ]
+            },
+            {
+                "Order": 14,
+                "H2": "$ref: $bhva/semanticDiagnostics",
+                "chain": [
+                    "$bhva/semanticDiagnostics"
+                ]
+            }
+        ]
+    },
+    "requiredDefaultSyntax": {
+        "keywords": [
+            "required keyword",
+            "default keyword",
+            "required block",
+            "default value",
+            "initialization",
+            "mandatory field"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.6/all"
+                ],
+                "H1": "required",
+                "enumTag": "identity"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.7/all"
+                ],
+                "H1": "default",
+                "enumTag": "identity",
+                "normTag": "declarative"
+            }
+        ]
+    },
+    "emitSyntax": {
+        "keywords": [
+            "emit",
+            "event emission",
+            "emit syntax",
+            "event dispatch",
+            "emit construct"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.8/all"
+                ],
+                "H1": "emit",
+                "enumTag": "identity"
+            },
+            {
+                "Order": 2,
+                "H2": "$ref: $desa/eventDesign",
+                "chain": [
+                    "$desa/eventDesign"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "$ref: $ont/eventModel",
+                "chain": [
+                    "$ont/eventModel"
+                ]
+            }
+        ]
+    },
+    "invokeSyntax": {
+        "keywords": [
+            "invoke",
+            "delegate invocation",
+            "statement form",
+            "assignment form",
+            "inline expression",
+            "chained delegate",
+            "invoke arguments",
+            "invoke vs direct call",
+            "contextual admissibility",
+            "new",
+            "instantiation",
+            "binder",
+            "object creation"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.9/all"
+                ],
+                "H1": "invoke"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.9.1/all"
+                ],
+                "H2": "Conceptual Role"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.9.2/all"
+                ],
+                "H2": "Syntax Forms"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.9.3/all"
+                ],
+                "H2": "Arguments"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.9.4/all"
+                ],
+                "H2": "Normative Rules",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "chain": [
+                    "3.9.5/all"
+                ],
+                "H2": "Contextual Admissibility",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 7,
+                "chain": [
+                    "3.9.6/all"
+                ],
+                "H2": "invoke vs Direct Call — Decision Criteria"
+            },
+            {
+                "Order": 8,
+                "chain": [
+                    "3.9.7/all"
+                ],
+                "H2": "AST Grammar"
+            },
+            {
+                "Order": 9,
+                "chain": [
+                    "3.9.8/all"
+                ],
+                "H2": "Cross-reference Summary"
+            },
+            {
+                "Order": 10,
+                "H2": "$ref: $sema/delegate",
+                "chain": [
+                    "$sema/delegate"
+                ]
+            },
+            {
+                "Order": 11,
+                "H2": "$ref: $desa/delegateIntegration",
+                "chain": [
+                    "$desa/delegateIntegration"
+                ]
+            },
+            {
+                "Order": 12,
+                "H2": "$ref: $ont/delegateModel",
+                "chain": [
+                    "$ont/delegateModel"
+                ]
+            }
+        ]
+    },
+    "variableSyntax": {
+        "keywords": [
+            "variable declaration",
+            "variable syntax",
+            "let",
+            "var",
+            "val",
+            "variable binding",
+            "scope"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.10/all"
+                ],
+                "H1": "variable declaration",
+                "enumTag": "identity"
+            }
+        ]
+    },
+    "inlineSyntax": {
+        "keywords": [
+            "inline",
+            "expression form",
+            "statement form",
+            "return coercion",
+            "inline semantics",
+            "inline normative rules",
+            "contextual admissibility",
+            "inline construct relationship"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.11/all"
+                ],
+                "H1": "inline",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.11.1/all"
+                ],
+                "H2": "Conceptual Role"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.11.2/all"
+                ],
+                "H2": "Syntax Forms",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.11.3/all"
+                ],
+                "H2": "Semantics",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.11.4/all"
+                ],
+                "H2": "Normative Rules",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 6,
+                "chain": [
+                    "3.11.5/all"
+                ],
+                "H2": "Contextual Admissibility"
+            },
+            {
+                "Order": 7,
+                "chain": [
+                    "3.11.6/all"
+                ],
+                "H2": "Relationship to Other Constructs"
+            },
+            {
+                "Order": 8,
+                "H2": "$ref: $sema/inline",
+                "chain": [
+                    "$sema/inline"
+                ]
+            }
+        ]
+    },
+    "methodSyntax": {
+        "keywords": [
+            "method",
+            "method declaration",
+            "standalone method",
+            "class method",
+            "interface method",
+            "generic method",
+            "method body",
+            "yield",
+            "return",
+            "method visibility",
+            "method normative rules"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.12/all"
+                ],
+                "H1": "method"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.12.1/all"
+                ],
+                "H2": "Syntax Forms"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.12.2/all"
+                ],
+                "H2": "Method Body",
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.12.3/all"
+                ],
+                "H2": "yield",
+                "normTag": "structural"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.12.4/all"
+                ],
+                "H2": "return",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 6,
+                "chain": [
+                    "3.12.5/all"
+                ],
+                "H2": "Normative Rules",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 7,
+                "chain": [
+                    "3.12.6/all"
+                ],
+                "H2": "Visibility"
+            },
+            {
+                "Order": 8,
+                "chain": [
+                    "3.12.7/all"
+                ],
+                "H2": "AST Grammar"
+            },
+            {
+                "Order": 9,
+                "chain": [
+                    "3.12.8/all"
+                ],
+                "H2": "Cross-reference Summary"
+            },
+            {
+                "Order": 10,
+                "H2": "$ref: $bhva/methodNormatives",
+                "chain": [
+                    "$bhva/methodNormatives"
+                ]
+            }
+        ]
+    },
+    "inferSyntax": {
+        "keywords": [
+            "infer",
+            "conditional inference",
+            "default inference",
+            "forward chaining",
+            "this is",
+            "rule delegation",
+            "result verification",
+            "typed inference",
+            "inference block",
+            "exptree",
+            "expression tree",
+            "permission derivation"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.13/all"
+                ],
+                "H1": "infer"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.13.1/all"
+                ],
+                "H2": "Syntax Forms"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.13.2/all"
+                ],
+                "H2": "Result Verification (Caller Side)"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.13.3/all"
+                ],
+                "H2": "Normative Rules",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.13.4/all"
+                ],
+                "H2": "Contextual Admissibility"
+            },
+            {
+                "Order": 6,
+                "chain": [
+                    "3.13.5/all"
+                ],
+                "H2": "AST Grammar Reference"
+            },
+            {
+                "Order": 7,
+                "chain": [
+                    "3.13.6/all"
+                ],
+                "H2": "Decision Matrix: infer vs Related Output Constructs"
+            },
+            {
+                "Order": 8,
+                "H2": "$ref: $desa/ruleDesign",
+                "chain": [
+                    "$desa/ruleDesign"
+                ]
+            },
+            {
+                "Order": 9,
+                "H2": "$ref: $phya/expTree_type",
+                "chain": [
+                    "$phya/expTree_type"
+                ]
+            }
+        ]
+    },
+    "controlFlowSyntax": {
+        "keywords": [
+            "control flow",
+            "if",
+            "else",
+            "case",
+            "foreach",
+            "loop when",
+            "loop until",
+            "for",
+            "conditional execution",
+            "iteration",
+            "contextual admissibility"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.14/all"
+                ],
+                "H1": "Control Flow Constructs",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.14.1/all"
+                ],
+                "H2": "Conditional Execution",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.14.2/all"
+                ],
+                "H2": "Iteration Constructs"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.14.3/all"
+                ],
+                "H2": "Contextual Admissibility Summary"
+            },
+            {
+                "Order": 5,
+                "H2": "$ref: $ont/syntaxAndAST",
+                "chain": [
+                    "$ont/syntaxAndAST"
+                ]
+            }
+        ]
+    },
+    "newSyntax": {
+        "keywords": [
+            "new",
+            "instantiation",
+            "object creation",
+            "constructor",
+            "record creation",
+            "field initialization",
+            "block form",
+            "constructor-call form",
+            "binder",
+            "via binder"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.15.3/all"
+                ],
+                "H2": "new",
+                "enumTag": "example",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.15.3.1/all"
+                ],
+                "H3": "Syntax Forms"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.15.3.2/all"
+                ],
+                "H3": "Normative Rules",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.15.3.3/all"
+                ],
+                "H3": "Contextual Admissibility"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.15.3.4/all"
+                ],
+                "H3": "Canonical Examples",
+                "enumTag": "example"
+            },
+            {
+                "Order": 6,
+                "H2": "$ref: $phya/binder",
+                "chain": [
+                    "$phya/binder"
+                ]
+            }
+        ],
+        "abstract": "The `new` instruction creates a new instance of a record, class, or custom type. It is the primary object construction mechanism in E.L.I.A."
+    },
+    "instructionsSyntax": {
+        "keywords": [
+            "break",
+            "continue",
+            "new",
+            "throw",
+            "print",
+            "file",
+            "anyof",
+            "default(T)",
+            "sizeof",
+            "typeof",
+            "on error",
+            "escalation model",
+            "instructions"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.15/all"
+                ],
+                "H1": "Instructions",
+                "enumTag": "structural",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.15.1/all"
+                ],
+                "H2": "break",
+                "enumTag": "structural",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.15.2/all"
+                ],
+                "H2": "continue",
+                "enumTag": "structural",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.15.3/all"
+                ],
+                "H2": "new",
+                "enumTag": "structural"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.15.4/all"
+                ],
+                "H2": "throw",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 6,
+                "chain": [
+                    "3.15.5/all"
+                ],
+                "H2": "print",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 7,
+                "chain": [
+                    "3.15.6/all"
+                ],
+                "H2": "file",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 8,
+                "chain": [
+                    "3.15.7/all"
+                ],
+                "H2": "anyof",
+                "normTag": "structural"
+            },
+            {
+                "Order": 9,
+                "chain": [
+                    "3.15.8/all"
+                ],
+                "H2": "default(T)",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 10,
+                "chain": [
+                    "3.15.9/all"
+                ],
+                "H2": "sizeof(x)",
+                "normTag": "structural"
+            },
+            {
+                "Order": 11,
+                "chain": [
+                    "3.15.10/all"
+                ],
+                "H2": "typeof(x)",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 12,
+                "chain": [
+                    "3.15.11/all"
+                ],
+                "H2": "on error (Escalation Model)"
+            },
+            {
+                "Order": 13,
+                "H2": "$ref: $desa/errorDesign",
+                "chain": [
+                    "$desa/errorDesign"
+                ]
+            }
+        ]
+    },
+    "expressionsSyntax": {
+        "keywords": [
+            "comparison operators",
+            "logical operators",
+            "mathematical operators",
+            "brackets",
+            "precedence",
+            "expressions",
+            "operators"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.16/all"
+                ],
+                "H1": "Expressions and Operators",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.16.1/all"
+                ],
+                "H2": "Comparison Operators",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.16.2/all"
+                ],
+                "H2": "Logical Operators"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.16.3/all"
+                ],
+                "H2": "Mathematical Operators",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.16.4/all"
+                ],
+                "H2": "Brackets and Precedence",
+                "normTag": "behavioral"
+            }
+        ]
+    },
+    "blockCompositionSyntax": {
+        "keywords": [
+            "block composition",
+            "nesting",
+            "contextual restrictions",
+            "semantic gates",
+            "block model",
+            "action execution",
+            "block nesting rules"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.17/all"
+                ],
+                "H1": "Block Composition and Nesting",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.18/all"
+                ],
+                "H1": "Contextual Restrictions (Summary)",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.18.1/all"
+                ],
+                "H2": "Semantic Gates"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.18.2/all"
+                ],
+                "H2": "Control Flow"
+            },
+            {
+                "Order": 5,
+                "H2": "$ref: $ont/concernSeparation",
+                "chain": [
+                    "$ont/concernSeparation"
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "$ref: $ont/syntaxAndAST",
+                "chain": [
+                    "$ont/syntaxAndAST"
+                ]
+            }
+        ]
+    },
+    "compilationValidationSyntax": {
+        "keywords": [
+            "compilation validation",
+            "field resolution",
+            "parameter resolution",
+            "type compatibility",
+            "normative notes",
+            "cross-reference"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.19/all"
+                ],
+                "H1": "Normative Notes",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.20/all"
+                ],
+                "H1": "Compilation Validation Rules",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.20.1/all"
+                ],
+                "H2": "Field Resolution and Validation",
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.20.2/all"
+                ],
+                "H2": "Parameter Resolution and Validation",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.20.3/all"
+                ],
+                "H2": "Type Compatibility Enforcement at Call Sites",
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "chain": [
+                    "3.20.4/all"
+                ],
+                "H2": "Cross-reference Summary"
+            },
+            {
+                "Order": 7,
+                "H2": "$ref: $bhva/symbolResolutionErrors",
+                "chain": [
+                    "$bhva/symbolResolutionErrors"
+                ]
+            },
+            {
+                "Order": 8,
+                "H2": "$ref: $bhva/typeCompatibilityErrors",
+                "chain": [
+                    "$bhva/typeCompatibilityErrors"
+                ]
+            },
+            {
+                "Order": 9,
+                "H2": "$ref: $bhva/compilationPhaseModel",
+                "chain": [
+                    "$bhva/compilationPhaseModel"
+                ]
+            },
+            {
+                "Order": 10,
+                "H2": "$ref: $desa/enforcementDesign",
+                "chain": [
+                    "$desa/enforcementDesign"
+                ]
+            }
+        ]
+    },
+    "literalSyntax": {
+        "keywords": [
+            "integer literal",
+            "float literal",
+            "decimal literal",
+            "boolean literal",
+            "string literal",
+            "null literal",
+            "GUID literal",
+            "RIID literal",
+            "date literal",
+            "enum literal",
+            "tuple literal",
+            "array initializer",
+            "dictionary initializer",
+            "value literals",
+            "BNF"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.21/all"
+                ],
+                "H1": "Value Literals",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "chain": [
+                    "3.21.1/all"
+                ],
+                "H2": "Integer Literals",
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "chain": [
+                    "3.21.2/all"
+                ],
+                "H2": "Floating-Point and Decimal Literals",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "chain": [
+                    "3.21.3/all"
+                ],
+                "H2": "Boolean Literals"
+            },
+            {
+                "Order": 5,
+                "chain": [
+                    "3.21.4/all"
+                ],
+                "H2": "String Literals",
+                "normTag": "structural"
+            },
+            {
+                "Order": 6,
+                "chain": [
+                    "3.21.5/all"
+                ],
+                "H2": "Null and Special Literals",
+                "normTag": "structural"
+            },
+            {
+                "Order": 7,
+                "chain": [
+                    "3.21.6/all"
+                ],
+                "H2": "GUID and RIID Literals",
+                "normTag": "structural"
+            },
+            {
+                "Order": 8,
+                "chain": [
+                    "3.21.7/all"
+                ],
+                "H2": "Date/Time Literals",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 9,
+                "chain": [
+                    "3.21.8/all"
+                ],
+                "H2": "Enum Literals",
+                "normTag": "structural"
+            },
+            {
+                "Order": 10,
+                "chain": [
+                    "3.21.9/all"
+                ],
+                "H2": "Tuple Literals",
+                "normTag": "structural"
+            },
+            {
+                "Order": 11,
+                "chain": [
+                    "3.21.10/all"
+                ],
+                "H2": "Array Initializers",
+                "normTag": "structural"
+            },
+            {
+                "Order": 12,
+                "chain": [
+                    "3.21.11/all"
+                ],
+                "H2": "Dictionary Initializers",
+                "normTag": "structural"
+            },
+            {
+                "Order": 13,
+                "chain": [
+                    "3.21.12/all"
+                ],
+                "H2": "Contextual Admissibility",
+                "normTag": "structural"
+            },
+            {
+                "Order": 14,
+                "chain": [
+                    "3.21.13/all"
+                ],
+                "H2": "BNF Summary"
+            },
+            {
+                "Order": 15,
+                "H2": "$ref: $phya/primitive_types",
+                "chain": [
+                    "$phya/primitive_types"
+                ]
+            },
+            {
+                "Order": 16,
+                "H2": "$ref: $phya/derived_types",
+                "chain": [
+                    "$phya/derived_types"
+                ]
+            }
+        ]
+    },
+    "forwardRefSyntax": {
+        "keywords": [
+            "forward reference",
+            "forward declaration",
+            "mutual recursion",
+            "resolution order",
+            "compilation phases"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "chain": [
+                    "3.22/all"
+                ],
+                "H1": "Forward References"
+            }
+        ]
+    }
+}

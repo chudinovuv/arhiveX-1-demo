@@ -1,0 +1,242 @@
+{
+  "nodeType": "spec",
+  "title": "E.L.I.A. Specification Navigation",
+  "version": "1.1.0",
+  "patterns": "patterns.json",
+  "definitions": "definitions.els",
+  "structureMap": "structure_map.json",
+  "indices": {
+    "registry": "aspect_index.json",
+    "files": [
+      {"alias": "phya", "file": "physical_aspect_index.json", "scope": "data types, type classification, serialization, materialization"},
+      {"alias": "sema", "file": "semantic_aspect_index.json", "scope": "semantic types, interfaces, domains, delegates, enforcement"},
+      {"alias": "ont",  "file": "ontologic_aspect_index.json", "scope": "design principles, type system overview, classification axes, subordination, levels"},
+      {"alias": "desa", "file": "design_aspect_index.json", "scope": "design decisions, architectural patterns"},
+      {"alias": "grma", "file": "grammar_aspect_index.json", "scope": "AST grammar, declaration normatives, canonical syntax examples per construct"},
+      {"alias": "bhva", "file": "behavioral_aspect_index.json", "scope": "behavioral properties, interaction constraints, normative properties per construct"},
+      {"alias": "phla", "file": "philosophical_aspect_index.json", "scope": "philosophical foundations, theses from introduction, meaning-first paradigm, semantic decay, anti-drift"},
+      {"alias": "trma", "file": "terminology_aspect_index.json", "scope": "formal T&D terms, language constructs (primitives, blocks, streams, derived, behavioral, semantic), block syntax keywords, annex definitions"},
+      {"alias": "onma", "file": "ontological_role_index.json", "scope": "ontological role index: concept × WHAT/WHY/HOW/WHEN. Routes questions by ontological type to aspect-level chain addresses. 67 units across 22 constructs"}
+    ],
+    "unitStructure": {
+      "unitName": {
+        "role": "Higher-order keyword. Provides orthogonal classification for the keywords[] array. Each word in the name is also a keyword that may match other units — forming reading chains across units.",
+        "parsing": "camelCase → split on capitals; snake_case → split on underscores. Result = classification keywords.",
+        "chaining": "Each word from unitName can be a keyword in ANOTHER unit. This creates implicit reading chains: unitA.name contains word X → X is keyword in unitB → unitB becomes part of the reading plan. This is how the index builds cross-unit reading sequences without explicit $ref.",
+        "examples": [
+          {"name": "typeSerialization", "words": ["type", "serialization"], "chains_to": "typeMetadata (via 'type'), securityContext (via 'type')"},
+          {"name": "stream_raw_binary_types", "words": ["stream", "raw", "binary", "types"], "chains_to": "stream_types (via 'stream'), opaque_block_types (via 'binary')"},
+          {"name": "error_type", "words": ["error", "type"], "chains_to": "derived_types (via 'type'), specialized_types (via 'error')"}
+        ]
+      },
+      "keywords": "Low-order keywords. Specific terms within the unit's domain. Used for fine-grained matching.",
+      "seq": "Ordered reading chain. Each entry has Order (reading position), H{N} field (heading level+title), chain[] (addresses).",
+      "headingField": {
+        "naming": "Field name = H1, H2, H3, H4, H5, H6. Encodes both heading level and title text.",
+        "normalization": {
+          "rule": "Value MAY start with a section/annex number prefix. Strip ^[A-Z0-9][\\d.]*\\s+ to get pure heading text for rg search.",
+          "examples": [
+            {"raw": "2.1.6 Special/control Class)", "stripped": "Special/control Class)"},
+            {"raw": "B.5 Constraints and Enforcement", "stripped": "Constraints and Enforcement"},
+            {"raw": "Normative properties", "stripped": "Normative properties"}
+          ],
+          "search": "rg -i '^#{level}\\s+.*{STRIPPED}' file.md — where {level} = repeat # by field number (H2 → ##)"
+        }
+      },
+      "$ref": "Intra-index reference to another unit. Expands in-place during reading.",
+      "readingPlanMechanisms": {
+        "explicit": "seq[].Order + seq[].chain[] + seq[].$ref — direct reading plan defined by the unit author.",
+        "implicit": "unitName words → match as keywords in other units → those units extend the reading plan. This mechanism works ALONGSIDE explicit seq/order/chain, not instead of it."
+      }
+    }
+  },
+  "crossRefIndex": {
+    "alias": "xref",
+    "file": "cross_ref_index.json",
+    "scope": "Section cross-references graph: outgoing links from each section to other sections, external standards (RFC, ISO, GDPR, …), URLs, and person contacts",
+    "refTypes": ["section", "standard", "url", "person"],
+    "buildScript": "npm run build:xref",
+    "weight": {
+      "description": "xref-derived chains are supplementary context — they follow outgoing links from already-matched sections. They rank below all primary index matches but above unstructured fulltext search.",
+      "scoring": {
+        "metaRank": "last+1 — xref chains get metaRank = (number of matched aspect indices) + 1. They always appear after primary matches in the reading plan.",
+        "refTypeWeights": {
+          "section": 0,
+          "standard": 5,
+          "url": 10,
+          "person": 10
+        },
+        "refTypeWeightsNote": "Added to base score. section refs are most navigable (0 penalty), external standards carry a small penalty (5), URLs and persons are least actionable (10)."
+      },
+      "tierPlacement": "xref chains typically land in Tier 3 (Registry & cross-refs) or Tier 4 (Supplementary context) depending on the originating section's rank and order.",
+      "integration": "NOT auto-included in search_spec. Used on-demand: (1) agent reads xref for a matched section to discover related sections, (2) agent manually adds discovered chains to the reading plan via read_chain tool."
+    },
+    "stats": {
+      "sections": 148,
+      "totalRefs": 267,
+      "byType": { "section": 212, "standard": 53, "url": 2, "person": 0 }
+    }
+  },
+  "numberingRules": {
+    "levelFromHash": "# count = heading level: # = H1, ## = H2, ### = H3, #### = H4",
+    "typeDetection": {
+      "rule": "Read first token after # marks. First character determines type.",
+      "digit": "Document section. Numbering: X.Y.Z...",
+      "letter": "ANNEX section. Numbering: A.1.2... Search in annex_*.md files."
+    },
+    "genericSections": {
+      "rule": "Generic marker .0. is detected ONLY relative to document base chain, NOT absolute numbering.",
+      "algorithm": [
+        "1. Determine document base chain from H1 title (e.g. 2.5, 2.7, 4.0, 2.0)",
+        "2. Strip base chain prefix from section number",
+        "3. If the FIRST remaining segment is 0 → section is GENERIC, applies to all siblings",
+        "4. A 0 that is part of the base chain itself is NOT a generic marker"
+      ],
+      "examples": [
+        {"section": "2.0.1", "base": "2.0", "remaining": "1", "generic": false, "reason": "0 is part of base chain 2.0"},
+        {"section": "2.5.0.1", "base": "2.5", "remaining": "0.1", "generic": true, "reason": "first segment after base is 0"},
+        {"section": "2.7.0.2", "base": "2.7", "remaining": "0.2", "generic": true, "reason": "first segment after base is 0"},
+        {"section": "2.7.3.1", "base": "2.7", "remaining": "3.1", "generic": false, "reason": "first segment after base is 3"},
+        {"section": "4.0.1", "base": "4.0", "remaining": "1", "generic": false, "reason": "0 is part of base chain 4.0"},
+        {"section": "A.7.1", "base": "A", "remaining": "7.1", "generic": false, "reason": "annex, no 0 segment"}
+      ],
+      "readingRule": "When reading X.Y.N (N≠0), ALWAYS first read X.Y.0.* generic sections from the same or parent document."
+    },
+    "baseChainFromFilename": {
+      "rule": "Filename digit groups → base chain. If 3+ digit groups and last is 0, strip it — file is generic for parent.",
+      "examples": [
+        {"file": "2_5_derived_types.md", "base": "2.5"},
+        {"file": "2_7_0_semantic_types.md", "base": "2.7", "note": "generic for 2.7.*"},
+        {"file": "2_7_3_semantic_interface.md", "base": "2.7.3"},
+        {"file": "annex_a_type_registry.md", "base": "A", "type": "annex"}
+      ]
+    }
+  },
+  "searchProtocol": {
+    "pipeline": [
+      "1. SECTION TYPE: determine target section type(s) from query (see intents)",
+      "2. KEYWORD: extract entity/concept from query",
+      "3a. keyword → index.keywords[] → find unit(s)",
+      "3b. keyword → rg -i '^#{1,4}\\s+.*{KEYWORD}' current/*.md → title hits",
+      "3c. merge 3a+3b, deduplicate by chain",
+      "4. Filter by section type using sectionTitles.*.rg",
+      "5. chain → helpers.chainToFile → resolve file",
+      "6. chain → section.search → find section in file",
+      "7. suffix (/A., /(B), /all, /table-1) → helpers.chainAddressToRg → extract",
+      "8. Assemble in ORDER. No reorder. No summarize."
+    ],
+    "intents": {
+      "canonical_example": {
+        "triggers": ["canonical example", "canonical form", "show example", "how to write"],
+        "extract": ["Syntax → Canonical Syntax"],
+        "note": "Code block ONLY. No semantics, no normative."
+      },
+      "grammar": {
+        "triggers": ["grammar", "AST", "syntax tree", "formal syntax"],
+        "extract": ["Syntax → AST Grammar", "Syntax → Declaration (normative)"]
+      },
+      "normative_rules": {
+        "triggers": ["rules", "requirements", "constraints", "what must/should"],
+        "extract": ["Normative Properties", "Normative rules", "Declaration (normative)"],
+        "note": "CHAIN_ONLY. ALL normative subsections. NEVER summarize."
+      },
+      "semantic_role": {
+        "triggers": ["what is", "purpose", "role", "meaning"],
+        "extract": ["Semantic Role", "Designation"]
+      },
+      "declaration": {
+        "triggers": ["how to declare", "declaration", "syntax"],
+        "extract": ["Declaration (normative)", "Canonical Syntax"]
+      },
+      "full": {
+        "triggers": ["explain", "tell me about", "everything about"],
+        "extract": ["Designation", "Semantic Role", "Normative Properties", "Syntax"],
+        "note": "Follow chain ORDER. Skip nothing. No normative summaries."
+      }
+    },
+    "normativeRules": {
+      "NO_SUMMARIZE": "NEVER summarize normative. Quote as-is or combine as validation chains.",
+      "CHAIN_ONLY": "if(condition) → then(requirement). Chain order = validation order.",
+      "identifiers": ["Normative Note", "Normative Reference", "Normative Properties", "Declaration (normative)"],
+      "rfcKeywords": ["MUST", "MUST NOT", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "MAY"]
+    },
+    "blockRules": {
+      "ORDER_MATTERS": "Chain array order = mandatory reading order.",
+      "NO_NAIVE_SUMMARY": "Summarizing destroys semantic chain structure.",
+      "ASPECTS_ARE_ATOMIC": "Each aspect (A., B., C.) is atomic. Never merge across sections.",
+      "LEAF_ONLY_ALL": "/all suffix for LEAF sections only."
+    }
+  },
+  "sectionTitles": {
+    "Semantic Role": {
+      "triggers": ["Semantic Role", "Semantic Reference", "Semantic Designation"],
+      "rg": "^#{1,6}\\s+.*Semantic\\s+(Role|Reference|Designation)",
+      "note": "WHAT. Identity/purpose. Aspects (A., B., C.) are atomic."
+    },
+    "Normative": {
+      "triggers": ["Normative Note", "Normative Reference", "Normative Properties", "Normative rules", "Declaration (normative)"],
+      "rg": "^#{1,6}\\s+.*(Normative|Declaration\\s*\\([Nn]ormative\\))",
+      "note": "CHAIN_ONLY. Always numbered lists. Always read ENTIRE section."
+    },
+    "Syntax": {
+      "triggers": ["Syntax", "AST Grammar", "Canonical Syntax", "Canonical Declaration"],
+      "rg": "^#{1,6}\\s+.*(\\bSyntax\\b|AST Grammar|Canonical\\s+(Syntax|Declaration))",
+      "note": "HOW. Code blocks verbatim. Declaration subsections are normative."
+    },
+    "Designation": {
+      "triggers": ["Designation", "Semantic Designation"],
+      "rg": "^#{1,6}\\s+.*(Designation)",
+      "note": "WHAT. Name, category, form. Short, factual."
+    },
+    "Classification": {
+      "triggers": ["Classification"],
+      "rg": "^#{1,6}\\s+.*Classification",
+      "note": "WHAT. Categories/axes. Often at H1/H2. Preserve hierarchy."
+    },
+    "Reference": {
+      "triggers": ["Reference", "References", "See also"],
+      "rg": "^#{1,6}\\s+.*(\\bReference[s]?\\b|See\\s+also)",
+      "note": "CITATION/RESOURCE. Links to other sections, external standards, persons. Mandatory reading before proceeding."
+    },
+    "Note": {
+      "triggers": ["Note", "Notes"],
+      "rg": "^#{1,6}\\s+.*\\bNote[s]?\\b",
+      "note": "WHY/HOW. Supplementary clarification. Blockquote or titled section. Context-only, no new requirements."
+    }
+  },
+  "ontological": {
+    "roles": {"WHAT": "Nature/identity", "WHY": "Purpose/rationale", "HOW": "Method/process", "WHEN": "Conditions/timing"},
+    "indexOntoDefaults": {
+      "phya": ["WHAT"],
+      "sema": ["WHAT"],
+      "ont": ["WHY", "WHAT"],
+      "desa": ["HOW", "WHY"],
+      "grma": ["HOW"],
+      "bhva": ["HOW", "WHEN"],
+      "phla": ["WHY"],
+      "trma": ["WHAT"],
+      "onma": ["WHAT", "WHY", "HOW", "WHEN"]
+    },
+    "unitOverrides": "15 units have explicit onto overrides in their index files (ont: 8, desa: 4, sema: 3). onma has per-unit onto by design — each unit is a concept×role combination.",
+    "nodeRoles": {
+      "Canvas": "WHAT/WHY/HOW — contains H1, H2",
+      "H1": "HOW/WHEN — high-level overview",
+      "H2": "WHY/HOW — detailed, explains H1",
+      "H3": "HOW/WHEN — details for H2, contains Aspect",
+      "H4": "HOW — implementation specifics",
+      "Reference": "CITATION/RESOURCE — mandatory reading before proceeding",
+      "Note": "WHY/HOW — supplementary, applies to any parent",
+      "Aspect": "HOW/WHEN — orthogonal sub-aspect inside H1-H4, never standalone"
+    }
+  },
+  "grammar": {
+    "note": "Quick reference. Full validation map with $ref navigation: structure_map.json",
+    "hierarchy": "Canvas > Section(H1-H6) > {Paragraph, List, Aspect, CodeBlock, Note, Reference}",
+    "Canvas": {"types": ["document", "annex"], "contains": ["Section"]},
+    "Section": {"types": ["H1-H6"], "contains": ["Paragraph", "List", "Aspect", "CodeBlock", "Note", "Reference"]},
+    "Paragraph": {"types": ["plain", "sequential (A),(B),(C)"], "contains": ["TextBlock", "CodeBlock", "Reference"]},
+    "List": {"types": ["numbered 3-level", "unnumbered"], "nesting": "1. → (a) → (i)"},
+    "Note": {"marker": "> blockquote", "contains": ["TextBlock", "CodeBlock"]},
+    "Aspect": {"marker": "A. B. C.", "atomic": true, "contains": ["Paragraph contents"]}
+  }
+}

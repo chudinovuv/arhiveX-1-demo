@@ -1,0 +1,994 @@
+{
+    "$specVersion": "1.0.5",
+    "identifiersClassSyntax": {
+        "keywords": [
+            "identifiersClass",
+            "identifiersClass syntax",
+            "identifiersClass declaration",
+            "identifiersClass grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.1.5.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.1.5.4.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H3": "2.1.5.4.2 AST Grammar",
+                "chain": [
+                    "2.1.5.4.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.1.5.4.3 Canonical Syntax",
+                "chain": [
+                    "2.1.5.4.3/all"
+                ]
+            }
+        ]
+    },
+    "enumSyntax": {
+        "keywords": [
+            "enum",
+            "enum syntax",
+            "enum declaration",
+            "enum grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.1.7.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.1.7.4.1/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H3": "2.1.7.4.2 AST Grammar",
+                "chain": [
+                    "2.1.7.4.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.1.7.4.3 Canonical Syntax",
+                "chain": [
+                    "2.1.7.4.3/all"
+                ]
+            }
+        ]
+    },
+    "fixedStringClassSyntax": {
+        "keywords": [
+            "fixedStringClass",
+            "fixedStringClass syntax",
+            "fixedStringClass declaration",
+            "fixedStringClass grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.1.8.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.1.8.4.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H3": "2.1.8.4.2 AST Grammar",
+                "chain": [
+                    "2.1.8.4.2/all"
+                ]
+            }
+        ]
+    },
+    "opaqueBlocksClassSyntax": {
+        "keywords": [
+            "opaqueBlocksClass",
+            "opaqueBlocksClass syntax",
+            "opaqueBlocksClass declaration",
+            "opaqueBlocksClass grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.2.1.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.2.1.4.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H3": "2.2.1.4.2 AST Grammar",
+                "chain": [
+                    "2.2.1.4.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.2.1.4.3 Canonical Syntax",
+                "chain": [
+                    "2.2.1.4.3/all"
+                ]
+            }
+        ]
+    },
+    "anySyntax": {
+        "keywords": [
+            "any",
+            "any syntax",
+            "any declaration",
+            "any grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.4.1.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.4.1.4.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H3": "2.4.1.4.2 AST Grammar",
+                "chain": [
+                    "2.4.1.4.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.4.1.4.3 Canonical Syntax",
+                "chain": [
+                    "2.4.1.4.3/all"
+                ]
+            }
+        ]
+    },
+    "tupleSyntax": {
+        "keywords": [
+            "tuple",
+            "tuple syntax",
+            "tuple declaration",
+            "tuple grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.4.2.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.4.2.4.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "2.4.2.4.2 AST Grammar",
+                "chain": [
+                    "2.4.2.4.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.4.2.4.3 Canonical Declaration",
+                "chain": [
+                    "2.4.2.4.3/all"
+                ]
+            }
+        ]
+    },
+    "versionSyntax": {
+        "keywords": [
+            "version",
+            "version syntax",
+            "version declaration",
+            "version grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.4.3.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.4.3.4.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "2.4.3.4.2 AST Grammar",
+                "chain": [
+                    "2.4.3.4.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.4.3.4.3 Canonical Syntax",
+                "chain": [
+                    "2.4.3.4.3/all"
+                ]
+            }
+        ]
+    },
+    "referenceSyntax": {
+        "keywords": [
+            "reference",
+            "reference syntax",
+            "reference declaration",
+            "reference grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.4.4.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.4.4.4.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "2.4.4.4.2 AST Grammar",
+                "chain": [
+                    "2.4.4.4.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.4.4.4.3 Canonical Syntax",
+                "chain": [
+                    "2.4.4.4.3/all"
+                ],
+                "enumTag": "example"
+            }
+        ]
+    },
+    "exptreeSyntax": {
+        "keywords": [
+            "exptree",
+            "exptree syntax",
+            "exptree declaration",
+            "exptree grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.4.5.2.1 Declaration (Normative)",
+                "chain": [
+                    "2.4.5.2.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H3": "2.4.5.2.2 AST Grammar",
+                "chain": [
+                    "2.4.5.2.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.4.5.2.3 Canonical Syntax",
+                "chain": [
+                    "2.4.5.2.3/all"
+                ]
+            }
+        ]
+    },
+    "errorClassSyntax": {
+        "keywords": [
+            "errorClass",
+            "errorClass syntax",
+            "errorClass declaration",
+            "errorClass grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.5.1.7.1 Declaration (Normative)",
+                "chain": [
+                    "2.5.1.7.1/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H3": "2.5.1.7.2 AST Grammar",
+                "chain": [
+                    "2.5.1.7.2/all"
+                ]
+            }
+        ]
+    },
+    "eventClassSyntax": {
+        "keywords": [
+            "eventClass",
+            "eventClass syntax",
+            "eventClass declaration",
+            "eventClass grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.5.2.6.1 Declaration (Normative)",
+                "chain": [
+                    "2.5.2.6.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H3": "2.5.2.6.2 AST Grammar",
+                "chain": [
+                    "2.5.2.6.2/all"
+                ]
+            }
+        ]
+    },
+    "typedArrayClassSyntax": {
+        "keywords": [
+            "typedArrayClass",
+            "typedArrayClass syntax",
+            "typedArrayClass declaration",
+            "typedArrayClass grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.5.3.5.1 Declaration (Normative)",
+                "chain": [
+                    "2.5.3.5.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "2.5.3.5.2 AST Grammar",
+                "chain": [
+                    "2.5.3.5.2/all"
+                ]
+            }
+        ]
+    },
+    "derivedArrayClassSyntax": {
+        "keywords": [
+            "derivedArrayClass",
+            "derivedArrayClass syntax",
+            "derivedArrayClass declaration",
+            "derivedArrayClass grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.5.4.6.1 Declaration (Normative)",
+                "chain": [
+                    "2.5.4.6.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "2.5.4.6.2 AST Grammar",
+                "chain": [
+                    "2.5.4.6.2/all"
+                ]
+            }
+        ]
+    },
+    "collectionSyntax": {
+        "keywords": [
+            "collection",
+            "collection syntax",
+            "collection declaration",
+            "collection grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.5.5.5.1 Declaration (Normative)",
+                "chain": [
+                    "2.5.5.5.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "2.5.5.5.2 AST Grammar",
+                "chain": [
+                    "2.5.5.5.2/all"
+                ]
+            }
+        ]
+    },
+    "recordSyntax": {
+        "keywords": [
+            "record",
+            "record syntax",
+            "record declaration",
+            "record grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.5.6.5.1 Declaration (Normative)",
+                "chain": [
+                    "2.5.6.5.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "2.5.6.5.2 AST Grammar",
+                "chain": [
+                    "2.5.6.5.2/all"
+                ]
+            }
+        ]
+    },
+    "dictionarySyntax": {
+        "keywords": [
+            "dictionary",
+            "dictionary syntax",
+            "dictionary declaration",
+            "dictionary grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.5.7.5.1 Declaration (Normative)",
+                "chain": [
+                    "2.5.7.5.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "2.5.7.5.2 AST Grammar",
+                "chain": [
+                    "2.5.7.5.2/all"
+                ]
+            }
+        ]
+    },
+    "classSyntax": {
+        "keywords": [
+            "class",
+            "class syntax",
+            "class declaration",
+            "class grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.6.1.5.1 Declaration (Normative)",
+                "chain": [
+                    "2.6.1.5.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H3": "2.6.1.5.2 AST Grammar",
+                "chain": [
+                    "2.6.1.5.2/all"
+                ]
+            }
+        ]
+    },
+    "binderSyntax": {
+        "keywords": [
+            "binder",
+            "binder syntax",
+            "binder declaration",
+            "binder grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.6.2.5.1 Declaration (Normative)",
+                "chain": [
+                    "2.6.2.5.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H3": "2.6.2.5.2 AST Grammar",
+                "chain": [
+                    "2.6.2.5.2/all"
+                ]
+            }
+        ]
+    },
+    "flowSyntax": {
+        "keywords": [
+            "flow",
+            "flow syntax",
+            "flow declaration",
+            "flow grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.6.4.5.1 Declaration (Normative)",
+                "chain": [
+                    "2.6.4.5.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H3": "2.6.4.5.2 AST Grammar",
+                "chain": [
+                    "2.6.4.5.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.6.4.5.3 Canonical Declaration",
+                "chain": [
+                    "2.6.4.5.3/all"
+                ]
+            }
+        ]
+    },
+    "actionSyntax": {
+        "keywords": [
+            "action",
+            "action syntax",
+            "action declaration",
+            "action grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.6.5.5.1 Declaration (Normative)",
+                "chain": [
+                    "2.6.5.5.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H3": "2.6.5.5.2 AST Grammar",
+                "chain": [
+                    "2.6.5.5.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.6.5.5.3 Canonical Declaration",
+                "chain": [
+                    "2.6.5.5.3/all"
+                ]
+            }
+        ]
+    },
+    "ruleSyntax": {
+        "keywords": [
+            "rule",
+            "rule syntax",
+            "rule declaration",
+            "rule grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.6.6.6.1 Declaration (Normative)",
+                "chain": [
+                    "2.6.6.6.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H3": "2.6.6.6.2 AST Grammar",
+                "chain": [
+                    "2.6.6.6.2/all"
+                ]
+            }
+        ]
+    },
+    "interfaceSyntax": {
+        "keywords": [
+            "interface",
+            "interface syntax",
+            "interface declaration",
+            "interface grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.6.7.5.1 Declaration (Normative)",
+                "chain": [
+                    "2.6.7.5.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H3": "2.6.7.5.2 AST Grammar",
+                "chain": [
+                    "2.6.7.5.2/all"
+                ]
+            }
+        ]
+    },
+    "methodSyntax": {
+        "keywords": [
+            "method",
+            "method syntax",
+            "method declaration",
+            "method grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "3.12.7 AST Grammar",
+                "chain": [
+                    "3.12.7/all"
+                ]
+            }
+        ]
+    },
+    "definitionSyntax": {
+        "keywords": [
+            "definition",
+            "definition syntax",
+            "definition declaration",
+            "definition grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.7.1.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.7.1.4.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H3": "2.7.1.4.2 AST Grammar",
+                "chain": [
+                    "2.7.1.4.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.7.1.4.3 Canonical Declaration",
+                "chain": [
+                    "2.7.1.4.3/all"
+                ],
+                "enumTag": "structural"
+            }
+        ]
+    },
+    "dataInterfaceSyntax": {
+        "keywords": [
+            "dataInterface",
+            "dataInterface syntax",
+            "dataInterface declaration",
+            "dataInterface grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.7.2.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.7.2.4.1/all"
+                ],
+                "enumTag": "identity",
+                "normTag": "semantic"
+            },
+            {
+                "Order": 2,
+                "H3": "2.7.2.4.2 Syntax within with-block",
+                "chain": [
+                    "2.7.2.4.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.7.2.4.3 AST Grammar",
+                "chain": [
+                    "2.7.2.4.3/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H3": "2.7.2.4.4 Canonical Syntax",
+                "chain": [
+                    "2.7.2.4.4/all"
+                ]
+            }
+        ]
+    },
+    "semanticInterfaceSyntax": {
+        "keywords": [
+            "semanticInterface",
+            "semanticInterface syntax",
+            "semanticInterface declaration",
+            "semanticInterface grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.7.3.4.1 Declaration (Normative)",
+                "chain": [
+                    "2.7.3.4.1/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H3": "2.7.3.4.2 AST Grammar",
+                "chain": [
+                    "2.7.3.4.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.7.3.4.3 Canonical Syntax",
+                "chain": [
+                    "2.7.3.4.3/all"
+                ]
+            }
+        ]
+    },
+    "delegateSyntax": {
+        "keywords": [
+            "delegate",
+            "delegate syntax",
+            "delegate declaration",
+            "delegate grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.7.4.5.1 Declaration (Normative)",
+                "chain": [
+                    "2.7.4.5.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H3": "2.7.4.5.2 AST Grammar",
+                "chain": [
+                    "2.7.4.5.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.7.4.5.3 Canonical Syntax",
+                "chain": [
+                    "2.7.4.5.3/all"
+                ]
+            }
+        ]
+    },
+    "explanationSyntax": {
+        "keywords": [
+            "explanation",
+            "explanation syntax",
+            "explanation declaration",
+            "explanation grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.7.5.7.1 Declaration (Normative)",
+                "chain": [
+                    "2.7.5.7.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "2.7.5.7.2 AST Grammar",
+                "chain": [
+                    "2.7.5.7.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "2.7.5.7.3 Canonical Declaration",
+                "chain": [
+                    "2.7.5.7.3/all"
+                ]
+            }
+        ]
+    },
+    "dataSurrogateSyntax": {
+        "keywords": [
+            "dataSurrogate",
+            "dataSurrogate syntax",
+            "dataSurrogate declaration",
+            "dataSurrogate grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.7.6.6 Declaration Syntax (Normative)",
+                "chain": [
+                    "2.7.6.6/all"
+                ]
+            }
+        ]
+    },
+    "behavioralSurrogateSyntax": {
+        "keywords": [
+            "behavioralSurrogate",
+            "behavioralSurrogate syntax",
+            "behavioralSurrogate declaration",
+            "behavioralSurrogate grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.7.7.5 Declaration Syntax (Normative)",
+                "chain": [
+                    "2.7.7.5/all"
+                ]
+            }
+        ]
+    },
+    "domainSyntax": {
+        "keywords": [
+            "domain",
+            "domain syntax",
+            "domain declaration",
+            "domain grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.7.9.10.1 Declaration (Normative)",
+                "chain": [
+                    "2.7.9.10.1/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H3": "2.7.9.10.2 AST Grammar",
+                "chain": [
+                    "2.7.9.10.2/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "H3": "2.7.9.10.3 Canonical Declaration",
+                "chain": [
+                    "2.7.9.10.3/all"
+                ]
+            }
+        ]
+    },
+    "usingSyntax": {
+        "keywords": [
+            "using",
+            "using syntax",
+            "using declaration",
+            "using grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "3.3.1.1 Canonical Syntax",
+                "chain": [
+                    "3.3.1.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H3": "3.3.2.1 Canonical Syntax",
+                "chain": [
+                    "3.3.2.1/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "3.3.3.1 Canonical Syntax",
+                "chain": [
+                    "3.3.3.1/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H3": "3.3.4.1 Canonical Syntax",
+                "chain": [
+                    "3.3.4.1/all"
+                ]
+            },
+            {
+                "Order": 5,
+                "H3": "3.3.7.1 Canonical Syntax",
+                "chain": [
+                    "3.3.7.1/all"
+                ]
+            }
+        ]
+    },
+    "importSyntax": {
+        "keywords": [
+            "import",
+            "import syntax",
+            "import declaration",
+            "import grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "3.4.1.1 Canonical Syntax",
+                "chain": [
+                    "3.4.1.1/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H3": "3.4.2.1 Canonical Syntax",
+                "chain": [
+                    "3.4.2.1/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 3,
+                "H3": "3.4.3.1 Canonical Syntax",
+                "chain": [
+                    "3.4.3.1/all"
+                ]
+            }
+        ]
+    },
+    "invokeSyntax": {
+        "keywords": [
+            "invoke",
+            "invoke syntax",
+            "invoke declaration",
+            "invoke grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "3.9.7 AST Grammar",
+                "chain": [
+                    "3.9.7/all"
+                ]
+            }
+        ]
+    },
+    "inferSyntax": {
+        "keywords": [
+            "infer",
+            "infer syntax",
+            "infer declaration",
+            "infer grammar"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "3.13.5 AST Grammar",
+                "chain": [
+                    "3.13.5/all"
+                ]
+            }
+        ]
+    }
+}

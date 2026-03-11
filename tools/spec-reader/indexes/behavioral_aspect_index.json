@@ -1,0 +1,1496 @@
+{
+    "$specVersion": "1.0.5",
+    "fundamentalTypeCategoriesNormatives": {
+        "keywords": [
+            "fundamentalTypeCategories",
+            "fundamentalTypeCategories normative",
+            "fundamentalTypeCategories behavioral",
+            "fundamentalTypeCategories properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H3": "2.0.3.2.1 Normative Properties",
+                "chain": [
+                    "2.0.3.2.1/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "2.0.3.3.1 Normative Properties",
+                "chain": [
+                    "2.0.3.3.1/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "integralClassNormatives": {
+        "keywords": [
+            "integralClass",
+            "integralClass normative",
+            "integralClass behavioral",
+            "integralClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.1.1.2 Normative Properties",
+                "chain": [
+                    "2.1.1.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "decimalNormatives": {
+        "keywords": [
+            "decimal",
+            "decimal normative",
+            "decimal behavioral",
+            "decimal properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.1.2.2 Normative Properties",
+                "chain": [
+                    "2.1.2.2/all"
+                ],
+                "normTag": "semantic"
+            }
+        ]
+    },
+    "dateNormatives": {
+        "keywords": [
+            "date",
+            "date normative",
+            "date behavioral",
+            "date properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.1.4.2 Normative Properties",
+                "chain": [
+                    "2.1.4.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "identifiersClassNormatives": {
+        "keywords": [
+            "identifiersClass",
+            "identifiersClass normative",
+            "identifiersClass behavioral",
+            "identifiersClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.1.5.2 Normative Properties",
+                "chain": [
+                    "2.1.5.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "specialNormatives": {
+        "keywords": [
+            "special",
+            "special normative",
+            "special behavioral",
+            "special properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.1.6.1 Normative Properties",
+                "chain": [
+                    "2.1.6.1/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "enumNormatives": {
+        "keywords": [
+            "enum",
+            "enum normative",
+            "enum behavioral",
+            "enum properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.1.7.2 Normative Properties",
+                "chain": [
+                    "2.1.7.2/all"
+                ],
+                "normTag": "semantic"
+            }
+        ]
+    },
+    "fixedStringClassNormatives": {
+        "keywords": [
+            "fixedStringClass",
+            "fixedStringClass normative",
+            "fixedStringClass behavioral",
+            "fixedStringClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.1.8.2 Normative Properties",
+                "chain": [
+                    "2.1.8.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "blocksNormatives": {
+        "keywords": [
+            "blocks",
+            "blocks normative",
+            "blocks behavioral",
+            "blocks properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.2.0.2 Normative Properties",
+                "chain": [
+                    "2.2.0.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "opaqueBlocksClassNormatives": {
+        "keywords": [
+            "opaqueBlocksClass",
+            "opaqueBlocksClass normative",
+            "opaqueBlocksClass behavioral",
+            "opaqueBlocksClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.2.1.2 Normative Properties",
+                "chain": [
+                    "2.2.1.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "structuralBlockClassNormatives": {
+        "keywords": [
+            "structuralBlockClass",
+            "structuralBlockClass normative",
+            "structuralBlockClass behavioral",
+            "structuralBlockClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.2.2.0.2 Normative Properties",
+                "chain": [
+                    "2.2.2.0.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "streamTypesNormatives": {
+        "keywords": [
+            "streamTypes",
+            "streamTypes normative",
+            "streamTypes behavioral",
+            "streamTypes properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.3.0.2 Normative Properties",
+                "chain": [
+                    "2.3.0.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "streamCarriersClassNormatives": {
+        "keywords": [
+            "streamCarriersClass",
+            "streamCarriersClass normative",
+            "streamCarriersClass behavioral",
+            "streamCarriersClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.3.1.2 Normative Properties",
+                "chain": [
+                    "2.3.1.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "rawStringClassNormatives": {
+        "keywords": [
+            "rawStringClass",
+            "rawStringClass normative",
+            "rawStringClass behavioral",
+            "rawStringClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.3.2.3 Normative Properties",
+                "chain": [
+                    "2.3.2.3/all"
+                ],
+                "normTag": "semantic"
+            }
+        ]
+    },
+    "rawBinaryClassNormatives": {
+        "keywords": [
+            "rawBinaryClass",
+            "rawBinaryClass normative",
+            "rawBinaryClass behavioral",
+            "rawBinaryClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.3.3.3 Normative Properties",
+                "chain": [
+                    "2.3.3.3/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "structuralStreamClassNormatives": {
+        "keywords": [
+            "structuralStreamClass",
+            "structuralStreamClass normative",
+            "structuralStreamClass behavioral",
+            "structuralStreamClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.3.4.0.2 Normative Properties",
+                "chain": [
+                    "2.3.4.0.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "specializedTypesNormatives": {
+        "keywords": [
+            "specializedTypes",
+            "specializedTypes normative",
+            "specializedTypes behavioral",
+            "specializedTypes properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.4.0.4 Normative Properties",
+                "chain": [
+                    "2.4.0.4/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "anyNormatives": {
+        "keywords": [
+            "any",
+            "any normative",
+            "any behavioral",
+            "any properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.4.1.3 Normative Properties",
+                "chain": [
+                    "2.4.1.3/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "tupleNormatives": {
+        "keywords": [
+            "tuple",
+            "tuple normative",
+            "tuple behavioral",
+            "tuple properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.4.2.2 Normative Properties",
+                "chain": [
+                    "2.4.2.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "versionNormatives": {
+        "keywords": [
+            "version",
+            "version normative",
+            "version behavioral",
+            "version properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.4.3.3 Normative Properties",
+                "chain": [
+                    "2.4.3.3/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "referenceNormatives": {
+        "keywords": [
+            "reference",
+            "reference normative",
+            "reference behavioral",
+            "reference properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.4.4.3 Normative Properties",
+                "chain": [
+                    "2.4.4.3/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "errorClassNormatives": {
+        "keywords": [
+            "errorClass",
+            "errorClass normative",
+            "errorClass behavioral",
+            "errorClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.5.1.2 Normative Properties",
+                "chain": [
+                    "2.5.1.2/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "2.5.1.3 Canonical Envelope Fields",
+                "chain": [
+                    "2.5.1.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "2.5.1.4 Error Extension",
+                "chain": [
+                    "2.5.1.4/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "2.5.1.5 Error Specialization Hierarchy",
+                "chain": [
+                    "2.5.1.5/all"
+                ],
+                "normTag": "behavioral"
+            }
+        ]
+    },
+    "eventClassNormatives": {
+        "keywords": [
+            "eventClass",
+            "eventClass normative",
+            "eventClass behavioral",
+            "eventClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.5.2.2 Normative Properties",
+                "chain": [
+                    "2.5.2.2/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "2.5.2.3 Canonical Envelope Fields",
+                "chain": [
+                    "2.5.2.3/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "2.5.2.4 Event Specialization Hierarchy",
+                "chain": [
+                    "2.5.2.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            }
+        ]
+    },
+    "typedArrayClassNormatives": {
+        "keywords": [
+            "typedArrayClass",
+            "typedArrayClass normative",
+            "typedArrayClass behavioral",
+            "typedArrayClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.5.3.2 Normative Properties",
+                "chain": [
+                    "2.5.3.2/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "2.5.3.3 Canonical Envelope Linkage",
+                "chain": [
+                    "2.5.3.3/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "derivedArrayClassNormatives": {
+        "keywords": [
+            "derivedArrayClass",
+            "derivedArrayClass normative",
+            "derivedArrayClass behavioral",
+            "derivedArrayClass properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.5.4.2 Normative Properties",
+                "chain": [
+                    "2.5.4.2/all"
+                ],
+                "enumTag": "example",
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H2": "2.5.4.5 Normative Guarantees",
+                "chain": [
+                    "2.5.4.5/all"
+                ]
+            }
+        ]
+    },
+    "collectionNormatives": {
+        "keywords": [
+            "collection",
+            "collection normative",
+            "collection behavioral",
+            "collection properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.5.5.2 Normative Properties",
+                "chain": [
+                    "2.5.5.2/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "recordNormatives": {
+        "keywords": [
+            "record",
+            "record normative",
+            "record behavioral",
+            "record properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.5.6.1 Normative Semantics",
+                "chain": [
+                    "2.5.6.1/all"
+                ],
+                "normTag": "structural"
+            }
+        ]
+    },
+    "classNormatives": {
+        "keywords": [
+            "class",
+            "class normative",
+            "class behavioral",
+            "class properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.6.1.3 Behavioral Properties",
+                "chain": [
+                    "2.6.1.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "2.6.1.4 Interaction Constraints",
+                "chain": [
+                    "2.6.1.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            }
+        ]
+    },
+    "binderNormatives": {
+        "keywords": [
+            "binder",
+            "binder normative",
+            "binder behavioral",
+            "binder properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.6.2.3 Behavioral Properties",
+                "chain": [
+                    "2.6.2.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "2.6.2.4 Interaction Constraints",
+                "chain": [
+                    "2.6.2.4/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "behavioral"
+            }
+        ]
+    },
+    "inlineNormatives": {
+        "keywords": [
+            "inline",
+            "inline normative",
+            "inline behavioral",
+            "inline properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.6.3.3 Behavioral Properties",
+                "chain": [
+                    "2.6.3.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "2.6.3.4 Interaction Constraints",
+                "chain": [
+                    "2.6.3.4/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            }
+        ]
+    },
+    "flowNormatives": {
+        "keywords": [
+            "flow",
+            "flow normative",
+            "flow behavioral",
+            "flow properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.6.4.3 Behavioral Properties",
+                "chain": [
+                    "2.6.4.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "2.6.4.4 Interaction Constraints",
+                "chain": [
+                    "2.6.4.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            }
+        ]
+    },
+    "actionNormatives": {
+        "keywords": [
+            "action",
+            "action normative",
+            "action behavioral",
+            "action properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.6.5.3 Behavioral Properties",
+                "chain": [
+                    "2.6.5.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "2.6.5.4 Interaction Constraints",
+                "chain": [
+                    "2.6.5.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            }
+        ]
+    },
+    "ruleNormatives": {
+        "keywords": [
+            "rule",
+            "rule normative",
+            "rule behavioral",
+            "rule properties",
+            "rule purity",
+            "dependency constraint",
+            "rule chaining",
+            "enforcement closure",
+            "classification inheritance",
+            "EER",
+            "execution evidence",
+            "closure execution",
+            "evaluation sequencing"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "Behavioral Properties (§2.6.6.3)",
+                "chain": [
+                    "2.6.6.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "Interaction Constraints (§2.6.6.4)",
+                "chain": [
+                    "2.6.6.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "H2": "Dependency and Purity Constraints (ANNEX D)",
+                "chain": [
+                    "D.5",
+                    "D.5/table-1"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "Rule Chaining, Closure, and Sequencing (ANNEX D)",
+                "chain": [
+                    "D.5.2/all",
+                    "D.5.2.1/all",
+                    "D.5.2.2/all",
+                    "D.5.2.3/all",
+                    "D.5.2.4/all",
+                    "D.5.2.5/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "H2": "Classification Inheritance from Referenced Data (ANNEX D)",
+                "chain": [
+                    "D.6/all",
+                    "D.6.1/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 6,
+                "H2": "Execution Evidence Records (ANNEX D)",
+                "chain": [
+                    "D.8/all",
+                    "D.8.1/all",
+                    "D.8.2/all",
+                    "D.8.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 7,
+                "H2": "Closure Execution Model (ANNEX D)",
+                "chain": [
+                    "D.9/all"
+                ],
+                "normTag": "behavioral"
+            }
+        ],
+        "abstract": "Behavioral norms for rules: purity, chaining, closure execution, classification inheritance, and evidence emission."
+    },
+    "interfaceNormatives": {
+        "keywords": [
+            "interface",
+            "interface normative",
+            "interface behavioral",
+            "interface properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.6.7.3 Behavioral Properties",
+                "chain": [
+                    "2.6.7.3/all"
+                ],
+                "normTag": "declarative"
+            },
+            {
+                "Order": 2,
+                "H2": "2.6.7.4 Interaction Constraints",
+                "chain": [
+                    "2.6.7.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            }
+        ]
+    },
+    "methodNormatives": {
+        "keywords": [
+            "method",
+            "method normative",
+            "method behavioral",
+            "method properties",
+            "method type",
+            "callable",
+            "execution unit"
+        ],
+        "seq": [
+            {
+                "Order": 0,
+                "H1": "2.6.8 Method — Domain / Module Execution Unit",
+                "chain": [
+                    "2.6.8",
+                    "2.6.8/(A)"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 1,
+                "H2": "2.6.8.1 Designation",
+                "chain": [
+                    "2.6.8.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "2.6.8.2 Semantic Role",
+                "chain": [
+                    "2.6.8.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "2.6.8.3 Behavioral Properties",
+                "chain": [
+                    "2.6.8.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "2.6.8.4 Interaction Constraints",
+                "chain": [
+                    "2.6.8.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "declarative"
+            },
+            {
+                "Order": 5,
+                "H2": "2.6.8.5 Syntax",
+                "chain": [
+                    "2.6.8.5",
+                    "2.6.8.5.1/all",
+                    "2.6.8.5.2/all",
+                    "2.6.8.5.3/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "behavioral"
+            }
+        ]
+    },
+    "definitionNormatives": {
+        "keywords": [
+            "definition",
+            "definition normative",
+            "definition behavioral",
+            "definition properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.7.1.3 Normative Properties",
+                "chain": [
+                    "2.7.1.3/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "semantic"
+            }
+        ]
+    },
+    "dataInterfaceNormatives": {
+        "keywords": [
+            "dataInterface",
+            "dataInterface normative",
+            "dataInterface behavioral",
+            "dataInterface properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.7.2.3 Normative Properties",
+                "chain": [
+                    "2.7.2.3/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "structural"
+            }
+        ]
+    },
+    "semanticInterfaceNormatives": {
+        "keywords": [
+            "semanticInterface",
+            "semanticInterface normative",
+            "semanticInterface behavioral",
+            "semanticInterface properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.7.3.3 Normative Properties",
+                "chain": [
+                    "2.7.3.3/all"
+                ],
+                "enumTag": "structural",
+                "normTag": "semantic"
+            }
+        ]
+    },
+    "delegateNormatives": {
+        "keywords": [
+            "delegate",
+            "delegate normative",
+            "delegate behavioral",
+            "delegate properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.7.4.4 Normative Properties",
+                "chain": [
+                    "2.7.4.4/all"
+                ],
+                "enumTag": "behavioral",
+                "normTag": "behavioral"
+            }
+        ]
+    },
+    "domainNormatives": {
+        "keywords": [
+            "domain",
+            "domain normative",
+            "domain behavioral",
+            "domain properties"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "2.7.9.4 Normative Properties",
+                "chain": [
+                    "2.7.9.4/all"
+                ],
+                "enumTag": "normative",
+                "normTag": "declarative"
+            }
+        ]
+    },
+    "errorCodeFoundation": {
+        "keywords": [
+            "error code",
+            "error code scheme",
+            "diagnostic code",
+            "severity level",
+            "ERROR",
+            "WARNING",
+            "INFO",
+            "compilation phase"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "G.1 Purpose",
+                "chain": [
+                    "G.1/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 2,
+                "H2": "G.2 Error Code Scheme",
+                "chain": [
+                    "G.2/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "G.2.1 Secondary classification by compilation phase (informative)",
+                "chain": [
+                    "G.2.1"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "G.3 Severity Levels",
+                "chain": [
+                    "G.3/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "H2": "$ref: $desa/enforcementDesign",
+                "chain": [
+                    "$desa/enforcementDesign"
+                ]
+            }
+        ]
+    },
+    "typeCompatibilityErrors": {
+        "keywords": [
+            "type compatibility",
+            "E2101",
+            "E2111",
+            "nominal typing",
+            "conversion constraint",
+            "container invariance",
+            "materialization"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "G.4 Type Compatibility Errors (§2.1)",
+                "chain": [
+                    "G.4/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "G.5 Derived Type Errors (§2.5)",
+                "chain": [
+                    "G.5/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 3,
+                "H2": "G.6 Behavioral Type Errors (§2.6)",
+                "chain": [
+                    "G.6/all"
+                ],
+                "normTag": "behavioral"
+            }
+        ]
+    },
+    "semanticDiagnostics": {
+        "keywords": [
+            "semantic error",
+            "E2701",
+            "E2707",
+            "enforcement graph",
+            "definition lifecycle",
+            "governance",
+            "supersede",
+            "combine",
+            "retire",
+            "domain authority",
+            "cross-domain",
+            "follow gate",
+            "admit gate",
+            "enforcement direction",
+            "explanation symmetry",
+            "E2760"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "G.7 Semantic Type Errors (§2.7)",
+                "chain": [
+                    "G.7"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 2,
+                "H3": "G.7A Enforcement Graph Errors (§2.7 — continued)",
+                "chain": [
+                    "G.7A"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "G.7B Definition Lifecycle Errors",
+                "chain": [
+                    "G.7B"
+                ]
+            },
+            {
+                "Order": 4,
+                "H3": "G.7C Semantic Interface Governance Errors",
+                "chain": [
+                    "G.7C"
+                ]
+            },
+            {
+                "Order": 5,
+                "H3": "G.7D Domain Authority & Cross-Border Errors",
+                "chain": [
+                    "G.7D"
+                ]
+            },
+            {
+                "Order": 6,
+                "H3": "G.7E Follow/Admit Gate Errors",
+                "chain": [
+                    "G.7E"
+                ]
+            },
+            {
+                "Order": 7,
+                "chain": [
+                    "G.7F"
+                ],
+                "H3": "Enforcement Direction & Explanation Symmetry Errors"
+            },
+            {
+                "Order": 8,
+                "H2": "$ref: $desa/enforcementDesign",
+                "chain": [
+                    "$desa/enforcementDesign"
+                ]
+            }
+        ]
+    },
+    "symbolResolutionErrors": {
+        "keywords": [
+            "symbol resolution",
+            "E3001",
+            "E3021",
+            "field access",
+            "parameter passing",
+            "call site",
+            "type resolution",
+            "import boundary",
+            "visibility"
+        ],
+        "onto": [
+            "WHAT"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "G.8 Symbol Resolution Errors (§3.0)",
+                "chain": [
+                    "G.8"
+                ]
+            },
+            {
+                "Order": 2,
+                "H3": "G.8.1 Type and Symbol Resolution",
+                "chain": [
+                    "G.8.1"
+                ]
+            },
+            {
+                "Order": 3,
+                "H3": "G.8.2 Field Access Errors",
+                "chain": [
+                    "G.8.2"
+                ]
+            },
+            {
+                "Order": 4,
+                "H3": "G.8.3 Parameter Passing Errors",
+                "chain": [
+                    "G.8.3"
+                ]
+            },
+            {
+                "Order": 5,
+                "H3": "G.8.4 Type Compatibility at Call Sites",
+                "chain": [
+                    "G.8.4"
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "G.9 Syntax and Instruction Errors (§3.0)",
+                "chain": [
+                    "G.9/all"
+                ]
+            }
+        ]
+    },
+    "diagnosticSummaryAndExtension": {
+        "onto": [
+            "WHAT"
+        ],
+        "keywords": [
+            "diagnostic summary",
+            "error table",
+            "legacy migration",
+            "error code migration",
+            "extension rules",
+            "vendor prefix"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "G.10 Diagnostic Summary Table",
+                "chain": [
+                    "G.10/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "G.11 Legacy Error Code Migration",
+                "chain": [
+                    "G.11/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "H2": "G.12 Extension Rules",
+                "chain": [
+                    "G.12/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H2": "$ref: $desa/enforcementDesign",
+                "chain": [
+                    "$desa/enforcementDesign"
+                ]
+            }
+        ]
+    },
+    "compilationPhaseModel": {
+        "onto": [
+            "HOW",
+            "WHEN"
+        ],
+        "keywords": [
+            "compilation phase",
+            "P1",
+            "P2",
+            "P3",
+            "P4",
+            "P5",
+            "P6",
+            "syntax phase",
+            "symbol resolution",
+            "type checking",
+            "semantic validation",
+            "enforcement graph construction",
+            "lifecycle validation",
+            "compiler obligation"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "G1.1 Purpose and Scope",
+                "chain": [
+                    "G1.1/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "G1.2 Compilation Phases",
+                "chain": [
+                    "G1.2/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "H2": "G1.3 Phase Obligations",
+                "chain": [
+                    "G1.3"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 4,
+                "H3": "G1.3.1 P1 — Syntax",
+                "chain": [
+                    "G1.3.1"
+                ]
+            },
+            {
+                "Order": 5,
+                "H3": "G1.3.2 P2 — Symbol Resolution",
+                "chain": [
+                    "G1.3.2"
+                ]
+            },
+            {
+                "Order": 6,
+                "H3": "G1.3.3 P3 — Type Checking",
+                "chain": [
+                    "G1.3.3"
+                ]
+            },
+            {
+                "Order": 7,
+                "H3": "G1.3.4 P4 — Semantic Validation",
+                "chain": [
+                    "G1.3.4"
+                ],
+                "normTag": "semantic"
+            },
+            {
+                "Order": 8,
+                "H3": "G1.3.5 P5 — Enforcement Graph Construction",
+                "chain": [
+                    "G1.3.5"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 9,
+                "H3": "G1.3.6 P6 — Lifecycle Validation",
+                "chain": [
+                    "G1.3.6"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 10,
+                "H2": "$ref: $desa/enforcementDesign",
+                "chain": [
+                    "$desa/enforcementDesign"
+                ]
+            }
+        ]
+    },
+    "diagnosticBehaviorModel": {
+        "onto": [
+            "HOW",
+            "WHEN"
+        ],
+        "keywords": [
+            "diagnostic aggregation",
+            "strict enforcement posture",
+            "compilation outcome",
+            "SUCCESS",
+            "FAILURE",
+            "SUCCESS_WITH_WARNINGS",
+            "incremental compilation",
+            "determinism",
+            "severity escalation",
+            "diagnostic deduplication"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "G1.4 Diagnostic Aggregation Rules",
+                "chain": [
+                    "G1.4/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "G1.5 Strict Enforcement Posture",
+                "chain": [
+                    "G1.5/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 3,
+                "H2": "G1.6 Compilation Outcome Model",
+                "chain": [
+                    "G1.6/all"
+                ]
+            },
+            {
+                "Order": 4,
+                "H2": "G1.7 Incremental Compilation",
+                "chain": [
+                    "G1.7/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "H2": "G1.8 Determinism Requirement",
+                "chain": [
+                    "G1.8/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "$ref: $desa/enforcementDesign",
+                "chain": [
+                    "$desa/enforcementDesign"
+                ]
+            }
+        ]
+    },
+    "errorCodePrefixMapping": {
+        "onto": [
+            "WHAT",
+            "HOW"
+        ],
+        "keywords": [
+            "error code prefix",
+            "TYP",
+            "MOD",
+            "MTH",
+            "INL",
+            "FLW",
+            "OPR",
+            "INS",
+            "INF",
+            "PRM",
+            "error code mapping",
+            "diagnostic prefix",
+            "code class",
+            "error category",
+            "compilation error code",
+            "normative rule code",
+            "MOD-010",
+            "MOD-140",
+            "TYP-010",
+            "TYP-110",
+            "MTH-049",
+            "MTH-155",
+            "INL-070",
+            "FLW-030",
+            "OPR-050",
+            "INS-260",
+            "INF-080",
+            "PRM-060"
+        ],
+        "seq": [
+            {
+                "Order": 1,
+                "H2": "G.2 Error Code Scheme",
+                "chain": [
+                    "G.2/all"
+                ]
+            },
+            {
+                "Order": 2,
+                "H2": "G.4 Type Compatibility Errors (TYP-xxx)",
+                "chain": [
+                    "G.4/all"
+                ]
+            },
+            {
+                "Order": 3,
+                "H2": "G.5 Derived Type Errors",
+                "chain": [
+                    "G.5/all"
+                ],
+                "normTag": "structural"
+            },
+            {
+                "Order": 4,
+                "H2": "G.6 Behavioral Type Errors",
+                "chain": [
+                    "G.6/all"
+                ],
+                "normTag": "behavioral"
+            },
+            {
+                "Order": 5,
+                "H2": "G.9 Syntax and Instruction Errors (MOD/MTH/INL/FLW/OPR/INS/INF/PRM)",
+                "chain": [
+                    "G.9/all"
+                ]
+            },
+            {
+                "Order": 6,
+                "H2": "G.10 Diagnostic Summary and Extension Rules",
+                "chain": [
+                    "G.10/all"
+                ]
+            },
+            {
+                "Order": 7,
+                "$ref": "$bhva/errorCodeFoundation"
+            }
+        ],
+        "abstract": "Maps error code prefixes (TYP/MOD/MTH/INL/FLW/OPR/INS/INF/PRM) to their spec sections and diagnostic categories. Use when questions reference specific error codes like MOD-010 or TYP-110."
+    }
+}

@@ -1,0 +1,257 @@
+﻿{
+    "version": "1.0.0",
+    "title": "Alia Specification — Search & Extraction Patterns",
+    "description": "rg-compatible patterns for extraction, validation, and navigation of E.L.I.A. specification structure. Used together with aspect indices and specification_struct.json.",
+    "engine": {
+        "tool": "rg (ripgrep)",
+        "default": "Rust regex (rg without flags)",
+        "pcre2": "rg -P (for lookahead/lookbehind)",
+        "multiline": "rg -U (for multiline blocks)",
+        "fixedString": "rg -F (for exact H-title matches from indices)"
+    },
+
+    "canvas": {
+        "document": {
+            "filename": {
+                "rg": "^\\d+(_\\d+){0,3}_[a-zA-Z0-9_-]+\\.md$",
+                "description": "Document canvas filename. Digits separated by _ map to chain with dots.",
+                "extract": "Replace _ between leading digits with dots. 2_7_3_semantic_interface.md -> chain 2.7.3",
+                "examples": ["1_0_design_principles.md", "2_7_3_semantic_interface.md", "8_0_resilience_model.md"]
+            },
+            "title": {
+                "rg": "^#\\s+\\d+(\\.\\d+)*\\s+.+",
+                "description": "H1 title of document canvas (first # in file)",
+                "examples": ["# 2.7.3 Semantic Interface", "# 1.0 Design Principles"]
+            }
+        },
+        "annex": {
+            "filename": {
+                "rg": "^annex_[a-zA-Z](_[a-zA-Z0-9]+)*\\.md$",
+                "description": "Annex canvas filename. annex_X_... maps to chain X",
+                "extract": "Strip annex_, replace _ with dot. annex_a_type_registry.md -> chain A",
+                "examples": ["annex_a_type_registry.md", "annex_b_type_metadata.md", "annex_e_normative_classes.md"]
+            },
+            "title": {
+                "rg": "^\\*\\*ANNEX\\s+[A-Z]\\s*[—–-]\\s*.+\\*\\*",
+                "description": "Annex title (bold marker **ANNEX X — Title**)",
+                "examples": ["**ANNEX A — Type Registry and Semantic Configuration**"]
+            }
+        }
+    },
+
+    "section": {
+        "header": {
+            "document": {
+                "rg": "^#{1,6}\\s+\\d+(\\.\\d+)*\\s+",
+                "parametric": "rg '^#{LEVEL}\\s+{CHAIN}\\s+' {FILE}",
+                "description": "Document section header. Number of # = level (H1-H6). CHAIN from index.",
+                "examples": ["## 2.7 Semantic Types", "### 2.7.3 Semantic Interface", "#### 2.7.3.1 Definition"]
+            },
+            "annex": {
+                "rg": "^#{1,6}\\s+[A-Z](\\.\\d+)*\\s+",
+                "parametric": "rg '^#{LEVEL}\\s+{CHAIN}\\s+' {FILE}",
+                "description": "Annex section header.",
+                "examples": ["## A.1 Primitive Types", "### B.2.1 Metadata Fields"]
+            }
+        },
+        "search": {
+            "byChain": {
+                "template": "rg '^#{1,6}\\s+{CHAIN}\\s+' {FILE}",
+                "description": "Find section by chain address from index.",
+                "example": "rg '^#{1,6}\\s+2\\.7\\.3\\s+' current/2_7_3_semantic_interface.md"
+            },
+            "byTitle": {
+                "template": "rg -F '{H_TITLE}' {FILE}",
+                "description": "Find section by H-title from index (exact match, rg -F).",
+                "example": "rg -F 'Semantic Interface' current/2_7_3_semantic_interface.md"
+            },
+            "byKeywordInTitle": {
+                "template": "rg -i '^#{1,4}\\s+.*{KEYWORD}' current/*.md",
+                "description": "Search H1-H4 section titles across all spec files for keyword. Use for discovery when keyword is not found in index or to supplement index results.",
+                "example": "rg -i '^#{1,4}\\s+.*delegate' current/*.md"
+            },
+            "extractBody": {
+                "template": "rg -U -A {N} '^#{LEVEL}\\s+{CHAIN}\\s+' {FILE}",
+                "description": "Extract section header + N body lines. For full body: read until next header of same or higher level.",
+                "example": "rg -U -A 50 '^###\\s+2\\.7\\.3\\s+' current/2_7_3_semantic_interface.md"
+            }
+        },
+        "level": {
+            "description": "Section level is determined by the number of # at the start of the line.",
+            "mapping": {
+                "H1": "# (1 hash) — canvas level, top section in file",
+                "H2": "## (2 hash) — main sections",
+                "H3": "### (3 hash) — subsections, detailed breakdown",
+                "H4": "#### (4 hash) — concrete implementation",
+                "H5": "##### (5 hash) — deep detail",
+                "H6": "###### (6 hash) — rarely used"
+            }
+        }
+    },
+
+    "aspect": {
+        "header": {
+            "rg": "^[A-Z]\\.\\s+",
+            "parametric": "rg '^{LETTER}\\.\\s+' {FILE}",
+            "description": "Aspect marker: uppercase letter + dot + space. Each aspect is ATOMIC — do not merge aspects from different sections.",
+            "examples": ["A. Definition", "B. **Semantic Role**", "C. *Classification*"]
+        },
+        "titled": {
+            "rg": "^[A-Z]\\.\\s+(\\*\\*.*?\\*\\*|\\*.*?\\*|.+)$",
+            "description": "Aspect with title (plain, bold, or italic).",
+            "extractTitle": "Strip letter marker and formatting: B. **Semantic Role** -> Semantic Role"
+        },
+        "search": {
+            "template": "rg '^{LETTER}\\.\\s+' {FILE}",
+            "description": "Find specific aspect by letter from chain address (e.g. 2.7.3/B. -> search ^B\\.\\s+ in file 2_7_3).",
+            "example": "rg '^B\\.\\s+' current/2_7_3_semantic_interface.md"
+        }
+    },
+
+    "paragraph": {
+        "sequential": {
+            "rg": "^\\([A-Z]\\)\\s+",
+            "parametric": "rg '^\\({LETTER}\\)\\s+' {FILE}",
+            "description": "Sequential paragraph marker: (A), (B), (C). From chain address (e.g. 2.7.3/(B)) — search for specific letter.",
+            "examples": ["(A) First paragraph", "(B) Second paragraph", "(C) Third paragraph"],
+            "search": {
+                "template": "rg '^\\({LETTER}\\)\\s+' {FILE}",
+                "example": "rg '^\\(B\\)\\s+' current/2_7_3_semantic_interface.md"
+            }
+        },
+        "plain": {
+            "rg": "^(?!#|>|\\d+\\.|[A-Z]\\.|[-*+]|\\(See|\\(ask:|\\[).+",
+            "description": "Plain paragraph — text without special markers. Defined by exclusion: does NOT start with #, >, digit+dot, letter+dot, list marker, or reference."
+        }
+    },
+
+    "reference": {
+        "internal": {
+            "rg": "\\(See\\s+<[^>]+>\\)",
+            "description": "Internal cross-reference to other sections/canvases.",
+            "examples": ["(See <{Section}1/title>)", "(See <{Canvas}@1.2, {Aspect}A>)"]
+        },
+        "section": {
+            "rg": "\\[in Section\\s+[A-Z0-9]+(\\.[0-9]+)*\\]",
+            "description": "Section reference [in Section X.Y.Z].",
+            "examples": ["[in Section 3.3.1.3]", "[in Section A.1.2]"]
+        },
+        "web": {
+            "rg": "\\[[^\\]]+:\\s*<[^>]+>\\]|\\[[^\\]]+\\]\\([^)]+\\)",
+            "description": "Web reference in custom or markdown format.",
+            "examples": ["[title: <https://example.com>]", "[Link](https://example.com)"]
+        },
+        "person": {
+            "rg": "\\(ask:\\s*[^:]+:\\s*(email|link)\\)",
+            "description": "Person/contact reference.",
+            "examples": ["(ask: Alex Petron: email)"]
+        }
+    },
+
+    "note": {
+        "rg": "^>\\s+",
+        "multiline": "^>\\s+(.+(?:\\n>\\s+.+)*)",
+        "description": "Blockquote/note. Consecutive lines starting with > form a single block.",
+        "examples": ["> This is a note.", "> Multi-line note\n> continues here"]
+    },
+
+    "list": {
+        "numbered": {
+            "level1": {
+                "rg": "^\\d+\\.\\s+",
+                "description": "Level 1 numbered list item.",
+                "examples": ["1. First item", "2. Second item"]
+            },
+            "level2": {
+                "rg": "^\\s*-?\\s*\\([a-z]\\)\\s+",
+                "description": "Level 2 sub-item: (a), (b), (c).",
+                "examples": ["  (a) Sub-item", "- (b) With dash"]
+            },
+            "level3": {
+                "rg": "^\\s*-?\\s*\\((i{1,3}|iv|v|vi{0,3}|ix|x)\\)\\s+",
+                "description": "Level 3 sub-item: roman numerals (i), (ii), (iii), (iv), (v).",
+                "examples": ["    (i) Roman one", "    (ii) Roman two", "    (iv) Roman four"]
+            }
+        },
+        "unnumbered": {
+            "rg": "^[-*+]\\s+",
+            "description": "Bulleted (unnumbered) list.",
+            "examples": ["- Item", "* Item", "+ Item"]
+        }
+    },
+
+    "textBlock": {
+        "bold": {
+            "rg": "\\*\\*[^*]+\\*\\*",
+            "description": "Bold text."
+        },
+        "italic": {
+            "rg": "(?<!\\*)\\*(?!\\*)[^*]+\\*(?!\\*)",
+            "engine": "rg -P",
+            "description": "Italic text (single *, not double)."
+        },
+        "inlineCode": {
+            "rg": "`[^`]+`",
+            "description": "Inline code."
+        },
+        "codeBlock": {
+            "open": "^```",
+            "description": "Code block fence (open/close). Between ``` — source code, do not interpret as markup."
+        }
+    },
+
+    "normative": {
+        "markers": {
+            "rg": "MUST NOT|MUST|SHALL NOT|SHALL|SHOULD NOT|SHOULD|MAY",
+            "description": "RFC 2119 / RFC 8174 normative requirement keywords. Found inside paragraphs, aspects, blockquotes.",
+            "WARNING": "NEVER summarize normative content. Extract as-is. Use only in validation chains."
+        },
+        "sectionTitles": {
+            "rg": "^#{1,6}\\s+.*?(Normative|Declaration|Obligations|Compliance|Enforcement)",
+            "description": "Section headers containing normative requirements."
+        },
+        "noteBlock": {
+            "rg": "^>\\s+.*(Normative|normative|MUST|MUST NOT|SHALL)",
+            "description": "Normative notes in blockquotes."
+        }
+    },
+
+    "helpers": {
+        "filenameToChain": {
+            "rule": "Replace _ between leading digits with dots, discard text portion.",
+            "examples": [
+                {"input": "2_7_3_semantic_interface.md", "output": "2.7.3"},
+                {"input": "1_0_design_principles.md", "output": "1.0"},
+                {"input": "8_0_resilience_model.md", "output": "8.0"}
+            ]
+        },
+        "annexFilenameToChain": {
+            "rule": "Strip annex_, take letter and digits, join with dots.",
+            "examples": [
+                {"input": "annex_a_type_registry.md", "output": "A"},
+                {"input": "annex_b_type_metadata.md", "output": "B"},
+                {"input": "annex_e_normative_classes.md", "output": "E"}
+            ]
+        },
+        "chainToFile": {
+            "rule": "Replace dots in chain with _, add current/ prefix. For annexes: annex_ + chain.",
+            "examples": [
+                {"input": "2.7.3", "output": "current/2_7_3_*.md"},
+                {"input": "A", "output": "current/annex_a_*.md"}
+            ]
+        },
+        "chainAddressToRg": {
+            "description": "Convert chain address from index to rg command.",
+            "rules": [
+                {"address": "X.Y.Z", "meaning": "section header + first paragraph", "rg": "rg '^#{1,6}\\s+X\\.Y\\.Z\\s+' FILE"},
+                {"address": "X.Y.Z/all", "meaning": "entire section (LEAF sections only). Case-insensitive: /all and /All both valid.", "rg": "rg -U -A 200 '^#{1,6}\\s+X\\.Y\\.Z\\s+' FILE"},
+                {"address": "X.Y.Z/A.", "meaning": "specific aspect", "rg": "rg '^A\\.\\s+' FILE (within section X.Y.Z)"},
+                {"address": "X.Y.Z/A.-D.", "meaning": "range of aspects A, B, C, D", "expand": "X.Y.Z/A., X.Y.Z/B., X.Y.Z/C., X.Y.Z/D.", "rg": "rg '^[A-D]\\.\\s+' FILE (within section X.Y.Z)"},
+                {"address": "X.Y.Z/(A)-(F)", "meaning": "range of paragraphs (A) through (F)", "expand": "X.Y.Z/(A), X.Y.Z/(B), ..., X.Y.Z/(F)", "rg": "rg '^\\([A-F]\\)\\s+' FILE (within section X.Y.Z)"},
+                {"address": "X.Y.Z/(B)", "meaning": "specific paragraph", "rg": "rg '^\\(B\\)\\s+' FILE (within section X.Y.Z)"},
+                {"address": "X.Y.Z/table-1", "meaning": "first table in section", "rg": "rg -U '\\|.*\\|' FILE (within section X.Y.Z)"},
+                {"address": "X.Y.Z/block-1", "meaning": "first code block in section", "rg": "rg -U '^```' FILE (within section X.Y.Z)"}
+            ]
+        }
+    }
+}

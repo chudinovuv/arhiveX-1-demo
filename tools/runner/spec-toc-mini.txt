@@ -1,0 +1,52 @@
+2.2 Blocks
+  2.2.0.1 Designation
+  2.2.0.2 Normative properties
+  2.2.0.3 Semantic role
+  2.2.0.4 String Type Hierarchy
+2.2.1 Opaque blocks class
+  2.2.1.1 Designation
+  2.2.1.2 Normative properties
+  2.2.1.3 Semantic role
+  2.2.1.4 Syntax
+    2.2.1.4.1 Declaration (Normative)
+    2.2.1.4.2 AST Grammar
+    2.2.1.4.3 Canonical Syntax
+2.2.2 Structural block class
+  2.2.2.0.1 Designation
+  2.2.2.0.2 Normative properties
+  2.2.2.0.3 Semantic role
+2.2.3 Special Block Formats
+2.2.4 Binary Encoding Rules for Block Types
+  2.2.4.1 Parser Obligations
+  2.2.4.2 Performance Implications
+2.3 Stream Types
+  2.3.0.1 Designation
+  2.3.0.2 Normative properties
+  2.3.0.3 Semantic role
+  2.3.0.4 Stream Metadata and Interface Obligations
+2.3.1 Stream carriers class
+  2.3.1.1 Designation
+  2.3.1.2 Normative properties
+  2.3.1.3 Semantic role
+  2.3.1.4 Semantic Data Binding
+  2.3.1.5 Syntax
+2.3.2 RAW String Class
+  2.3.2.1 Designation
+  2.3.2.2 Semantic role
+  2.3.2.3 Normative properties
+    2.3.2.3.1 Regular String
+    2.3.2.3.2 Base64 String
+  2.3.2.4 Semantic Data Binding
+  2.3.2.5 Syntax
+2.3.3 RAW Binary Class
+  2.3.3.1 Designation
+  2.3.3.2 Semantic role
+  2.3.3.3 Normative properties
+  2.3.3.4 Semantic Data Binding
+  2.3.3.5 Syntax
+2.3.4 Structural Stream class
+  2.3.4.0.1 Designation
+  2.3.4.0.2 Normative properties
+  2.3.4.0.3 Syntax
+  2.3.4.1 Semantic Role
+  2.3.4.2 Semantic Data Binding

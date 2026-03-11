@@ -1,0 +1,931 @@
+﻿{
+  "$schema": "grammar_index/v1",
+  "$specVersion": "1.0.5",
+  "$description": "Six-level grammar index: block → identifier → construct → operator → declaration → slot. Maps spec sections to example files with admissibility matrix.",
+
+  "levels": {
+    "block":       "Self-contained unit with define...end or domain...end",
+    "identifier":  "Naming, addressing, qualification patterns",
+    "construct":   "Semantic action keyword inside a block",
+    "operator":    "Relation/binding/comparison between entities",
+    "declaration": "Structural element inside a block",
+    "slot":        "Admissible right-hand companion of a construct or operator"
+  },
+
+  "blocks": {
+    "domain": {
+      "syntax": "domain \"Name\"",
+      "spec": ["3.1", "8.8.1"],
+      "examples": ["3_1_0_Domain.el"],
+      "admits": {
+        "constructs": ["import", "using", "let"],
+        "declarations": ["version", "runtime", "runver", "platform", "cross-border", "explained_as", "export", "public", "private"],
+        "operators": { "binding": ["enforces"] },
+        "nested_blocks": ["module", "record", "class", "interface", "action", "flow", "rule", "binder", "delegate", "definition", "semantic_interface", "data_interface", "error", "event", "enum", "method", "derived_array", "collection", "dictionary"]
+      }
+    },
+    "module": {
+      "syntax": "define module \"Name\"",
+      "spec": ["3.2", "8.8.2"],
+      "examples": ["3_2_0_module.el"],
+      "admits": {
+        "constructs": ["using", "import"],
+        "declarations": ["version", "runtime", "runver", "platform", "explained_as", "export", "public"],
+        "operators": { "binding": ["enforces"] },
+        "nested_blocks": ["record", "interface", "delegate", "rule", "action", "definition"]
+      }
+    },
+    "definition": {
+      "syntax": "definition \"Name\"",
+      "spec": ["2.7.1", "2.7.1.3.4", "8.8.3"],
+      "examples": ["2_7_1_Definition.el"],
+      "admits": {
+        "constructs": [],
+        "declarations": ["version", "effective_date", "deprecated_date", "source", "explained_as", "constraints", "export", "public"],
+        "operators": { "binding": ["enforces", "enforced"] },
+        "forbidden": ["All executable statements", "invoke", "emit", "follow"]
+      },
+      "source": {
+        "syntax": "source: reference(.type: \"standard\", .name: \"DORA\", .section: \"Art.6\")",
+        "desc": "Optional referenceable token binding the definition to an external authoritative origin (§2.7.1 A.3). Repeatable (0..*).",
+        "position": "After lifecycle clauses, before explained_as"
+      },
+      "riid": {
+        "layout": "version[32] | effective_date[32] | deprecated_date[32] = 96 bit",
+        "lookup_key": "SHA-256 of canonical name (256 bit, stored in symbol table, not in riid)",
+        "resolution": ["full riid → exact version", "SHA-256 lookup key → latest non-deprecated version"]
+      },
+      "multiple_enforces": {
+        "desc": "A definition MAY contain multiple enforces clauses; the compiler merges and deduplicates them into a single logical set."
+      }
+    },
+    "record": {
+      "syntax": "define record Name",
+      "spec": ["2.5.6", "8.8.4"],
+      "examples": ["2_5_6_Record.el"],
+      "admits": {
+        "constructs": [],
+        "declarations": ["property", "explained_as", "export", "public"],
+        "operators": { "binding": ["enforces", "implements", "extends"] },
+        "forbidden": ["method bodies", "executable statements", "control flow", "delegate bindings"]
+      }
+    },
+    "class": {
+      "syntax": "define class Name",
+      "spec": ["2.6.1", "8.8.10"],
+      "examples": ["2_6_1_Class.el"],
+      "admits": {
+        "constructs": ["let", "new", "return", "throw", "foreach", "if", "case", "loop", "break", "continue", "invoke", "emit", "follow"],
+        "declarations": ["property", "method", "event", "explained_as", "export", "public"],
+        "operators": {
+          "binding": ["implements", "enforces"],
+          "reference": ["this", "this.X"],
+          "comparison": ["==", "!=", ">=", "<=", ">", "<", "and", "or", "not", "is", "is_not"],
+          "set": ["anyof", "in", "not_in", "typeof"],
+          "math": ["+", "-", "*", "/", "mod"]
+        }
+      }
+    },
+    "interface": {
+      "syntax": "define interface Name",
+      "spec": ["2.6.7", "8.8.5"],
+      "examples": ["2_6_7_Interface.el"],
+      "admits": {
+        "constructs": [],
+        "declarations": ["property", "property_readonly", "method_signature", "method_default", "event", "explained_as", "export", "public"],
+        "operators": {
+          "binding": ["mapped_to_method", "mapped_to_delegate", "mapped_to_action", "mapped_to_property", "extends", "enforces", "implements"],
+          "fallback": ["method_default", "readonly_default"],
+          "reference": ["this"]
+        },
+        "forbidden": ["Execution", "policy decisions"]
+      }
+    },
+    "error": {
+      "syntax": "define error ErrorName [extends BaseError]",
+      "spec": ["2.5.1"],
+      "examples": ["2_5_1_Error.el", "2_4_SpecializedTypes.el"],
+      "admits": {
+        "constructs": [],
+        "declarations": ["ErrorCode", "Message", "Severity", "property", "explained_as"],
+        "operators": { "binding": ["enforces"] },
+        "identifiers": ["ErrorCode:", "Message:", "Severity:"]
+      }
+    },
+    "event": {
+      "syntax": "define event EventName [extends BaseEvent]",
+      "spec": ["2.5.2", "8.8.6"],
+      "examples": ["2_5_2_Event.el", "2_4_SpecializedTypes.el"],
+      "admits": {
+        "constructs": [],
+        "declarations": ["EventKind", "EventVersion", "property", "explained_as", "export"],
+        "operators": { "binding": ["enforces"] },
+        "identifiers": ["EventKind:", "EventVersion:"],
+        "forbidden": ["logic", "behavioral types"]
+      }
+    },
+    "rule": {
+      "syntax": "define rule \"Name\"(params)",
+      "spec": ["2.6.6", "8.8.7", "D"],
+      "examples": ["2_6_6_Rule.el", "3_13_0_infer.el"],
+      "admits": {
+        "constructs": ["infer", "follow", "foreach", "let"],
+        "declarations": ["explained_as"],
+        "operators": {
+          "binding": ["enforces"],
+          "fallback": ["default_infer"],
+          "reference": ["this_is"],
+          "comparison": ["==", "!=", ">=", "<=", ">", "<", "and", "or", "not", "is", "is_not"],
+          "set": ["anyof", "in", "not_in", "between_and", "typeof"],
+          "chaining": ["follow_backward", "follow_aggregate", "forward_chain"]
+        },
+        "forbidden": ["side effects", "emit", "invoke delegates", "state mutation", "I/O"]
+      }
+    },
+    "action": {
+      "syntax": "define action \"Name\"(params)",
+      "spec": ["2.6.5", "8.8.8"],
+      "examples": ["2_6_5_Action.el"],
+      "admits": {
+        "constructs": ["follow", "invoke", "emit", "let", "new", "return", "inline", "required"],
+        "declarations": ["explained_as", "with", "on_error", "export", "public"],
+        "operators": {
+          "binding": ["enforces"],
+          "comparison": ["is", "is_not"],
+          "chaining": ["follow_backward"]
+        },
+        "forbidden": ["if", "else", "case", "foreach", "loop", "break", "continue", "throw", "yield", "branching"]
+      }
+    },
+    "flow": {
+      "syntax": "define flow \"Name\"(params)",
+      "spec": ["2.6.4", "8.8.9"],
+      "examples": ["2_6_4_Flow.el", "2_6_4_Flow_ProcessAlgorithm.el"],
+      "admits": {
+        "constructs": ["stage", "parallel", "follow", "invoke", "emit", "let", "new", "return", "foreach", "if", "case", "loop", "break", "continue", "required"],
+        "declarations": ["explained_as", "with", "on_error", "requires", "export", "public"],
+        "operators": {
+          "binding": ["enforces"],
+          "comparison": ["==", "!=", ">=", "<=", ">", "<", "and", "or", "not", "is", "is_not"],
+          "set": ["in"],
+          "chaining": ["follow_backward", "follow_aggregate"],
+          "math": ["+", "-", "*", "/"]
+        },
+        "identifiers": ["@pipeline_var"]
+      }
+    },
+    "binder": {
+      "syntax": "define binder Name(params)",
+      "spec": ["2.6.2"],
+      "examples": ["2_6_2_Binder.el"],
+      "admits": {
+        "constructs": ["let", "new", "yield", "foreach", "if", "case", "for", "break", "continue", "follow", "print"],
+        "declarations": ["explained_as", "public", "private"],
+        "operators": {
+          "binding": ["enforces"],
+          "comparison": ["==", "!=", ">=", "<=", ">", "<", "and", "or", "not", "is", "is_not"],
+          "set": ["between_and"],
+          "math": ["+", "-", "*"]
+        }
+      }
+    },
+    "delegate": {
+      "syntax": "delegate Name(params) mapped to ...",
+      "spec": ["2.7.4", "8.8.11"],
+      "examples": ["2_7_4_Delegate.el", "language primitive-constructions.el"],
+      "admits": {
+        "constructs": [],
+        "declarations": ["explained_as", "bind_to", "using_library", "using_tool"],
+        "operators": {
+          "binding": ["mapped_to_endpoint", "bind_to_field", "bind_to_scalar", "bind_to_pipeline", "bind_to_result", "enforces"],
+          "reference": ["this", "this.<member>", "@pipeline_var"]
+        },
+        "identifiers": [":GET", ":POST", ":PUT", ":DELETE", ":PATCH"]
+      }
+    },
+    "method": {
+      "syntax": "define method Name(params): ReturnType",
+      "spec": ["3.12"],
+      "examples": ["3_12_0_method.el"],
+      "admits": {
+        "constructs": ["let", "new", "return", "throw", "foreach", "if", "case", "loop", "for", "break", "continue", "yield", "follow", "invoke", "required", "print", "read_file", "write_file"],
+        "declarations": ["explained_as", "export", "public"],
+        "operators": {
+          "comparison": ["==", "!=", ">=", "<=", ">", "<", "and", "or", "not", "xor", "is", "is_not"],
+          "set": ["anyof", "in", "not_in", "typeof", "sizeof"],
+          "math": ["+", "-", "*", "/", "mod", "^"],
+          "reference": ["this", "this.X"]
+        }
+      }
+    },
+    "semantic_interface": {
+      "syntax": "semantic interface \"Name\"",
+      "spec": ["2.7.3"],
+      "examples": ["2_7_3_SemanticInterface.el"],
+      "admits": {
+        "constructs": ["supersede", "combine", "retire", "deprecated"],
+        "declarations": ["version", "effective_date", "deprecated_date", "explained_as", "constraints", "export", "public"],
+        "operators": {
+          "binding": ["enforces", "extends", "by_definition", "by_flow", "by_action", "by_rule", "by_domain", "by_module"]
+        }
+      }
+    },
+    "data_interface": {
+      "syntax": "define data interface Name[T,K] over \"provider\"",
+      "spec": ["2.7.2"],
+      "examples": ["2_7_2_DataInterface.el"],
+      "admits": {
+        "constructs": ["operation"],
+        "declarations": ["explained_as", "with", "export", "public"],
+        "operators": {
+          "binding": ["over", "of_parent", "enforces", "mapped_to_endpoint"]
+        }
+      }
+    },
+    "derived_array": {
+      "syntax": "define Name: array[,] of Type",
+      "spec": ["2.5.3", "2.5.4"],
+      "examples": ["2_5_3_Array_Collection_Dictionary.el"],
+      "admits": {
+        "declarations": ["explained_as", "export", "public"],
+        "operators": { "binding": ["enforces"] }
+      }
+    },
+    "collection": {
+      "syntax": "define Name: collection of Type [as List|Set|Stack]",
+      "spec": ["2.5.5"],
+      "examples": ["2_5_3_Array_Collection_Dictionary.el"],
+      "admits": {
+        "declarations": ["explained_as", "constraints", "export", "public"],
+        "operators": {
+          "binding": ["enforces", "as_kind"]
+        }
+      }
+    },
+    "dictionary": {
+      "syntax": "define Name: dictionary[K, V]",
+      "spec": ["2.5.7"],
+      "examples": ["2_5_3_Array_Collection_Dictionary.el"],
+      "admits": {
+        "declarations": ["explained_as", "export"],
+        "operators": { "binding": ["enforces"] }
+      }
+    }
+  },
+
+  "constructs": {
+    "infer": {
+      "spec": ["3.13"],
+      "examples": ["3_13_0_infer.el", "2_6_6_Rule.el"],
+      "admitted_in": ["rule"],
+      "slots": {
+        "when": { "desc": "Conditional inference", "rhs": "condition_block" },
+        "foreach": { "desc": "Collection iteration inside infer", "rhs": "foreach_block" },
+        "follow": { "desc": "Rule delegation inside infer", "rhs": "follow_expression" }
+      }
+    },
+    "follow": {
+      "spec": ["3.5"],
+      "examples": ["3_5_0_follow.el"],
+      "admitted_in": ["action", "flow", "method", "rule", "binder", "class"],
+      "slots": {
+        "guard": { "desc": "Validation guard", "rhs": "\"rule-name\"(args) is \"label\"", "syntax": "follow (\"error msg\"): \"rule\"(args) is \"value\";" },
+        "aggregate": { "desc": "Aggregated multi-follow", "rhs": "follow(aggregate: true): ... end", "syntax": "follow(aggregate: true): ... end" },
+        "let_assign": { "desc": "Capture rule result", "rhs": "let x = follow: \"rule\"(args)" }
+      }
+    },
+    "emit": {
+      "spec": ["3.8"],
+      "examples": ["3_8_0_emit.el"],
+      "admitted_in": ["action", "flow", "class"],
+      "slots": {
+        "event": { "desc": "Emit a typed event", "rhs": "EventType(.Field: value)" }
+      },
+      "forbidden_in": ["rule", "record", "interface", "definition", "binder"]
+    },
+    "invoke": {
+      "spec": ["3.9"],
+      "examples": ["3_9_0_invoke.el"],
+      "admitted_in": ["action", "flow", "method", "class"],
+      "slots": {
+        "delegate": { "desc": "Call external delegate", "rhs": "DelegateName(args)" }
+      }
+    },
+    "inline": {
+      "spec": ["3.11"],
+      "examples": ["3_11_0_inline.el"],
+      "admitted_in": ["rule", "action", "flow"],
+      "slots": {
+        "expression": { "desc": "Inline expression evaluation", "rhs": "inline(\"name\", args)" },
+        "return": { "desc": "Return inline result", "rhs": "return inline(...)" },
+        "capture": { "desc": "Capture inline result", "rhs": "${result}" }
+      }
+    },
+    "return": {
+      "spec": ["3.15"],
+      "admitted_in": ["action", "method", "class"],
+      "slots": {
+        "value": { "desc": "Return expression", "rhs": "expression" },
+        "new": { "desc": "Return new instance", "rhs": "new Type(.Field: value)" },
+        "tuple": { "desc": "Return tuple", "rhs": "(val1, val2, val3)" },
+        "inline": { "desc": "Return inline result", "rhs": "inline(...)" }
+      }
+    },
+    "throw": {
+      "spec": ["3.15"],
+      "admitted_in": ["flow", "method", "class"],
+      "slots": {
+        "error": { "desc": "Throw typed error", "rhs": "ErrorType(.Field: value)" }
+      },
+      "forbidden_in": ["action", "rule", "binder", "record", "interface", "delegate"]
+    },
+    "let": {
+      "spec": ["3.10"],
+      "examples": ["3_10_0_variable.el"],
+      "admitted_in": ["action", "flow", "method", "binder", "rule", "class", "domain"],
+      "slots": {
+        "value": { "desc": "Assign expression", "rhs": "expression" },
+        "new": { "desc": "Create new instance", "rhs": "new Type()" },
+        "follow": { "desc": "Capture rule result", "rhs": "follow: \"rule\"(args)" },
+        "invoke": { "desc": "Capture delegate result", "rhs": "invoke Delegate(args)" },
+        "default": { "desc": "Default value", "rhs": "default \"value\"" }
+      }
+    },
+    "new": {
+      "spec": ["3.15"],
+      "admitted_in": ["action", "flow", "method", "rule", "binder", "class"],
+      "slots": {
+        "record": { "desc": "Construct record", "rhs": "new RecordType(.Field: value)" },
+        "array": { "desc": "Construct array", "rhs": "new array of Type()" },
+        "guid": { "desc": "Generate GUID", "rhs": "new_guid()" }
+      }
+    },
+    "foreach": {
+      "spec": ["3.14"],
+      "examples": ["3_14_0_control_flow.el"],
+      "admitted_in": ["method", "binder", "rule", "flow", "class"],
+      "slots": {
+        "collection": { "desc": "Iterate collection", "rhs": "foreach item in collection: ... end" },
+        "follow_guard": { "desc": "Foreach with aggregate follow", "rhs": "foreach item in col follow(aggregate: true): ... end" }
+      },
+      "forbidden_in": ["action"]
+    },
+    "if": {
+      "spec": ["3.14"],
+      "examples": ["3_14_0_control_flow.el"],
+      "admitted_in": ["method", "binder", "rule", "flow", "class"],
+      "slots": {
+        "condition": { "desc": "If condition", "rhs": "if condition: ... end" },
+        "else": { "desc": "Else branch", "rhs": "else: ... end" },
+        "else_if": { "desc": "Else-if chain", "rhs": "else if condition: ... end" }
+      },
+      "forbidden_in": ["action"]
+    },
+    "case": {
+      "spec": ["3.14"],
+      "examples": ["3_14_0_control_flow.el"],
+      "admitted_in": ["method", "rule", "binder", "flow", "class"],
+      "slots": {
+        "when": { "desc": "Case branch", "rhs": "when value: ... end" },
+        "default": { "desc": "Default branch", "rhs": "default: ... end" }
+      },
+      "forbidden_in": ["action"]
+    },
+    "loop": {
+      "spec": ["3.14"],
+      "examples": ["3_14_0_control_flow.el"],
+      "admitted_in": ["method", "flow"],
+      "slots": {
+        "while": { "desc": "Loop while condition", "rhs": "loop when condition: ... end" },
+        "until": { "desc": "Loop until condition", "rhs": "loop ... until condition;" },
+        "for": { "desc": "Counted loop", "rhs": "for i = start to end [step N]: ... end" }
+      }
+    },
+    "import": {
+      "spec": ["3.4"],
+      "examples": ["3_4_0_imports.el"],
+      "admitted_in": ["domain", "module"]
+    },
+    "using": {
+      "spec": ["3.3"],
+      "admitted_in": ["domain", "module"],
+      "examples": ["3_3_0_using.els"],
+      "sub_forms": {
+        "using_library": {
+          "syntax": "using library \"name\" as \"alias\" via native|platform|rpc|process",
+          "spec": ["3.3.1"],
+          "desc": "Typed external library integration with integration category",
+          "categories": {
+            "native":   "Level 1 — in-process FFI (C ABI, shared memory)",
+            "platform": "Level 2 — platform-managed service (COM, D-Bus)",
+            "rpc":      "Level 3 — remote procedure call (gRPC, REST)",
+            "process":  "Level 2 — structured subprocess IPC (LSP, JSON-RPC over stdin)"
+          },
+          "options": {
+            "syntax": "options: (.<key>: <value>)",
+            "desc": "Typed configuration dictionary — dictionary[string, any]",
+            "version": "options.version — version constraint when assembly-reference has no manifest"
+          }
+        },
+        "using_tool": {
+          "syntax": "using tool \"name\" as \"alias\"",
+          "spec": ["3.3.4"],
+          "desc": "Shell-level OS executable binding — spawn process, pass args, capture stdout/exit code",
+          "options": {
+            "syntax": "options: (.<key>: <value>)",
+            "version": "options.version — version constraint for CLI tools"
+          }
+        },
+        "using_domain": {
+          "syntax": "using domain \"name\"",
+          "spec": ["3.3.2"]
+        },
+        "using_module": {
+          "syntax": "using module \"name\"",
+          "spec": ["3.3.3"]
+        }
+      },
+      "distinction": {
+        "spec": ["3.3.5"],
+        "desc": "using library via process = structured IPC (daemons, LSP); using tool = shell execution (git, docker, ffmpeg)"
+      },
+      "startup_validation": {
+        "spec": ["3.3.1", "3.3.4", "3.3.6"],
+        "desc": "Fatal startup check — program MUST NOT proceed if dependency missing"
+      }
+    },
+    "stage": {
+      "spec": ["2.6.4"],
+      "examples": ["2_6_4_Flow.el"],
+      "admitted_in": ["flow"],
+      "slots": {
+        "body": { "desc": "Stage body with actions/follows", "rhs": "stage \"name\"(params): ... end" }
+      }
+    },
+    "parallel": {
+      "spec": ["2.6.4"],
+      "examples": ["2_6_4_Flow.el"],
+      "admitted_in": ["flow"]
+    },
+    "required": {
+      "spec": ["3.6"],
+      "examples": ["3_6_0_required.el"],
+      "admitted_in": ["action", "method", "rule", "binder"]
+    },
+    "yield": {
+      "spec": ["3.12"],
+      "examples": ["2_6_2_Binder.el"],
+      "admitted_in": ["binder", "method"]
+    }
+  },
+
+  "operators": {
+    "binding": {
+      "mapped_to": {
+        "spec": ["2.7.4", "2.6.7"],
+        "variants": {
+          "endpoint": { "syntax": "mapped to \"api\":POST /path", "admitted_in": ["delegate", "data_interface"] },
+          "method":   { "syntax": "mapped to method MethodName", "admitted_in": ["interface"] },
+          "delegate": { "syntax": "mapped to delegate DelegateName", "admitted_in": ["interface"] },
+          "action":   { "syntax": "mapped to action \"action-name\"", "admitted_in": ["interface"] },
+          "property": { "syntax": "mapped to property PropName", "admitted_in": ["interface"] }
+        },
+        "examples": ["2_7_4_Delegate.el", "2_6_7_Interface.el"]
+      },
+      "bind_to": {
+        "spec": ["2.7.4.4.6", "2.7.4.5.2"],
+        "desc": "Deterministic result-shaping clause — maps external response into E.L.I.A. record/scalar fields",
+        "variants": {
+          "field":    { "syntax": "bind to .field: expression", "desc": "Property of record/complex return type" },
+          "scalar":   { "syntax": "bind to .value: expression", "desc": "Scalar primitive return — .value is reserved keyword" },
+          "pipeline": { "syntax": "bind to @variable: expression", "desc": "Pipeline variable assignment" },
+          "result":   { "syntax": "bind to .result: (tuple)", "desc": "Tuple composition of return value" }
+        },
+        "binding_expressions": ["this", "this.<member>", "@variable", "delegate_call()", "nested_record_literal", "expression"],
+        "admitted_in": ["delegate"],
+        "examples": ["2_7_4_Delegate.el", "language primitive-constructions.el"]
+      },
+      "implements": {
+        "syntax": "implements InterfaceA, InterfaceB",
+        "admitted_in": ["class", "record"],
+        "examples": ["2_6_1_Class.el", "2_5_6_Record.el", "2_6_7_Interface.el"]
+      },
+      "extends": {
+        "syntax": "extends ParentType",
+        "admitted_in": ["record", "interface", "semantic_interface"],
+        "examples": ["2_5_6_Record.el", "2_6_7_Interface.el", "2_7_3_SemanticInterface.el"]
+      },
+      "enforces": {
+        "syntax": "enforces [\"Policy1\", \"Policy2\"]",
+        "desc": "Outward enforcement vector — projects definition obligations onto construct. Rule-to-rule exception: a rule MAY also reference other rules to form an atomic rule chain (see §2.7.0.5.2 C). In definitions: multiple enforces clauses are permitted and merged.",
+        "admitted_in": ["all blocks"],
+        "repeatable_in": ["definition"],
+        "examples": ["virtually all files"]
+      },
+      "enforced": {
+        "syntax": "enforced [\"Policy1\", \"Policy2\"]",
+        "desc": "Inward governance vector — construct is governed by referenced definitions (see §2.7.0.5.3)",
+        "admitted_in": ["definition", "rule", "action", "delegate", "data_interface"],
+        "examples": ["2_7_1_Definition.el"]
+      },
+      "as_kind": {
+        "syntax": "as List | as Set | as Stack",
+        "admitted_in": ["collection"],
+        "examples": ["2_5_3_Array_Collection_Dictionary.el"]
+      },
+      "over": {
+        "syntax": "over \"provider\"",
+        "admitted_in": ["data_interface"],
+        "examples": ["2_7_2_DataInterface.el"]
+      }
+    },
+    "fallback": {
+      "default_infer": {
+        "syntax": "default infer \"label\";",
+        "admitted_in": ["rule"],
+        "examples": ["2_6_6_Rule.el", "3_13_0_infer.el", "3_7_0_default.el"]
+      },
+      "default_value": {
+        "syntax": "property X: T default value",
+        "admitted_in": ["record", "class", "error", "event", "interface"],
+        "examples": ["2_5_6_Record.el", "2_6_1_Class.el", "2_5_1_Error.el"]
+      },
+      "readonly_default": {
+        "syntax": "property X: T readonly default \"value\"",
+        "admitted_in": ["interface"],
+        "examples": ["2_6_7_Interface.el"]
+      },
+      "method_default": {
+        "syntax": "method Name(): T default ... end",
+        "admitted_in": ["interface"],
+        "examples": ["2_6_7_Interface.el"]
+      },
+      "default_when_null": {
+        "syntax": "default \"value\" when X is null",
+        "admitted_in": ["binder", "flow", "method"],
+        "examples": ["3_7_0_default.el"]
+      }
+    },
+    "reference": {
+      "this": {
+        "syntax": "this.PropertyName",
+        "admitted_in": ["class", "interface", "delegate"],
+        "desc": "Member access on current instance; in delegate bind_to: reference to mapped_to result object (§2.7.4.4.6/C)",
+        "examples": ["2_6_1_Class.el", "2_6_7_Interface.el", "3_12_0_method.el", "2_7_4_Delegate.el"],
+        "delegate_rules": {
+          "desc": "In delegate bind_to clause: this = mapped_to result; this.<member> = member access; UNDEFINED during fallback; NOT available in bind-only delegates",
+          "spec": ["2.7.4.4.6"]
+        }
+      },
+      "this_is": {
+        "syntax": "this is \"label\"",
+        "admitted_in": ["rule"],
+        "desc": "Forward chaining — check current inference state",
+        "examples": ["2_6_6_Rule.el", "3_13_0_infer.el"]
+      },
+      "reference_literal": {
+        "syntax": "reference(.type: \"...\", .url: \"...\", .data: (...))",
+        "admitted_in": ["domain", "action", "method"],
+        "desc": "Immutable semantic pointer to external object",
+        "examples": ["2_4_SpecializedTypes.el"],
+        "profiles": ["contact", "structured_node", "web_resource", "prompt_mcp", "domain", "secret", "connection_string"]
+      }
+    },
+    "comparison": {
+      "equality": ["==", "!="],
+      "relational": [">=", "<=", ">", "<"],
+      "logical": ["and", "or", "not", "xor"],
+      "semantic": ["is", "is not"],
+      "admitted_in": ["method", "rule", "flow", "binder", "class", "action"]
+    },
+    "set": {
+      "anyof":       { "syntax": "X anyof [val1, val2]",     "admitted_in": ["rule", "method"] },
+      "in":          { "syntax": "X in [val1, val2]",       "admitted_in": ["rule", "flow"] },
+      "not_in":      { "syntax": "X not in [val1, val2]",   "admitted_in": ["rule"] },
+      "between_and": { "syntax": "X between min and max",   "admitted_in": ["rule", "binder"] },
+      "typeof":      { "syntax": "typeof(X) == TypeName",   "admitted_in": ["rule", "method"] },
+      "sizeof":      { "syntax": "sizeof(X)",               "admitted_in": ["method"] }
+    },
+    "chaining": {
+      "follow_backward": {
+        "syntax": "follow: \"rule\"(args) is \"label\"",
+        "desc": "Backward chaining — delegate to another rule",
+        "admitted_in": ["rule", "action", "method"],
+        "examples": ["2_6_6_Rule.el", "3_5_0_follow.el"]
+      },
+      "follow_aggregate": {
+        "syntax": "follow(aggregate: true): ... end",
+        "desc": "Aggregated multi-condition follow",
+        "admitted_in": ["rule", "action", "flow"],
+        "examples": ["2_6_6_Rule.el", "3_5_0_follow.el", "3_14_0_control_flow.el"]
+      },
+      "forward_chain": {
+        "syntax": "this is \"label\"",
+        "desc": "Forward chaining — reference prior inference in same rule",
+        "admitted_in": ["rule"],
+        "examples": ["2_6_6_Rule.el", "3_13_0_infer.el"]
+      }
+    },
+    "math": {
+      "operators": ["+", "-", "*", "/", "mod", "^"],
+      "admitted_in": ["method", "binder", "rule", "flow", "class"]
+    }
+  },
+
+  "declarations": {
+    "property": {
+      "variants": {
+        "simple":      "property Name: Type;",
+        "default":     "property Name: Type default value;",
+        "readonly":    "property Name: Type readonly;",
+        "readonly_mapped": "property Name: Type readonly mapped to property X;",
+        "enforced":    "property Name: Type enforces [\"...\"];",
+        "inline_enum": "property Name: enum (A, B, C);",
+        "inline_record": "property Name: record ... end;"
+      },
+      "admitted_in": ["record", "class", "interface", "error", "event", "domain"],
+      "examples": ["2_5_6_Record.el", "2_6_1_Class.el", "2_6_7_Interface.el", "2_5_1_Error.el", "2_5_2_Event.el"]
+    },
+    "method_signature": {
+      "variants": {
+        "abstract":  "method Name(params): ReturnType;",
+        "default":   "method Name(params): ReturnType default ... end;",
+        "mapped":    "method Name(params): ReturnType mapped to method X;"
+      },
+      "admitted_in": ["interface", "class"],
+      "examples": ["2_6_7_Interface.el", "2_6_1_Class.el"]
+    },
+    "event_signature": {
+      "syntax": "event Name(sender: any, args: Type): void;",
+      "admitted_in": ["interface", "class"],
+      "examples": ["2_6_7_Interface.el"]
+    },
+    "constraints": {
+      "syntax": "constraints [must: [...], should: [...], may: [...], exceptions: [...]]",
+      "admitted_in": ["definition", "collection", "semantic_interface"],
+      "examples": ["2_7_1_Definition.el", "2_5_3_Array_Collection_Dictionary.el", "2_7_3_SemanticInterface.el"]
+    },
+    "explained_as": {
+      "syntax": "explained as \"...\"",
+      "admitted_in": ["all blocks"],
+      "examples": ["virtually all files"]
+    },
+    "with_config": {
+      "syntax": "with [param1: value1, param2: value2]",
+      "admitted_in": ["action", "flow", "data_interface"],
+      "examples": ["2_6_5_Action.el", "2_6_4_Flow.el", "2_4_SpecializedTypes.el"]
+    },
+    "on_error": {
+      "spec": ["3.15.11", "2.6.5.5.1", "2.7.4"],
+      "desc": "Declarative escalation clause at construct boundary. Not control flow.",
+      "variants": {
+        "throw":  "on error throw ErrorType(.Field: value);",
+        "return": "on error return <default-expression>;",
+        "emit":   "on error emit EventType(...);"
+      },
+      "admitted_in": ["action", "flow", "delegate"],
+      "forbidden_in": ["rule", "binder", "method"],
+      "examples": ["2_5_1_Error.el", "2_4_SpecializedTypes.el", "2_6_4_Flow.el"]
+    },
+    "requires": {
+      "syntax": "requires [\"Prerequisite1\", \"Prerequisite2\"]",
+      "admitted_in": ["flow"],
+      "examples": ["2_6_4_Flow.el"]
+    },
+    "visibility": {
+      "keywords": ["export", "public", "private"],
+      "admitted_in": ["all blocks"]
+    },
+    "metadata": {
+      "keywords": {
+        "version":         "version: \"X.Y.Z\"",
+        "effective_date":  "effective_date: \"YYYY-MM-DD\"",
+        "deprecated_date": "deprecated_date: \"YYYY-MM-DD\" | null",
+        "active_date":     "active_date: \"YYYY-MM-DD\"",
+        "runtime":         "runtime: .net | jvm | go | rust | c++ | native | dep | container | node",
+        "runver":          "runver: \"X.Y.Z\"",
+        "platform":        "platform: x64 | x86 | arm | apple | win",
+        "cross-border":    "cross-border: sanitize | encrypt | prevent"
+      },
+      "admitted_in": ["domain", "module", "definition", "semantic_interface"]
+    }
+  },
+
+  "identifiers": {
+    "dot_field_colon": {
+      "syntax": ".FieldName: value",
+      "desc": "Named argument in constructor/emit/invoke/reference",
+      "context": ["new Type(...)", "emit EventType(...)", "invoke Delegate(...)", "reference(...)"],
+      "examples": ["virtually all files"]
+    },
+    "dot_field_equals": {
+      "syntax": ".FieldName = value",
+      "desc": "Assignment in binder body or new block",
+      "context": ["binder body", "new Type() ... end"],
+      "examples": ["2_6_2_Binder.el", "3_10_0_variable.el"]
+    },
+    "tuple_positional": {
+      "syntax": ".N = value",
+      "desc": "Positional tuple field assignment",
+      "context": ["tuple literal"],
+      "examples": ["2_4_SpecializedTypes.el"]
+    },
+    "pipeline_var": {
+      "syntax": "@variableName",
+      "desc": "Pipeline variable — cross-stage state in flow",
+      "context": ["flow stage"],
+      "examples": ["2_6_4_Flow.el"]
+    },
+    "qualified_name": {
+      "syntax": "Alias.\"Name\"",
+      "desc": "Cross-domain/module qualified reference",
+      "context": ["import", "follow", "semantic_interface"],
+      "examples": ["3_1_0_Domain.el", "3_5_0_follow.el", "2_7_3_SemanticInterface.el"]
+    },
+    "string_identifier": {
+      "syntax": "\"rule-name\"",
+      "desc": "String-based identifier for named behavioral types",
+      "context": ["action", "rule", "flow", "definition", "semantic_interface"],
+      "examples": ["virtually all files"]
+    },
+    "generic_params": {
+      "syntax": "[T], [T, K], [TInput, TOutput]",
+      "desc": "Generic type parameters",
+      "context": ["interface", "method", "data_interface", "record"],
+      "examples": ["2_6_7_Interface.el", "2_7_2_DataInterface.el", "3_12_0_method.el"]
+    },
+    "error_constants": {
+      "syntax": "ErrorCode: N; Message: \"...\"; Severity: level;",
+      "desc": "Static constants in error declaration",
+      "context": ["error"],
+      "examples": ["2_5_1_Error.el", "2_4_SpecializedTypes.el"]
+    },
+    "event_constants": {
+      "syntax": "EventKind: N; EventVersion: N;",
+      "desc": "Static constants in event declaration",
+      "context": ["event"],
+      "examples": ["2_5_2_Event.el", "2_4_SpecializedTypes.el"]
+    },
+    "http_method": {
+      "syntax": ":GET, :POST, :PUT, :DELETE, :PATCH",
+      "desc": "HTTP method in delegate mapped-to endpoint",
+      "context": ["delegate", "data_interface"],
+      "examples": ["2_7_4_Delegate.el", "2_6_4_Flow.el", "2_6_7_Interface.el"]
+    }
+  },
+
+  "literals": {
+    "$description": "Value literal forms defined in §3.21. Literals are slot-level values — RHS of let, return, property default, emit, invoke, etc.",
+    "spec": ["3.21"],
+    "examples": ["3_21_0_literals.el"],
+
+    "integer": {
+      "spec": ["3.21.1"],
+      "forms": {
+        "decimal":     { "syntax": "42, -100, 1_000_000",               "rules": ["LIT-010"] },
+        "hexadecimal": { "syntax": "0xFF, 0x00_FF_00",                  "rules": ["LIT-020", "LIT-030"] },
+        "binary":      { "syntax": "0b1010, 0b1100_1010",               "rules": ["LIT-020", "LIT-040"] }
+      },
+      "separator": { "syntax": "_", "rules": ["LIT-050"], "desc": "Visual grouping, no semantic effect" },
+      "admitted_in": ["all executable blocks"]
+    },
+    "floating_point": {
+      "spec": ["3.21.2"],
+      "forms": {
+        "float":   { "syntax": "3.14f",          "suffix": "f", "rules": ["LIT-070"] },
+        "double":  { "syntax": "1.23e10d",       "suffix": "d", "rules": ["LIT-080"] },
+        "decimal": { "syntax": "19.99m, 99.95",  "suffix": "m (or none → decimal)", "rules": ["LIT-060", "LIT-090"] }
+      },
+      "admitted_in": ["all executable blocks"]
+    },
+    "boolean": {
+      "spec": ["3.21.3"],
+      "values": ["true", "false"],
+      "rules": ["LIT-100", "LIT-110"],
+      "admitted_in": ["all executable blocks"]
+    },
+    "string": {
+      "spec": ["3.21.4"],
+      "forms": {
+        "simple":    { "syntax": "\"Hello, World!\"",                 "rules": ["LIT-120"] },
+        "multiline": { "syntax": "\"\"\"...\"\"\"",                   "rules": ["LIT-140", "LIT-150"] },
+        "escape_sequences": ["\\n", "\\t", "\\r", "\\\\", "\\\"", "\\0", "\\uXXXX"]
+      },
+      "rules": ["LIT-130"],
+      "admitted_in": ["all executable blocks"]
+    },
+    "null_special": {
+      "spec": ["3.21.5"],
+      "values": {
+        "null":    { "desc": "Absence of value for nullable types",     "rules": ["LIT-160"] },
+        "nothing": { "desc": "Semantic non-applicability",              "rules": ["LIT-170"] },
+        "void":    { "desc": "Return type marker only, not assignable", "rules": ["LIT-180"] }
+      },
+      "admitted_in": ["all executable blocks (null); declaration contexts (nothing, void)"]
+    },
+    "guid": {
+      "spec": ["3.21.6"],
+      "syntax": "{8-4-4-4-12} hex format",
+      "example": "{550e8400-e29b-41d4-a716-446655440000}",
+      "rules": ["LIT-200", "LIT-210"],
+      "admitted_in": ["all executable blocks"]
+    },
+    "riid": {
+      "spec": ["3.21.6"],
+      "syntax": "{8-4-8-4} hex format",
+      "example": "{a1b2c3d4-e5f6-78901234-abcd}",
+      "rules": ["LIT-220", "LIT-230"],
+      "admitted_in": ["all executable blocks"]
+    },
+    "datetime": {
+      "spec": ["3.21.7"],
+      "forms": {
+        "date":      { "syntax": "#YYYY-MM-DD#",                            "rules": ["LIT-300"] },
+        "time":      { "syntax": "#hHHmMMsSS#",                             "rules": ["LIT-310"] },
+        "timestamp": { "syntax": "#YYYY-MM-DDhHHmMMsSS#",                   "rules": ["LIT-320"] },
+        "timespan":  { "syntax": "#NdNhNmNs#",                              "rules": ["LIT-340"] },
+        "constructor": { "syntax": "datetime(\"ISO-8601-string\")",          "rules": ["LIT-350"] }
+      },
+      "admitted_in": ["all executable blocks"]
+    },
+    "enum": {
+      "spec": ["3.21.8"],
+      "syntax": "EnumType.Member",
+      "rules": ["LIT-400", "LIT-410"],
+      "admitted_in": ["all executable blocks"]
+    },
+    "tuple": {
+      "spec": ["3.21.9"],
+      "syntax": "(.1 = val, .2 = val, ...)",
+      "rules": ["LIT-420", "LIT-430"],
+      "admitted_in": ["all executable blocks"]
+    },
+    "array_initializer": {
+      "spec": ["3.21.10"],
+      "forms": {
+        "inline":      { "syntax": "[val1, val2, val3]",                           "rules": ["LIT-440"] },
+        "constructor": { "syntax": "new array of T(N) / new array[,] of T(N, M)",  "rules": ["LIT-450", "LIT-460"] }
+      },
+      "admitted_in": ["all executable blocks"]
+    },
+    "dictionary_initializer": {
+      "spec": ["3.21.11"],
+      "forms": {
+        "constructor": { "syntax": "new dictionary[K,V](key: val, ...)",  "rules": ["LIT-500", "LIT-510"] },
+        "empty":       { "syntax": "new dictionary[K,V]()",              "rules": ["LIT-520"] }
+      },
+      "admitted_in": ["all executable blocks"]
+    }
+  },
+
+  "admissibility_matrix": {
+    "$description": "What constructs/operators are FORBIDDEN inside which block types. Based on §8.8.x and §2.6.x behavioral properties.",
+    "rule": {
+      "forbidden_constructs": ["emit", "invoke", "throw", "print", "read_file", "write_file"],
+      "forbidden_operators": ["mapped_to"],
+      "rationale": "§2.6.6.3: Rules are pure, deterministic, side-effect free. No I/O, no state mutation.",
+      "spec": ["2.6.6.3", "8.8.7"]
+    },
+    "action": {
+      "forbidden_constructs": ["if", "else", "case", "foreach", "loop", "for", "break", "continue", "throw", "yield"],
+      "rationale": "§2.6.5.4.1/B: Actions are linear, no branching or iteration.",
+      "spec": ["2.6.5", "8.8.8"]
+    },
+    "flow": {
+      "forbidden_constructs": [],
+      "rationale": "Flow has full control flow. No specific construct-level prohibitions beyond what is listed in other block-level rules.",
+      "spec": ["2.6.4", "8.8.9"]
+    },
+    "method": {
+      "forbidden_constructs": ["emit"],
+      "rationale": "Methods have full control flow but no emit (orchestration-only construct). invoke is permitted for delegate capability access.",
+      "spec": ["3.12"]
+    },
+    "record": {
+      "forbidden_constructs": ["let", "new", "return", "throw", "foreach", "if", "case", "loop", "emit", "invoke", "follow", "inline", "break", "continue"],
+      "rationale": "§8.8.4: Records are data-only. No method bodies, no executable statements.",
+      "spec": ["8.8.4"]
+    },
+    "interface": {
+      "forbidden_constructs": ["let", "new", "return", "throw", "foreach", "if", "case", "loop", "emit", "invoke", "follow", "inline", "break", "continue"],
+      "rationale": "§8.8.5: Interfaces declare contracts only, no execution.",
+      "spec": ["8.8.5"],
+      "exception": "method_default may contain limited pure logic"
+    },
+    "definition": {
+      "forbidden_constructs": ["let", "new", "return", "throw", "foreach", "if", "case", "loop", "emit", "invoke", "follow", "inline", "break", "continue", "infer"],
+      "rationale": "§8.8.3: Definitions are semantic metadata only, no executable statements.",
+      "spec": ["8.8.3"]
+    },
+    "event": {
+      "forbidden_constructs": ["let", "new", "return", "throw", "foreach", "if", "case", "loop", "emit", "invoke", "follow", "inline", "break", "continue", "infer"],
+      "rationale": "§8.8.6: Events are immutable fact contracts, no logic.",
+      "spec": ["8.8.6"]
+    },
+    "error": {
+      "forbidden_constructs": ["let", "new", "return", "throw", "foreach", "if", "case", "loop", "emit", "invoke", "follow", "inline", "break", "continue", "infer"],
+      "rationale": "Errors are immutable failure facts.",
+      "spec": ["2.5.1"]
+    }
+  }
+}

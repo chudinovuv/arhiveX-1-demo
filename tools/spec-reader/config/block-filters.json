@@ -1,0 +1,32 @@
+{
+  "$comment": "Paired block markers for content masking. Lines inside these blocks are invisible to structural scanning (headings, aspects, paragraphs, tables). Blocks are matched by open/close patterns as regex.",
+  "blocks": [
+    {
+      "name": "fenced-code",
+      "open": "^```",
+      "close": "^```",
+      "note": "Standard markdown fenced code block. Open and close are the same pattern."
+    },
+    {
+      "name": "quad-quote",
+      "open": "^\"\"\"\"",
+      "close": "^\"\"\"\"",
+      "note": "Four-quote string block. Open and close are the same pattern."
+    },
+    {
+      "name": "grammar",
+      "open": "^<grammar>",
+      "close": "^</grammar>"
+    },
+    {
+      "name": "example",
+      "open": "^<example>",
+      "close": "^</example>"
+    },
+    {
+      "name": "code",
+      "open": "^<code>",
+      "close": "^</code>"
+    }
+  ]
+}
