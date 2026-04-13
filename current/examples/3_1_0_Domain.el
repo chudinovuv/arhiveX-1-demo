@@ -1,9 +1,20 @@
 ###############################################################################
-#  Copyright: 2026 AI Actor LLC, all rights reserved                          #
-#  License: MIT License                                                       #
+#  Copyright (c) 2026 Yurii Chudinov. All rights reserved.                    #
+#                                                                             #
 #  File: specifications/v0.9/examples/1_1_1_domain.el                         #
-#  License: Advanced Creative Commons Attribution 4.0 International License   #
 #  Description: Example of delegates definitions inside domain declaration    #
+#                                                                             #
+#  This file is part of the ARC/SPO language specification and is provided    #
+#  for reference and evaluation only. No license, express or implied, is      #
+#  granted to use, copy, modify, distribute, sublicense, or create derivative #
+#  works, in whole or in part, by any means.                                  #
+#                                                                             #
+#  Patent notice: subject matter disclosed in this file may be covered by     #
+#  patent applications filed with INPI Portugal (incl. #120955, #120960) and  #
+#  by deposits on Zenodo under the author's name. No patent license is        #
+#  granted.                                                                   #
+#                                                                             #
+#  Contact: chudinovuv@proton.me                                              #
 ###############################################################################
 
 # Comlete example of domain declaration with imports and delegates
